@@ -1,0 +1,89 @@
+/* COLORS VARIABLES */
+
+:root {
+    --primary-color: #ff7119;          /* Plug Orange */
+    --secondary-color: #2fa4a8;        /* Blue */
+    --tertiary-color: #5f2680;         /* Purple */
+
+
+    --bg-neutral-100: #ECECF3;
+    --bg-neutral-200: #D9D9E8;
+    --bg-neutral-300: #A9A9BA;
+    --bg-neutral-400: #686875;
+    --bg-neutral-500: #16161A;    
+    --bg-neutral-600: #101016;   
+    --bg-neutral-700: #0B0B12;  /* one shade up bg */
+    --bg-neutral-800: #07070F;
+    --bg-neutral-900: #04040C;  /* main bg */
+
+    --primary-100: #FFEDD1;
+    --primary-200: #FFD6A3;
+    --primary-300: #FFBA75;
+    --primary-400: #FF9E52;
+    --primary-500: #ff7119;
+    --primary-600: #DB5312;
+    --primary-700: #B7390C;
+    --primary-800: #932407;
+    --primary-900: #7A1504;
+
+    --secondary-100: #D6FAEF;
+    --secondary-200: #AFF6E6;
+    --secondary-300: #81E4D7;
+    --secondary-400: #5DCAC5;
+    --secondary-500: #2fa4a8;
+    --secondary-600: #228390;
+    --secondary-700: #176578;
+    --secondary-800: #0E4961;
+    --secondary-900: #093550;
+
+    --tertiary-100: #F4D5F8;
+    --tertiary-200: #E5AEF2;
+    --tertiary-300: #C27DD8;
+    --tertiary-400: #9654B2;
+    --tertiary-500: #5f2680;
+    --tertiary-600: #4A1B6E;
+    --tertiary-700: #38135C;
+    --tertiary-800: #270C4A;
+    --tertiary-900: #1C073D;
+
+    --bg-secondary-100: #F4F3EF;
+    --bg-secondary-200: #EAE6E1;
+    --bg-secondary-300: #C1BCB6;
+    --bg-secondary-400: #847F7A;
+    --bg-secondary-500: #33302e;
+    --bg-secondary-600: #2B2521;
+    --bg-secondary-700: #241B17;
+    --bg-secondary-800: #1D120E;
+    --bg-secondary-900: #180B08;
+
+    --text-primary: #f2f2f2;             /* Dark gray for text */
+    --text-secondary: #cfcfcf;           /* Lighter gray for secondary text */
+    --bg-primary: #0a0807;               /* DArk background */
+    --bg-secondary: #0d0d0d;          /* Light gray background */
+
+    --main-bg: #16161a;
+    --main-headline: #fffffe;
+    --main-paragraph: #94a1b2;
+    --main-button: #7f5af0;
+    --main-button-text: #fffffe;
+    
+    --main-card-bg: #242629;
+    --main-card-tag:#ff7119;
+
+    --main-links: #2cb67d;
+
+    --stroke:#010101;
+    --highlight: #ff7119;
+    --secondary: #7f5af0;
+    --tertiary: #2cb67d;
+    --neutral: #72757e;
+
+    --section-bg: #242629;
+    --section-headline: #fffffe;
+    --section-subheadline:#94a1b2;
+    --section-card-bg: #16161a;
+    --section-card-heading:#fffffe;
+    --section-card-paragraph: #94a1b2;
+    --section-button: #7f5af0;
+    --section-button-text: #fffffe;
+}
