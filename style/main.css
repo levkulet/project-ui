@@ -141,6 +141,10 @@ a.article:hover {
     color: #fff !important;
 }
 
+h5 {
+    color: #fafafa;
+    padding: 10px;
+}
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
@@ -150,6 +154,18 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+
+/* ---------------------------------------------------
+    ICON STYLE
+----------------------------------------------------- */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 /* ---------------------------------------------------
