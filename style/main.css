@@ -30,10 +30,20 @@ a:focus {
 .navbar {
     padding: 15px 10px;
     background: var(--main-bg);
+    background-color: var(--section-bg);
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link{
+    color: var(--section-headline);
+}
+
+.active {
+    color: var(--highlight);
+    background-color: var(--main-bg);
 }
 
 .navbar-btn {
@@ -65,6 +75,11 @@ a:focus {
     background:  var(--section-bg);
     color: var(--main-paragraph);
     transition: all 0.3s;
+}
+
+.sidebar-header img {
+    max-height: 200px;
+    width: auto; /* Ensure the width adjusts proportionally */
 }
 
 #sidebar.active {
