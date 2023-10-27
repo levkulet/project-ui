@@ -92,11 +92,16 @@ font-family: 'Poppins', sans-serif;
     --main-bg-text: var(--dark-neutral-1100);
     --section-bg-text: var(--dark-neutral-1100);
 
+    --header-gray:var(--bg-secondary-400);
+
+    --other-text: var(--pumpkin-300);
+
     --main-headline: #fffffe;
     --main-paragraph: #F4F3EF;
 
     --main-highlight: var(--pumpkin-500);
-    --second-highlight: var(--eminence-900);
+    --section-highlight: var(--eminence-900);
+    --other-highlight: var(--breaker-bay-300);
 
     --main-button-text: #fffffe;
 
@@ -154,6 +159,7 @@ font-family: 'Poppins', sans-serif;
     /* font sizes */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
+    --fs-750: 4.5rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;

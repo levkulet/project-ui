@@ -16,6 +16,32 @@ p {
     color: var(--main-paragraph);
 }
 
+h2 {
+    font-family: var(--font-serif-family);
+    font-size: var(--fs-750);
+    font-weight: 300;
+    line-height: 1.7em;
+    color: var(--main-paragraph);
+}
+
+h3 {
+    font-size: var(--fs-700);
+    font-weight: 300;
+    color: var(--main-highlight);
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-weight: 300;
+    color: var(--main-paragraph);
+}
+
+h6 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-200);
+    color: var(--header-gray);
+}
+
 a,
 a:hover,
 a:focus {
@@ -25,13 +51,28 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+/*     padding: 15px 10px; */
     background: var(--main-bg);
     background-color: var(--section-bg);
-    border: none;
-    border-radius: 0;
+/*     border: none;
+    border-radius: 0; */
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+ /*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+#navbar ul li a {
+    padding: 10px;
+    font-size: var(--fs-400);
+    display: block;
+}
+
+#navbar ul li a:hover {
+    color: var(--other-text);
+}
+
+.nav-item{
+    margin: 6px;
+    display: block;
 }
 
 .nav-link{
@@ -39,16 +80,20 @@ a:focus {
 }
 
 .active {
-    color: var(--highlight);
-    background-color: var(--main-bg);
+    color: var(--section-highlight);
+    background-color: var(--button-dark-neutral);
+}
+
+.active-a{
+    color: var(--other-highlight);
 }
 
 .navbar-btn {
     box-shadow: none;
     outline: none !important;
     border: none;
-    padding: 12px;
-    margin: 5px;
+    padding: 24px;
+    margin: 20px;
 }
 
 .line {
@@ -64,6 +109,11 @@ a:focus {
     z-index: 1; /* Adjust the z-index if necessary */
     transition: top 0.3s; /* Add a smooth transition effect */
   }
+
+.collapse-btn{
+    background-color: var(--primary-color);
+}
+
 
 /* ---------------------------------------------------
     PAGE STYLE
@@ -104,7 +154,7 @@ a:focus {
     min-width: 250px;
     max-width: 250px;
     /* position: fixed; */
-    position: sticky;
+    /* position: sticky; */
     background:  var(--section-bg);
     color: var(--main-paragraph);
     transition: all 0.3s;
@@ -122,16 +172,16 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: var(--main-bg);
+    background: var(--section-bg);
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
+    padding: 10px;
     border-bottom: 1px solid var(--stroke);
 }
 
 #sidebar ul h5 {
-    color: var(--highlight);
+    color: var(--main-highlight);
     padding: 10px;
 }
 
@@ -142,14 +192,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: var(--section-headline);
-    background: var(--secondary);
+    color: var(--other-text);
+    background: var(--main-bg);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    background: var(--secondary);
-    color: var(--section-headline);
+    background: var(--main-bg);
+    color: var(--main-links);
 }
 
 a[data-toggle="collapse"] {
@@ -167,7 +217,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: var(--tertiary-500);
+    background: var(--main-bg);
 }
 
 ul.CTAs {
@@ -184,8 +234,8 @@ ul.CTAs a {
 
 a.article,
 a.article:hover {
-    background: var(--tertiary-500) !important;
-    color: var(--tertiary-100) !important;
+    background: var(--section-bg) !important;
+    color: var(--main-links) !important;
 }
 
 /* ---------------------------------------------------
