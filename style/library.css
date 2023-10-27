@@ -105,17 +105,17 @@
     /* OTHER COLORS */
 
     /* SUCCESS COLOR */
-    --screamin'-green-50: #eefde8;
-    --screamin'-green-100: #d8facd;
-    --screamin'-green-200: #b4f5a1;
-    --screamin'-green-300: #74ea56; /* MAIN */
-    --screamin'-green-400: #5bdf3c;
-    --screamin'-green-500: #3bc51d;
-    --screamin'-green-600: #299d13;
-    --screamin'-green-700: #207813;
-    --screamin'-green-800: #1f5f15;
-    --screamin'-green-900: #1d5116;
-    --screamin'-green-950: #0a2c07;
+    --screamin-green-50: #eefde8;
+    --screamin-green-100: #d8facd;
+    --screamin-green-200: #b4f5a1;
+    --screamin-green-300: #74ea56; /* MAIN */
+    --screamin-green-400: #5bdf3c;
+    --screamin-green-500: #3bc51d;
+    --screamin-green-600: #299d13;
+    --screamin-green-700: #207813;
+    --screamin-green-800: #1f5f15;
+    --screamin-green-900: #1d5116;
+    --screamin-green-950: #0a2c07;
     
     /* WARNING COLOR */
     --broom-50: #fdfee8;
