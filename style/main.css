@@ -24,16 +24,14 @@ a:focus {
     transition: all 0.3s;
 }
 
-li {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-/* NAVIGATION BAR */
-
 .navbar {
+    padding: 15px 10px;
     background: var(--main-bg);
     background-color: var(--section-bg);
+    border: none;
+    border-radius: 0;
     margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link{
@@ -58,10 +56,6 @@ li {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
-}
-
-.navbar img{
-    padding: 6px;
 }
 
 .sticky {
@@ -118,7 +112,7 @@ li {
 }
 
 .sidebar-header img {
-    max-height: 160px;
+    max-height: 200px;
     width: auto; /* Ensure the width adjusts proportionally */
 }
 
@@ -127,8 +121,8 @@ li {
 }
 
 #sidebar .sidebar-header {
-    padding: 10px;
-    background: var(--section-bg);
+    padding: 20px;
+    background: var(--main-bg);
 }
 
 #sidebar ul.components {
