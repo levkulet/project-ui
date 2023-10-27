@@ -19,6 +19,32 @@ p {
     color: var(--main-paragraph);
 }
 
+h2 {
+    font-family: var(--font-serif-family);
+    font-size: var(--fs-750);
+    font-weight: 300;
+    line-height: 1.7em;
+    color: var(--main-paragraph);
+}
+
+h3 {
+    font-size: var(--fs-700);
+    font-weight: 300;
+    color: var(--main-highlight);
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-weight: 300;
+    color: var(--main-paragraph);
+}
+
+h6 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-200);
+    color: var(--header-gray);
+}
+
 a,
 a:hover,
 a:focus {
@@ -201,15 +227,15 @@ a.article:hover {
     BUTTONS
 ----------------------------------------------------- */
 .custom-button.btn:nth-child(1) {
-    background-color: var(--section-button);
+    background-color: var(--main-paragraph);
   }
   
   .custom-button.btn:nth-child(2) {
-    background-color: var(--section-button-text);
+    background-color: var(--main-links);
   }
   
   .custom-button.btn:nth-child(3) {
-    background-color: var(--highlight);
+    background-color: var(--pumpkin-400);
   }
   
   .custom-button.btn {
@@ -218,7 +244,7 @@ a.article:hover {
 
 /*DROPDOWN STYLES*/
 .custom-dropdown .btn {
-    background-color: var(--section-button); /* Use the custom variable */
+    background-color: var(--pumpkin-400); /* Use the custom variable */
    
     color: #fff;
     border: 1px solid #000;
