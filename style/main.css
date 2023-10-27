@@ -20,17 +20,16 @@ h2 {
     font-family: var(--font-serif-family);
     font-size: var(--fs-750);
     font-weight: 300;
-    line-height: 1.7em;
     color: var(--main-paragraph);
 }
 
 h3 {
-    font-size: var(--fs-700);
-    font-weight: 300;
+    font-size: var(--fs-600);
+    font-weight: 600;
     color: var(--main-highlight);
 }
 
-h2 {
+h4 {
     font-size: var(--fs-600);
     font-weight: 300;
     color: var(--main-paragraph);
@@ -177,11 +176,12 @@ a:focus {
 
 #sidebar ul.components {
     padding: 10px;
-    border-bottom: 1px solid var(--stroke);
+    border-bottom: 1px solid var(--main-highlight);
 }
 
 #sidebar ul h5 {
-    color: var(--main-highlight);
+    color: var(--breaker-bay-300);
+    font-weight: 600;
     padding: 10px;
 }
 
@@ -250,6 +250,31 @@ a.article:hover {
     /* margin-left: 20px; */
 }
 
+.color-box {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #fff; /* White stroke */
+     /* Your color variable */
+}
+  
+.color-details {
+    flex-grow: 1;
+}
+  
+.color-name {
+    font-weight: bold;
+    margin: 0;
+    padding: auto;
+}
+
+.color-code {
+    margin: 0;
+    padding: auto;
+    color: #666; /* Adjust the color of the hex code text */
+}
+
 /* ---------------------------------------------------
     ICON STYLE
 ----------------------------------------------------- */
@@ -257,7 +282,7 @@ a.article:hover {
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 600,
   'GRAD' 0,
   'opsz' 24
 }
