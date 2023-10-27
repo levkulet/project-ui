@@ -19,11 +19,6 @@ p {
     color: var(--main-paragraph);
 }
 
-.header{
-    margin-bottom: 30px;
-    
-}
-
 a,
 a:hover,
 a:focus {
@@ -196,20 +191,4 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
-}
-/*BUTTON STYLE*/
-.code-input {
-    font-family: monospace; /* Use a monospaced font for code */
-    white-space: pre; /* Preserve white spaces and line breaks */
-    border: 1px solid #ced4da; /* Add a border */
-    padding: 10px; /* Add padding to the textarea */
-    resize: none; /* Disable textarea resizing */
-    border-radius: 4px; /* Add rounded corners */
-    
-}
-h2 {
-    color: #fff;
-}
-h5{
-    color: #fff;
 }
