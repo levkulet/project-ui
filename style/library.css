@@ -1,6 +1,14 @@
-/* COLORS VARIABLES */
+
+/*
+G FONTS
+font-family: 'Playfair', serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300;0,5..1200,400;0,5..1200,500;0,5..1200,600;0,5..1200,700;0,5..1200,800;0,5..1200,900;1,5..1200,300;1,5..1200,400;1,5..1200,500;1,5..1200,600;1,5..1200,700;1,5..1200,800;1,5..1200,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
+    /* COLORS VARIABLES */
     --primary-color: #ff7119;          /* Pumkin 500*/
     --secondary-color: #2fa4a8;        /* Breaker Bay 500 */
     --tertiary-color: #5f2680;         /* Eminence 900 */
@@ -11,7 +19,7 @@
     --pumpkin-200: #ffd5a8;
     --pumpkin-300: #ffb670;
     --pumpkin-400: #ff8c37;
-    --pumpkin-500: #ff7119;
+    --pumpkin-500: #ff7119; /* MAIN */
     --pumpkin-600: #f05006;
     --pumpkin-700: #c73a07;
     --pumpkin-800: #9e2e0e;
@@ -41,7 +49,7 @@
     --eminence-600: #9d43da;
     --eminence-700: #8731bf;
     --eminence-800: #722d9c;
-    --eminence-900: #5f2680;
+    --eminence-900: #5f2680; /* MAIN */
     --eminence-950: #400f5c;
     
     --bg-secondary-100: #F4F3EF;
@@ -56,51 +64,48 @@
 
     /* Dark Neutrals */
     --dark-neutral-less100: #101214;
-    --dark-neutral-0: #161A1D; /* card color */
+    --dark-neutral-0: #161A1D; /* dark card color */
     --dark-neutral-100: #1D2125;/* bg main */
     --dark-neutral-200: #22272B;
-    --dark-neutral-250: #282E33;
+    --dark-neutral-250: #282E33; /* button dark */
     --dark-neutral-300: #2C333A;
     --dark-neutral-350: #38414A;
     --dark-neutral-400: #454F59;
     --dark-neutral-500: #596773;
     --dark-neutral-600: #738496;
     --dark-neutral-700: #8C9BAB;
-    --dark-neutral-800: #9FADBC;
+    --dark-neutral-800: #9FADBC; /* button light */
     --dark-neutral-900: #B6C2CF;
     --dark-neutral-1000: #C7D1DB;
-    --dark-neutral-1100: #DEE4EA;
+    --dark-neutral-1100: #DEE4EA; /* light card color */
 
-    --text-primary: #f2f2f2;             /* Dark gray for text */
-    --text-secondary: #cfcfcf;           /* Lighter gray for secondary text */
-    --bg-primary: #0a0807;               /* DArk background */
-    --bg-secondary: #0d0d0d;          /* Light gray background */
+    /* BACKGROUND COLORS */
+    --main-bg: var(--dark-neutral-100);
+    --section-bg: var(--dark-neutral-0);
 
-    --main-bg: #16161a;
+
+    --main-dark-card: var(--dark-neutral-0);
+    --main-light-card: var(--dark-neutral-1100);
+
+    /* FONT COLORS */
+    --main-bg-text: var(--dark-neutral-1100);
+    --section-bg-text: var(--dark-neutral-1100);
+
     --main-headline: #fffffe;
-    --main-paragraph: #94a1b2;
-    --main-button: #7f5af0;
+    --main-paragraph: #F4F3EF;
+
+    --main-highlight: var(--pumpkin-500);
+
     --main-button-text: #fffffe;
-    
-    --main-card-bg: #242629;
-    --main-card-tag:#ff7119;
 
-    --main-links: #2cb67d;
+    --main-card-tag: var(--pumpkin-400);
+    --main-links: var(--breaker-bay-500);
 
-    --stroke:#010101;
-    --highlight: #ff7119;
-    --secondary: #7f5af0;
-    --tertiary: #2cb67d;
-    --neutral: #72757e;
+    /* BUTTON COLORS */
+    --button-dark-neutral: var(--dark-neutral-250);
+    --button-light-neutral: var(--dark-neutral-800);
 
-    --section-bg: #242629;
-    --section-headline: #fffffe;
-    --section-subheadline:#94a1b2;
-    --section-card-bg: #16161a;
-    --section-card-heading:#fffffe;
-    --section-card-paragraph: #94a1b2;
-    --section-button: #7f5af0;
-    --section-button-text: #fffffe;
+    --main-button: var(--eminence-600);
 
     /* OTHER COLORS */
 
@@ -143,5 +148,18 @@
     --coral-900: #7e1410;
     --coral-950: #440606;
 
+    /* font sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font families */
+    --font-serif-family: 'Playfair', serif;
+    --font-sans-family: 'Poppins', sans-serif;
 
 }
