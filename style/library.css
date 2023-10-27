@@ -83,6 +83,7 @@ font-family: 'Poppins', sans-serif;
     --main-bg: var(--dark-neutral-100);
     --section-bg: var(--dark-neutral-0);
 
+    --main-active: var(--main-bg);
 
     --main-dark-card: var(--dark-neutral-0);
     --main-light-card: var(--dark-neutral-1100);
@@ -95,6 +96,7 @@ font-family: 'Poppins', sans-serif;
     --main-paragraph: #F4F3EF;
 
     --main-highlight: var(--pumpkin-500);
+    --second-highlight: var(--eminence-900);
 
     --main-button-text: #fffffe;
 
@@ -106,6 +108,7 @@ font-family: 'Poppins', sans-serif;
     --button-light-neutral: var(--dark-neutral-800);
 
     --main-button: var(--eminence-600);
+    --stroke: var(--dark-neutral-less100);
 
     /* OTHER COLORS */
 
