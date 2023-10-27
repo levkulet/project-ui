@@ -19,6 +19,11 @@ p {
     color: var(--main-paragraph);
 }
 
+.header{
+    margin-bottom: 30px;
+    
+}
+
 a,
 a:hover,
 a:focus {
@@ -27,16 +32,14 @@ a:focus {
     transition: all 0.3s;
 }
 
-li {
-    padding-left: 12px;
-    padding-right: 12px;
-}
-/* NAVIGATION BAR */
-
 .navbar {
+    padding: 15px 10px;
     background: var(--main-bg);
     background-color: var(--section-bg);
+    border: none;
+    border-radius: 0;
     margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link{
@@ -52,8 +55,6 @@ li {
     box-shadow: none;
     outline: none !important;
     border: none;
-    padding: 12px;
-    margin: 5px;
 }
 
 .line {
@@ -61,10 +62,6 @@ li {
     height: 1px;
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
-}
-
-.navbar img{
-    padding: 6px;
 }
 
 /* ---------------------------------------------------
@@ -86,7 +83,7 @@ li {
 }
 
 .sidebar-header img {
-    max-height: 160px;
+    max-height: 200px;
     width: auto; /* Ensure the width adjusts proportionally */
 }
 
@@ -95,8 +92,8 @@ li {
 }
 
 #sidebar .sidebar-header {
-    padding: 10px;
-    background: var(--section-bg);
+    padding: 20px;
+    background: var(--main-bg);
 }
 
 #sidebar ul.components {
@@ -199,4 +196,20 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+/*BUTTON STYLE*/
+.code-input {
+    font-family: monospace; /* Use a monospaced font for code */
+    white-space: pre; /* Preserve white spaces and line breaks */
+    border: 1px solid #ced4da; /* Add a border */
+    padding: 10px; /* Add padding to the textarea */
+    resize: none; /* Disable textarea resizing */
+    border-radius: 4px; /* Add rounded corners */
+    
+}
+h2 {
+    color: #fff;
+}
+h5{
+    color: #fff;
 }
