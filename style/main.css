@@ -89,7 +89,7 @@ a:focus {
 
 .active {
     color: var(--section-highlight);
-    background-color: var(--button-shark);
+    background-color: var(--button-dark);
 }
 
 .active-a{

@@ -145,6 +145,15 @@ font-family: 'Poppins', sans-serif;
     --grad-ps: linear-gradient(to right, #ff7119,  #1d2125);
     --grad-sm: linear-gradient(to right, #1d2125, #4c5053, #808487, #b9bcbe, #f5f7f9);
 
+    /* FEEDBACK COLORS */
+
+    --success-color: var(--screamin-green-600);
+    --info-color: var(--breaker-bay-400);
+    --warning-color: var(--broom-500);
+    --danger-color: var(--coral-500);
+    --neutral-color: var(--shark-600);
+
+
     /* DATA VISUALIZATION COLORS*/
 
     
@@ -157,11 +166,12 @@ font-family: 'Poppins', sans-serif;
     --main-dark-card: var(--shark-0);
     --main-light-card: var(--shark-1100);
 
-    /* FONT COLORS */
+    /* FONT  TEXT COLORS */
     --main-bg-text: var(--shark-1100);
     --section-bg-text: var(--shark-1100);
 
     --dark-text: var(--shark-0);
+    --light-text: var(--mystic-0);
 
     --header-gray:var(--bg-secondary-400);
 
@@ -180,14 +190,12 @@ font-family: 'Poppins', sans-serif;
     --main-links: var(--breaker-bay-500);
 
     /* BUTTON COLORS */
-    --button-shark: var(--shark-250);
+    --button-dark: var(--shark-250);
     --button-light-neutral: var(--shark-800);
 
     --main-button: var(--eminence-600);
     --stroke: var(--shark-less100);
-
     
-
     /* FONT SIZES */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
@@ -205,8 +213,8 @@ font-family: 'Poppins', sans-serif;
     --font-sans-family: 'Poppins', sans-serif;
 
     /* GAPS AND SPACES */
-    --gap-buttons: ;
-    --gap-nav-item: ;
+    --gap-buttons: 0.25em;
+    --gap-nav-item: 1em;
     --gap-cards: ; 
     --gap-section: ;
     --gap-text: ;
