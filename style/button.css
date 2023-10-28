@@ -1,0 +1,327 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+/*     overflow-x: relative; */
+    font-family: 'Poppins', sans-serif;
+    background: var(--main-bg);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: var(--main-paragraph);
+}
+
+h2 {
+    font-family: var(--font-serif-family);
+    font-size: var(--fs-750);
+    font-weight: 300;
+    line-height: 1.7em;
+    color: var(--main-paragraph);
+}
+
+h3 {
+    font-size: var(--fs-700);
+    font-weight: 300;
+    color: var(--main-highlight);
+}
+
+h2 {
+    font-size: var(--fs-600);
+    font-weight: 300;
+    color: var(--main-paragraph);
+}
+
+h6 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-200);
+    color: var(--header-gray);
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+/*     padding: 15px 10px; */
+    background: var(--main-bg);
+    background-color: var(--section-bg);
+/*     border: none;
+    border-radius: 0; */
+    margin-bottom: 40px;
+ /*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+}
+
+#navbar ul li a {
+    padding: 10px;
+    font-size: var(--fs-400);
+    display: block;
+}
+
+#navbar ul li a:hover {
+    color: var(--other-text);
+}
+
+.nav-item{
+    margin: 6px;
+    display: block;
+}
+
+.nav-link{
+    color: var(--main-links);
+}
+
+.active {
+    color: var(--section-highlight);
+    background-color: var(--button-dark-neutral);
+}
+
+.active-a{
+    color: var(--other-highlight);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    padding: 24px;
+    margin: 20px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0; /* Adjust the top position as needed */
+    z-index: 1; /* Adjust the z-index if necessary */
+    transition: top 0.3s; /* Add a smooth transition effect */
+  }
+
+.collapse-btn{
+    background-color: var(--primary-color);
+}
+
+
+/* ---------------------------------------------------
+    PAGE STYLE
+----------------------------------------------------- */
+.row {
+    display:        flex;
+    flex-wrap:      wrap;
+    flex-direction: row;
+    align-items:    flex-start;
+}
+
+.col {
+    flex-basis: 0px;
+    flex-grow:  1;
+  }
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    /* position: fixed; */
+    /* position: sticky; */
+    background:  var(--section-bg);
+    color: var(--main-paragraph);
+    transition: all 0.3s;
+    overflow-y: auto;
+}
+
+.sidebar-header img {
+    max-height: 200px;
+    width: auto; /* Ensure the width adjusts proportionally */
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: var(--section-bg);
+}
+
+#sidebar ul.components {
+    padding: 10px;
+    border-bottom: 1px solid var(--stroke);
+}
+
+#sidebar ul h5 {
+    color: var(--main-highlight);
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: var(--other-text);
+    background: var(--main-bg);
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    background: var(--main-bg);
+    color: var(--main-links);
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: var(--main-bg);
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.article,
+a.article:hover {
+    background: var(--section-bg) !important;
+    color: var(--main-links) !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    /* margin-left: 20px; */
+}
+
+/* ---------------------------------------------------
+    ICON STYLE
+----------------------------------------------------- */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/* ---------------------------------------------------
+    BUTTONS
+----------------------------------------------------- */
+.custom-button.btn:nth-child(1) {
+    background-color: var(--main-paragraph);
+  }
+  
+  .custom-button.btn:nth-child(2) {
+    background-color: var(--main-links);
+  }
+  
+  .custom-button.btn:nth-child(3) {
+    background-color: var(--pumpkin-400);
+  }
+  
+  .custom-button.btn {
+    margin-right: 25px; /* Adjust this value for spacing */
+  }
+
+/*DROPDOWN STYLES*/
+.custom-dropdown .btn {
+    background-color: var(--pumpkin-400); /* Use the custom variable */
+   
+    color: #fff;
+    border: 1px solid #000;
+  }
+  
+  .custom-dropdown .btn:hover {
+    background-color: var(--section-card-paragraph);
+    color: #fff;
+    border: 1px solid #000;
+  }
+  
+  .custom-dropdown .dropdown-toggle::after {
+    content: none; /* Remove the default dropdown arrow */
+    
+  }
+  
+  
+  
+  
+  
+  
+
+  
+
