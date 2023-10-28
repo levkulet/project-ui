@@ -161,12 +161,14 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    height: 100%;
     /* position: fixed; */
     /* position: sticky; */
     background:  var(--section-bg);
     color: var(--main-paragraph);
     transition: all 0.3s;
-    overflow-y: auto;
+    overflow: auto;
+ /*    overflow-y: scroll; */
 }
 
 .sidebar-header img {
