@@ -216,9 +216,9 @@ font-family: 'Poppins', sans-serif;
     /* GAPS AND SPACES */
     --gap-buttons: 0.25em;
     --gap-nav-item: 1em;
-    --gap-cards: ; 
-    --gap-section: ;
-    --gap-text: ;
-    --gap-items: ;
-    --gap-others: ;
+    --gap-cards: 1em; 
+    --gap-section: 1.5em;
+    --gap-text: 0.25em;
+    --gap-items: 0.5em;
+    --gap-others: 0.75em;
 }

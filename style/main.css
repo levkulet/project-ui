@@ -332,9 +332,16 @@ a.article:hover {
     text-transform: uppercase;
     padding: auto;
 }
-
+.section{
+    margin-bottom: var(--gap-section);
+}
 .section-bg{
     background-color: var(--section-bg);
+}
+.light-card-bg{
+    background-color: var(--main-light-card);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
