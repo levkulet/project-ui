@@ -135,6 +135,19 @@ font-family: 'Poppins', sans-serif;
     --coral-900: #7e1410;
     --coral-950: #440606;
 
+    /* GRADIENT COLORS */
+
+    --grad-pumpkin: linear-gradient(to right, #ff7119, #ff994a, #ffbb7c, #ffdab2, #fff7ed);
+    --grad-pb: linear-gradient(to right, #ff7119, #2fa4a8);
+    --grad-breaker: linear-gradient(to right, #2fa4a8, #62b8b9, #8acccb, #afe0de, #d3f4f2);
+    --grad-pe: linear-gradient(to right, #ff7119, #5f2680);
+    --grad-eminence: linear-gradient(to right, #5f2680, #81529f, #a37ebd, #c6abdc, #ebd9fb);
+    --grad-ps: linear-gradient(to right, #ff7119,  #1d2125);
+    --grad-sm: linear-gradient(to right, #1d2125, #4c5053, #808487, #b9bcbe, #f5f7f9);
+
+    /* DATA VISUALIZATION COLORS*/
+
+    
     /* BACKGROUND COLORS */
     --main-bg: var(--shark-100);
     --section-bg: var(--shark-0);
