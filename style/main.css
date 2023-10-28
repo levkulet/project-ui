@@ -186,6 +186,7 @@ a:focus {
 /*     padding: 10px 20px 10px 20px; */
     background: var(--section-bg);
     text-align: center;
+    
 }
 
 #sidebar ul.components {
@@ -197,6 +198,7 @@ a:focus {
     color: var(--breaker-bay-300);
     font-weight: 600;
     /* padding: 10px; */
+    margin-top: 1rem;
 }
 
 #sidebar ul li a {
@@ -250,6 +252,11 @@ a.article,
 a.article:hover {
     background: var(--section-bg) !important;
     color: var(--main-links) !important;
+}
+
+.copyright{
+    color: var(--header-gray);
+    font-size: var(--fs-100);
 }
 
 /* ---------------------------------------------------
