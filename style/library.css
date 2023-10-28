@@ -1,3 +1,6 @@
+/* PLEASE CHECK THE BOTTOM FOR OUR 
+MAIN VARIABLES */
+
 
 /*
 G FONTS
@@ -63,59 +66,33 @@ font-family: 'Poppins', sans-serif;
     --bg-secondary-900: #180B08;
 
     /* Dark Neutrals */
-    --dark-neutral-less100: #101214;
-    --dark-neutral-0: #161A1D; /* dark card color */
-    --dark-neutral-100: #1D2125;/* bg main */
-    --dark-neutral-200: #22272B;
-    --dark-neutral-250: #282E33; /* button dark */
-    --dark-neutral-300: #2C333A;
-    --dark-neutral-350: #38414A;
-    --dark-neutral-400: #454F59;
-    --dark-neutral-500: #596773;
-    --dark-neutral-600: #738496;
-    --dark-neutral-700: #8C9BAB;
-    --dark-neutral-800: #9FADBC; /* button light */
-    --dark-neutral-900: #B6C2CF;
-    --dark-neutral-1000: #C7D1DB;
-    --dark-neutral-1100: #DEE4EA; /* light card color */
+    --shark-less100: #101214;
+    --shark-0: #161A1D; /* dark card color */
+    --shark-100: #1D2125;/* bg main */
+    --shark-200: #22272B;
+    --shark-250: #282E33; /* button dark */
+    --shark-300: #2C333A;
+    --shark-350: #38414A;
+    --shark-400: #454F59;
+    --shark-500: #596773;
+    --shark-600: #738496;
+    --shark-700: #8C9BAB;
+    --shark-800: #9FADBC; /* button light */
+    --shark-900: #B6C2CF;
+    --shark-1000: #C7D1DB;
+    --shark-1100: #DEE4EA; /* light card color */
 
-    /* BACKGROUND COLORS */
-    --main-bg: var(--dark-neutral-100);
-    --section-bg: var(--dark-neutral-0);
+    --mystic-0: #f5f7f9; /* WHITE / LIGHT */
 
-    --main-active: var(--main-bg);
+    /* Alpha Neutrals */
+    /* 0.0 (fully transparent) and 1.0 (fully opaque)*/
+    --shark-alpha-10: rgba(29, 33, 37, 0.1);  
+    --shark-alpha-20: rgba(29, 33, 37, 0.2);
+    --shark-alpha-50: rgba(29, 33, 37, 0.5);
 
-    --main-dark-card: var(--dark-neutral-0);
-    --main-light-card: var(--dark-neutral-1100);
-
-    /* FONT COLORS */
-    --main-bg-text: var(--dark-neutral-1100);
-    --section-bg-text: var(--dark-neutral-1100);
-
-    --dark-text: var(--dark-neutral-0);
-
-    --header-gray:var(--bg-secondary-400);
-
-    --other-text: var(--pumpkin-300);
-
-    --main-headline: #fffffe;
-    --main-paragraph: #F4F3EF;
-
-    --main-highlight: var(--pumpkin-500);
-    --section-highlight: var(--eminence-900);
-    --other-highlight: var(--breaker-bay-300);
-
-    --main-button-text: #fffffe;
-
-    --main-card-tag: var(--pumpkin-400);
-    --main-links: var(--breaker-bay-500);
-
-    /* BUTTON COLORS */
-    --button-dark-neutral: var(--dark-neutral-250);
-    --button-light-neutral: var(--dark-neutral-800);
-
-    --main-button: var(--eminence-600);
-    --stroke: var(--dark-neutral-less100);
+    --mystic-alpha-15: rgba(245, 247, 249, 0.15);  
+    --mystic-alpha-30: rgba(245, 247, 249, 0.3);
+    --mystic-alpha-65: rgba(245, 247, 249, 0.65);
 
     /* OTHER COLORS */
 
@@ -158,19 +135,68 @@ font-family: 'Poppins', sans-serif;
     --coral-900: #7e1410;
     --coral-950: #440606;
 
-    /* font sizes */
+    /* BACKGROUND COLORS */
+    --main-bg: var(--shark-100);
+    --section-bg: var(--shark-0);
+
+    --main-active: var(--main-bg);
+
+    --main-dark-card: var(--shark-0);
+    --main-light-card: var(--shark-1100);
+
+    /* FONT COLORS */
+    --main-bg-text: var(--shark-1100);
+    --section-bg-text: var(--shark-1100);
+
+    --dark-text: var(--shark-0);
+
+    --header-gray:var(--bg-secondary-400);
+
+    --other-text: var(--pumpkin-300);
+
+    --main-headline: var(--breaker-bay-50);
+    --main-paragraph: var(--mystic-0);
+
+    --main-highlight: var(--pumpkin-500);
+    --section-highlight: var(--eminence-900);
+    --other-highlight: var(--breaker-bay-300);
+
+    --main-button-text: var(--shark-1100);
+
+    --main-card-tag: var(--pumpkin-400);
+    --main-links: var(--breaker-bay-500);
+
+    /* BUTTON COLORS */
+    --button-shark: var(--shark-250);
+    --button-light-neutral: var(--shark-800);
+
+    --main-button: var(--eminence-600);
+    --stroke: var(--shark-less100);
+
+    
+
+    /* FONT SIZES */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;
     --fs-750: 4.5rem;
     --fs-700: 3.5rem;
+    --fs-650: 2.5rem;
     --fs-600: 2rem;
     --fs-500: 1.75rem;
     --fs-400: 1.125rem;
     --fs-300: 1rem;
     --fs-200: 0.875rem;
 
-    /* font families */
+    /* FONT FAMILIES */
     --font-serif-family: 'Playfair', serif;
     --font-sans-family: 'Poppins', sans-serif;
 
+    /* GAPS AND SPACES */
+    --gap-buttons: ;
+    --gap-nav-item: ;
+    --gap-cards: ; 
+    --gap-section: ;
+    --gap-text: ;
+    --gap-items: ;
+    --gap-others: ;
 }

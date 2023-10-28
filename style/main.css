@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -11,7 +18,7 @@ body {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7em;
     color: var(--main-paragraph);
 }
@@ -19,20 +26,22 @@ p {
 h2 {
     font-family: var(--font-serif-family);
     font-size: var(--fs-750);
-    font-weight: 300;
+    font-weight: 600;
     color: var(--main-paragraph);
 }
 
 h3 {
-    font-size: var(--fs-600);
+    font-size: var(--fs-650);
     font-weight: 600;
     color: var(--main-highlight);
 }
 
 h4 {
     font-size: var(--fs-600);
-    font-weight: 300;
+    font-weight: 500;
     color: var(--main-paragraph);
+    margin-bottom: 0.25em;
+    margin-top: 1em;
 }
 
 h6 {
@@ -80,7 +89,7 @@ a:focus {
 
 .active {
     color: var(--section-highlight);
-    background-color: var(--button-dark-neutral);
+    background-color: var(--button-shark);
 }
 
 .active-a{
@@ -161,8 +170,10 @@ a:focus {
 }
 
 .sidebar-header img {
-    max-height: 200px;
-    width: auto; /* Ensure the width adjusts proportionally */
+    max-height: 160px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #sidebar.active {
@@ -170,8 +181,9 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+/*     padding: 10px 20px 10px 20px; */
     background: var(--section-bg);
+    text-align: center;
 }
 
 #sidebar ul.components {
@@ -182,7 +194,7 @@ a:focus {
 #sidebar ul h5 {
     color: var(--breaker-bay-300);
     font-weight: 600;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 #sidebar ul li a {
@@ -253,10 +265,11 @@ a.article:hover {
 .color-box {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
     padding: 10px;
-    border: 1px solid #fff; /* White stroke */
-     /* Your color variable */
+    border: 1px solid var(--section-bg);
+    height: 120px;
 }
   
 .color-details {
@@ -267,13 +280,24 @@ a.article:hover {
     font-weight: bold;
     margin: 0;
     padding: auto;
+    margin-left: 0.25rem;
+}
+
+.color-name-small {
+    font-size: 0.9em;
+}
+
+.color-dark{
+    color: var(--dark-text);
 }
 
 .color-code {
     margin: 0;
+    margin-left: 0.25rem;
+    text-transform: uppercase;
     padding: auto;
-    color: #666; /* Adjust the color of the hex code text */
 }
+
 
 /* ---------------------------------------------------
     ICON STYLE
