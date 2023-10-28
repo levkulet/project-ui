@@ -197,7 +197,7 @@ font-family: 'Poppins', sans-serif;
     --stroke: var(--shark-less100);
     
     /* FONT SIZES */
-    --fs-900: 9.375rem;
+    --fs-900: 9.375rem; 
     --fs-800: 6.25rem;
     --fs-750: 4.5rem;
     --fs-700: 3.5rem;

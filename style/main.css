@@ -23,6 +23,13 @@ p {
     color: var(--main-paragraph);
 }
 
+h1 {
+    font-family: var(--font-serif-family);
+    font-size: var(--fs-800);
+    font-weight: 600;
+    color: var(--main-paragraph);
+}
+
 h2 {
     font-family: var(--font-serif-family);
     font-size: var(--fs-750);
@@ -42,6 +49,13 @@ h4 {
     color: var(--main-paragraph);
     margin-bottom: 0.25em;
     margin-top: 1em;
+    font-size: var(--fs-500);
+}
+
+h5 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-300);
+    color: var(--header-gray);
 }
 
 h6 {
@@ -262,6 +276,18 @@ a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+.button-text{
+    font-size: var(--fs-200);
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.other-text{
+    color: var(--header-gray);
+    font-size: var(--fs-200);
+}
 
 #content {
     width: 100%;
@@ -305,6 +331,10 @@ a.article:hover {
     margin-left: 0.25rem;
     text-transform: uppercase;
     padding: auto;
+}
+
+.section-bg{
+    background-color: var(--section-bg);
 }
 
 
