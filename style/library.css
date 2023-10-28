@@ -34,7 +34,7 @@ font-family: 'Poppins', sans-serif;
     --breaker-bay-100: #d3f4f2;
     --breaker-bay-200: #a7e8e4;
     --breaker-bay-300: #73d5d4;
-    --breaker-bay-400: #46b9bb;
+    --breaker-bay-400: #46b9bb; /* INFO COLOR */
     --breaker-bay-500: #2fa4a8; /* MAIN */
     --breaker-bay-600: #217b80;
     --breaker-bay-700: #1e6367;
@@ -75,7 +75,7 @@ font-family: 'Poppins', sans-serif;
     --shark-350: #38414A;
     --shark-400: #454F59;
     --shark-500: #596773;
-    --shark-600: #738496;
+    --shark-600: #738496; /* NEUTRAL FEEDBACK */
     --shark-700: #8C9BAB;
     --shark-800: #9FADBC; /* button light */
     --shark-900: #B6C2CF;
@@ -103,7 +103,7 @@ font-family: 'Poppins', sans-serif;
     --screamin-green-300: #74ea56; /* MAIN */
     --screamin-green-400: #5bdf3c;
     --screamin-green-500: #3bc51d;
-    --screamin-green-600: #299d13;
+    --screamin-green-600: #299d13; /* SUCCESS COLOR */
     --screamin-green-700: #207813;
     --screamin-green-800: #1f5f15;
     --screamin-green-900: #1d5116;
@@ -115,7 +115,7 @@ font-family: 'Poppins', sans-serif;
     --broom-200: #feff87;
     --broom-300: #fff943;
     --broom-400: #ffeb14; /* MAIN */
-    --broom-500: #efd103;
+    --broom-500: #efd103; /* WARNING COLOR */
     --broom-600: #cea400;
     --broom-700: #a47604;
     --broom-800: #885b0b;
@@ -128,8 +128,8 @@ font-family: 'Poppins', sans-serif;
     --coral-200: #ffc4a8;
     --coral-300: #ff9b71;
     --coral-400: #ff784f; 
-    --coral-500: #fe3e11;
-    --coral-600: #ef2507;
+    --coral-500: #fe3e11; /* DANGER COLOR */
+    --coral-600: #ef2507; 
     --coral-700: #c61608; /* MAIN */
     --coral-800: #9d140f;
     --coral-900: #7e1410;
