@@ -353,7 +353,7 @@ a.article:hover {
 
 .btn.btn-border-1:hover {
     animation: pulse 1s ease-out .4s;
-    color: var(--shark-1000);
+    color: var(--shark-250);
 }
 
 .btn.btn-border-1:hover::after,
