@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -11,29 +18,44 @@ body {
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.7em;
+    color: var(--main-paragraph);
+}
+
+h1 {
+    font-family: var(--font-serif-family);
+    font-size: var(--fs-800);
+    font-weight: 600;
     color: var(--main-paragraph);
 }
 
 h2 {
     font-family: var(--font-serif-family);
     font-size: var(--fs-750);
-    font-weight: 300;
-    line-height: 1.7em;
+    font-weight: 600;
     color: var(--main-paragraph);
 }
 
 h3 {
-    font-size: var(--fs-700);
-    font-weight: 300;
+    font-size: var(--fs-650);
+    font-weight: 600;
     color: var(--main-highlight);
 }
 
-h2 {
+h4 {
     font-size: var(--fs-600);
-    font-weight: 300;
+    font-weight: 500;
     color: var(--main-paragraph);
+    margin-bottom: 0.25em;
+    margin-top: 1em;
+    font-size: var(--fs-500);
+}
+
+h5 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-300);
+    color: var(--header-gray);
 }
 
 h6 {
@@ -81,7 +103,7 @@ a:focus {
 
 .active {
     color: var(--section-highlight);
-    background-color: var(--button-dark-neutral);
+    background-color: var(--button-dark);
 }
 
 .active-a{
@@ -153,17 +175,21 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
+    height: 100%;
     /* position: fixed; */
     /* position: sticky; */
     background:  var(--section-bg);
     color: var(--main-paragraph);
     transition: all 0.3s;
-    overflow-y: auto;
+    overflow: auto;
+ /*    overflow-y: scroll; */
 }
 
 .sidebar-header img {
-    max-height: 200px;
-    width: auto; /* Ensure the width adjusts proportionally */
+    max-height: 160px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #sidebar.active {
@@ -171,18 +197,22 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
+/*     padding: 10px 20px 10px 20px; */
     background: var(--section-bg);
+    text-align: center;
+    
 }
 
 #sidebar ul.components {
     padding: 10px;
-    border-bottom: 1px solid var(--stroke);
+    border-bottom: 1px solid var(--main-highlight);
 }
 
 #sidebar ul h5 {
-    color: var(--main-highlight);
-    padding: 10px;
+    color: var(--breaker-bay-300);
+    font-weight: 600;
+    /* padding: 10px; */
+    margin-top: 1rem;
 }
 
 #sidebar ul li a {
@@ -238,9 +268,26 @@ a.article:hover {
     color: var(--main-links) !important;
 }
 
+.copyright{
+    color: var(--header-gray);
+    font-size: var(--fs-100);
+}
+
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+.button-text{
+    font-size: var(--fs-200);
+}
+
+.bold-text{
+    font-weight: 700;
+}
+
+.other-text{
+    color: var(--header-gray);
+    font-size: var(--fs-200);
+}
 
 #content {
     width: 100%;
@@ -250,6 +297,119 @@ a.article:hover {
     /* margin-left: 20px; */
 }
 
+.color-box2 {
+    display: flex;
+    align-items: center;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    padding: 10px;
+    height: 120px;
+}
+
+/*Button style*/
+
+.btn {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 12px 27px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--main-paragraph);
+    background: var(--bg-secondary-500);
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    border-radius: 0;
+}
+
+.btn.btn-border-1::after,
+.btn.btn-border-1::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    visibility: hidden;
+}
+
+.btn.btn-border-1::after {
+    bottom: -3px;
+    right: -3px;
+    border-left: 3px solid var(--shark-1000);
+    border-bottom: 3px solid var(--shark-1000);
+    transition: width .1s ease .1s, height .1s ease, visibility 0s .2s;
+}
+
+.btn.btn-border-1::before {
+    top: -3px;
+    left: -3px;
+    border-top: 3px solid var(--shark-1000);
+    border-right: 3px solid var(--shark-1000);
+    transition: width .1s ease .3s, height .1s ease .2s, visibility 0s .4s;
+}
+
+.btn.btn-border-1:hover {
+    animation: pulse 1s ease-out .4s;
+    color: var(--shark-1000);
+}
+
+.btn.btn-border-1:hover::after,
+.btn.btn-border-1:hover::before {
+    width: calc(100% + 6px);
+    height: calc(100% + 5px);
+    visibility: visible;
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::after {
+    transition: width .1s ease .2s, height .1s ease .3s, visibility 0s .2s;
+}
+
+.btn.btn-border-1:hover::before {
+    transition: width .1s ease, height .1s ease .1s;
+}
+/*---------------------------------------------------------------------------------------------------*/
+.color-details {
+    flex-grow: 1;
+}
+  
+.color-name {
+    font-weight: bold;
+    margin: 0;
+    padding: auto;
+    margin-left: 0.25rem;
+}
+
+.color-name-small {
+    font-size: 0.9em;
+}
+
+.color-dark{
+    color: var(--dark-text);
+}
+
+.color-code {
+    margin: 0;
+    margin-left: 0.25rem;
+    text-transform: uppercase;
+    padding: auto;
+}
+.section{
+    margin-bottom: var(--gap-section);
+}
+.section-bg{
+    background-color: var(--section-bg);
+}
+.light-card-bg{
+    background-color: var(--main-light-card);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
 /* ---------------------------------------------------
     ICON STYLE
 ----------------------------------------------------- */
@@ -257,7 +417,7 @@ a.article:hover {
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 600,
   'GRAD' 0,
   'opsz' 24
 }
@@ -277,6 +437,7 @@ a.article:hover {
         display: none;
     }
 }
+
 
 
 /* ---------------------------------------------------
