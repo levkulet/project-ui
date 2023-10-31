@@ -284,6 +284,10 @@ a.article:hover {
     font-weight: 700;
 }
 
+.data-body-text{
+    font-family: var(--font-serif-family);
+}
+
 .other-text{
     color: var(--header-gray);
     font-size: var(--fs-200);
