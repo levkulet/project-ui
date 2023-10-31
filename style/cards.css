@@ -1,0 +1,12 @@
+.card .card-body h4 {
+    color: var(--main-paragraph);
+}
+
+  .content-block {
+    background-color: white;
+    padding: 15px; /* Add padding if needed */
+    /* Add other styles as desired */
+}
+.card{
+    border: none;
+}

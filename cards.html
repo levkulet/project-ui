@@ -15,6 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/cards.css">
 
     <!-- Menu Burger Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -100,75 +101,42 @@
                 <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
                 
                 <div class="container">
-                    <div class="mt-5"> <!-- BRAND COLORS -->
-                        <div class="row">
-                            <h4 id="brand-colors" class="mb-3">Brand</h4>
-                            <div class="col color-box" style="background-color: var(--pumpkin-500);">
-                                <div class="color-details">
-                                  <p class="color-name">Pumpkin</p>
-                                  <p class="color-name">--pumpkin-500</p>
-                                  <p class="color-code">#ff7119</p>
+                    <div class="row">
+
+                        <!-- Left Side (Column for Card) -->
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body" style="background-color: var(--shark-0);">
+                                    <h4 class="card-title">This is a card without any images</h4>
+                                    <div class="line"></div>
+                                    <p class="">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col color-box" style="background-color: var(--pumpkin-50);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-50</p>
-                                    <p class="color-code color-dark">#fff7ed</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-100);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-100</p>
-                                    <p class="color-code color-dark">#ffecd4</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-200);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-200</p>
-                                    <p class="color-code color-dark">#ffd5a8</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-300);">
-                                <div class="color-details ">
-                                    <p class="color-name color-dark ">--pumpkin-300</p>
-                                    <p class="color-code color-dark">#ffb670</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-400);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-400</p>
-                                    <p class="color-code color-dark">#ff8c37</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-600);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-600</p>
-                                    <p class="color-code">#f05006</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-700);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-700</p>
-                                    <p class="color-code">#c73a07</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-800);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-800</p>
-                                    <p class="color-code">#9e2e0e</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-900);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-900</p>
-                                    <p class="color-code">#7f290f</p>
-                                  </div>
+
+                        
+                        <!-- Right Side (Column for Paragraph) -->
+                        <div class="col-md-6">
+                            <div class="row">
+                                <!-- Notes Section -->
+                                <div class="col-12">
+                                    <h3>Notes</h3>
+                                    <p>Wraps provided children in a styled box which we call a Card.</p>
+                                    <p>Card will style an image in one of three imagePositions (top, left, right) if an imageUrl is provided.</p>
+                                    <p>Padding (if needed) must be explicitly declared using a padding utility class: containerClasses for Card, contentClasses for any children, and imageClasses.</p>
+                                </div>
+                                
                             </div>
                         </div>
+
+                        
+                        
+                        
+
+                        
                     </div> <!-- END -->
                 </div>
+                
     
                
             </div> <!-- END Page Contents -->
