@@ -324,6 +324,7 @@ a.article:hover {
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     border-radius: 0;
+
 }
 
 .btn.btn-border-1::after,
@@ -439,6 +440,22 @@ a.article:hover {
 }
 
 
+@media (max-width: 360px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .custom-button{
+        margin: ;
+    }
+}
+
+
 
 /* ---------------------------------------------------
     BUTTONS
@@ -479,10 +496,22 @@ a.article:hover {
   }
   
   
+/*code block*//
   
-  
-  
-  
+
+
+.text-center{
+  text-align: center;
+}
+pre{
+  font-size: 12px;
+  color: var(--main-paragraph);
+  background-color: var(--shark-0);
+  padding: 30px;
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+
+}
 
   
 

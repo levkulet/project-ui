@@ -103,32 +103,101 @@
                 <div class="container">
                     <div class="mt-5"> <!-- BRAND COLORS -->
                         <div class="row">
-                            <h4 id="brand-colors" class="mb-3">Priority</h4>
-                            <div class="col-lg button-box" style="background-color: var(--shark-0);">
-                                <div class="row py-5 pt-6">
-                                    <div class="col-md-6 col-lg-4 color-box2 justify-content-center align-items-center">
-                                        <button class="col-5 custom-button btn btn-border-1" style="background-color: var(--pumpkin-500);">Primary</button>
-                                    </div>
-                                    <div class="col-md-6 col-lg-4 color-box2 justify-content-center align-items-center">
-                                        <button class="col-5 custom-button btn btn-border-1" style="background-color: var(--pumpkin-300);">Hover</button>
-                                    </div>
-                                    <div class="col-md-6 col-lg-4 color-box2  justify-content-center align-items-center">
-                                        <button class="col-5 custom-button btn btn-border-1" style="background-color: var(--main-links);">Active</button>
-                                    </div>
+                            <h4 id="brand-colors" class="mb-3">Buttons - Solid</h4>
+                            <div class="col-lg button-box" style="display: flex; justify-content: space-between; align-items: center; background-color: var(--shark-0);">
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background-color: var(--pumpkin-500);">Primary</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background-color: var(--main-links);">Active</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background-color: var(--pumpkin-300);">Hover</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background-color: var(--shark-0); color: var(--main-paragraph);" disabled>Disabled</button>
                                 </div>
                             </div>
                         </div>
                     </div> <!-- END -->
                 </div>
+                
+
+                <div class="container">
+                    <div class="mt-5"> <!-- BRAND COLORS -->
+                        <div class="row">
+                            <h4 id="brand-colors" class="mb-3">Buttons - Outline</h4>
+                            <div class="col-lg button-box" style="display: flex; justify-content: space-between; align-items: center; background-color: var(--shark-0);">
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="border-color: var(--main-links); background-color: transparent;">Active</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-300); background-color: transparent;">Hover</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);" disabled>Disabled</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- END -->
+                </div>
+
+                <div class="container">
+                    <div class="mt-5"> <!-- BRAND COLORS -->
+                        <div class="row">
+                            <h4 id="brand-colors" class="mb-3">Buttons - Gradient</h4>
+                            <div class="col-lg button-box" style="display: flex; justify-content: space-between; align-items: center; background-color: var(--shark-0);">
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background: var(--grad-pumpkin);">Primary</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background: var(--grad-pb);">Active</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background: var(--grad-breaker);">Hover</button>
+                                </div>
+                                <div class="color-box2 justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1" style="background: var(--grad-pe); color: var(--main-paragraph);" disabled>Disabled</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- END -->
+                </div>
+                
+                
+                    
             </div>
                 
-                
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                        <pre>
+                            <h3 class=""></h3>
+                            &lt;button class="col-5 custom-button btn btn-border-1"&gt;Active
+                            &lt;/button&gt;
+                            &lt;button class="col-5 custom-button btn btn-border-1"&gt;Active
+                            &lt;/button&gt;
+                            &lt;button class="col-5 custom-button btn btn-border-1"&gt;Active
+                            &lt;/button&gt;
+                        </pre>
+                    </div>
+                    <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                        <h4>Notes</h4>
+                        <p>You can design buttons using the HTML <span style="color: var(--pumpkin-500);">button</span> tag and apply styling through the use of the <span style="color: var(--pumpkin-500);">button</span> class.</p>
+                        <p>For input elements, you can transform them into buttons by adding the <span style="color: var(--pumpkin-500);">button</span> class and specifying a label using the <span style="color: var(--pumpkin-500);">value</span> attribute.</p>
+                    </div>
+                </div>
+            </div>
                
             </div> <!-- END Page Contents -->
           </div> <!--END right side container -->
+          
     </div> <!-- END wrapper -->
-
-
+    
+        
     <!-- 
       !!!!!!!!!!!
       SCRIPTS PLS DONT DELETE BELOW THIS
