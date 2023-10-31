@@ -311,8 +311,8 @@ a.article:hover {
 .btn {
     position: relative;
     display: inline-block;
-    margin: 15px;
-    padding: 12px 27px;
+    margin: 6px;
+    padding: 8px 16px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
@@ -324,7 +324,6 @@ a.article:hover {
     -webkit-transition: ease-out 0.5s;
     -moz-transition: ease-out 0.5s;
     border-radius: 0;
-
 }
 
 .btn.btn-border-1::after,
@@ -424,40 +423,6 @@ a.article:hover {
 }
 
 /* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-}
-
-
-@media (max-width: 360px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-    .custom-button{
-        margin: ;
-    }
-}
-
-
-
-/* ---------------------------------------------------
     BUTTONS
 ----------------------------------------------------- */
 .custom-button.btn:nth-child(1) {
@@ -496,7 +461,7 @@ a.article:hover {
   }
   
   
-/*code block*//
+/*code block*/
   
 
 
@@ -512,6 +477,155 @@ pre{
   border-radius: 5px;
 
 }
+/* ---------------------------------------------------
+    BUTTONS STYLE
+----------------------------------------------------- */
+
+.default-button {
+    display: inline-block;
+    background-color: var(--default-button); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.default-button:hover {
+    background-color: var(--shark-900); /* background color on hover */
+    color: var(--dark-text); /*text color on hover */
+}
+
+.important-button {
+    display: inline-block;
+    background-color: var(--important-button); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.important-button:hover {
+    background-color: var(--eminence-300); /* background color on hover */
+    color: var(--dark-text); /* color on hover */
+}
+
+.accept-button {
+    display: inline-block;
+    background-color: var(--accept-button); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.accept-button:hover {
+    background-color: var(--screamin-green-300); /* background color on hover */
+    color: var(--dark-text); /* color on hover */
+}
+
+.primary-button {
+    display: inline-block;
+    background-color: var(--primary-action-button); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-button:hover {
+    background-color: var(--breaker-bay-300); /* background color on hover */
+    color: var(--dark-text); /* color on hover */
+}
+
+.warning-button {
+    display: inline-block;
+    background-color: var(--warning-button); /* background color */
+    color: var(--dark-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.warning-button:hover {
+    background-color: var(--broom-300); /* background color on hover */
+    color: var(--dark-text); /* color on hover */
+}
+
+.danger-button {
+    display: inline-block;
+    background-color: var(--danger-button); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.danger-button:hover {
+    background-color: var(--coral-300); /* background color on hover */
+    color: var(--dark-text); /* color on hover */
+}
+
+.disabled-button {
+    display: inline-block;
+    background-color: var(--shark-200); /* background color */
+    color: var(--light-text); /*text color */
+    text-decoration: none;
+    border: 0.5px solid var(--mystic-alpha-30);
+    border-radius: 0;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: not-allowed;
+    position: relative;
+    margin: 6px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.disable-button:hover {
+    cursor: not-allowed;
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 360px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+    .custom-button{
+       /*  margin: ; */
+    }
+}
+
+
+
 
   
 
