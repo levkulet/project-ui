@@ -1,0 +1,26 @@
+.codes{
+    max-height: 200px;
+    overflow-y: auto;
+    color: white;
+    border: 1px solid white ;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.notes{
+    font-weight: 400;
+    font-size:xx-large;
+    color:#f05006 ;
+}
+
+legend{
+    color:#ff8c37 ;
+}
+
+label{
+    color:#ffb670 ;
+}
+
+.button-small{
+    background-color: #ffb670;
+}
