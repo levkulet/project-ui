@@ -344,7 +344,27 @@ a.article:hover {
     padding-bottom: 1rem;
 }
 
+/* ---------------------------------------------------
+   PRE TAG STYLE
+----------------------------------------------------- */
+.text-center{
+    text-align: center;
+}
 
+pre{
+    font-size: 12px;
+    color: var(--main-paragraph);
+    background-color: var(--shark-0);
+    margin: 12px;
+    padding: 30px;
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+  
+}
+
+ /* ---------------------------------------------------
+   CARD STYLE
+----------------------------------------------------- */
 
 /* ---------------------------------------------------
     ICON STYLE
