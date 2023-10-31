@@ -311,8 +311,8 @@ a.article:hover {
 .btn {
     position: relative;
     display: inline-block;
-    margin: 15px;
-    padding: 12px 27px;
+    margin: 6px;
+    padding: 8px 16px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
@@ -483,7 +483,6 @@ pre{
 
 .default-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--default-button); /* background color */
     color: var(--light-text); /*text color */
     text-decoration: none;
@@ -499,7 +498,6 @@ pre{
 
 .important-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--important-button); /* background color */
     color: var(--light-text); /*text color */
     text-decoration: none;
@@ -515,7 +513,6 @@ pre{
 
 .accept-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--accept-button); /* background color */
     color: var(--light-text); /*text color */
     text-decoration: none;
@@ -531,7 +528,6 @@ pre{
 
 .primary-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--primary-action-button); /* background color */
     color: var(--light-text); /*text color */
     text-decoration: none;
@@ -547,7 +543,6 @@ pre{
 
 .warning-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--warning-button); /* background color */
     color: var(--dark-text); /*text color */
     text-decoration: none;
@@ -563,7 +558,6 @@ pre{
 
 .danger-button {
     display: inline-block;
-    padding: 10px 20px;
     background-color: var(--danger-button); /* background color */
     color: var(--light-text); /*text color */
     text-decoration: none;
@@ -587,8 +581,8 @@ pre{
     transition: background-color 0.3s, color 0.3s;
     cursor: not-allowed;
     position: relative;
-    margin: 15px;
-    padding: 12px 27px;
+    margin: 6px;
+    padding: 8px 16px;
     text-align: center;
     font-size: 16px;
     letter-spacing: 1px;
