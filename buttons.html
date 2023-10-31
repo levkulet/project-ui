@@ -41,19 +41,19 @@
                   <li><a href="./data_visualization.html">Data Visualization</a></li>
 
                   <h5>COMPONENTS</h5>
-                  <li><a href="./buttons.html">Buttons</a> </li>
+                  <li class="active"><a href="./buttons.html"  data-toggle="collapse" 
+                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
+                    onclick="toggleSubMenu(event)">Buttons</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a class="active-a" href="#solid">Solid</a>
+                            </li>
+                        </ul>
+                  </li>
                   <li><a href="./notifications.html">Notifications</a></li> 
                   <li><a href="./stat.html">Stat</a></li>
                   <li><a href="./cards.html">Cards</a></li>
-                  <li class="active"><a href="./tables.html"  data-toggle="collapse" 
-                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Tables</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a class="active-a" href="#brand-colors">Brand Colors</a>
-                        </li>
-                    </ul>
-                  </li>
+                  <li><a href="./tables.html" >Tables</a></li>
                   <li><a href="./form_elements.html">Form Elements</a></li>
               </ul>
               <ul class="list-unstyled components">
@@ -103,7 +103,7 @@
             
                 <!-- Buttons - Solid -->
                 <div class="row mt-5 mb-1">
-                    <h4 id="brand-colors" class="mb-5">Buttons - Solid (With Hover)</h4>
+                    <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
                     <div class="row row-cols-2 g-0">
                         <div class="col">
                             <div class="d-flex justify-content-center align-items-center">
