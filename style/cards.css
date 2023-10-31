@@ -1,0 +1,81 @@
+.card .card-body h4 {
+    color: var(--main-paragraph);
+}
+
+  .content-block {
+    background-color: white;
+    padding: 15px; /* Add padding if needed */
+    /* Add other styles as desired */
+}
+.card{
+    border: none;
+}
+
+.card-shadow-dark {
+  box-shadow: 0 5px 15px var(--bg-secondary-900), 0 15px 12px var(--bg-secondary-900);
+}
+
+.card-shadow-light {
+    box-shadow: 0 5px 15px var(--bg-secondary-900), 0 15px 12px var(--bg-secondary-900);
+}
+
+.card-shadow-gradient {
+    box-shadow: 0 5px 15px var(--bg-secondary-900), 0 15px 12px var(--bg-secondary-900);
+}
+
+.color-dark{
+    color: var(--dark-text);
+    background-color: var(--dark-text);
+}
+
+.light-card-title{
+    color: var(--mystic-0);
+}
+
+.light-card-content{
+    display: block;
+    text-align: justify;
+    font-family: var(--font-serif-family);
+    color: var(--section-bg-text);
+}
+
+.dark-card-title{
+    color: var(--dark-text);
+}
+
+.dark-card-content{
+    display: block;
+    text-align: justify;
+    font-family: var(--font-serif-family);
+    color: var(--dark-text);
+}
+
+.card-dark{
+    background-color: var(--main-dark-card);
+    padding: 15px;
+    margin: 50px;
+   /*  border: 0.5px solid var(--mystic-0); */
+}
+
+.card-light{
+    background-color: var(--main-light-card);
+    padding: 20px;
+    margin: 50px;
+   /*  border: 0.5px solid var(--mystic-0); */
+}
+
+.card-gradient{
+    background: var(--grad-eminence);
+    padding: 15px;
+    margin: 50px;
+}
+
+.card-gradient p, .card-gradient h4 {
+    color: white;
+}
+
+.card-secondary{
+
+}
+
+

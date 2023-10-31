@@ -185,16 +185,25 @@ font-family: 'Poppins', sans-serif;
     --other-highlight: var(--breaker-bay-300);
 
     --main-button-text: var(--shark-1100);
+    --button-text-dark: var(--shark-0);
 
     --main-card-tag: var(--pumpkin-400);
     --main-links: var(--breaker-bay-500);
 
     /* BUTTON COLORS */
     --button-dark: var(--shark-250);
-    --button-light-neutral: var(--shark-800);
+    --button-light-neutral: var(--shark-800); 
 
     --main-button: var(--eminence-600);
     --stroke: var(--shark-less100);
+
+    --default-button: var(--shark-600);
+    --important-button: var(--eminence-600);
+    --accept-button: var(--success-color);
+    --primary-action-button: var(--info-color);
+    --warning-button: var(--warning-color);
+    --danger-button: var(--danger-color);
+    
     
     /* FONT SIZES */
     --fs-900: 9.375rem; 

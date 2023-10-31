@@ -15,6 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/cards.css">
 
     <!-- Menu Burger Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -32,26 +33,26 @@
               <ul class="list-unstyled components">
                 <h5>FOUNDATIONS</h5>
                 <li><a href="index.html">Color</a></li>
-                <li><a href="./typography.html">Typography</a></li>
-                <li><a href="./page_layout.html">Grid System</a></li>
                 <li><a href="./data_visualization.html">Data Visualization</a></li>
+                <li><a href="./page_layout.html">Grid System</a></li>
+                <li><a href="./typography.html">Typography</a></li>
 
                 <h5>COMPONENTS</h5>
                 <li><a href="./buttons.html">Buttons</a> </li>
-                <li><a href="./notifications.html">Notifications</a></li> 
-                <li><a href="./stat.html">Stat</a></li>
                 <li class="active">
                     <a href="./cards.html" data-toggle="collapse" 
                     data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
                     onclick="toggleSubMenu(event)">Cards</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a class="active-a" href="#brand-colors">Brand Colors</a>
+                            <a class="active-a" href="#dark-card">Dark Card</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="./tables.html">Tables</a></li>
                 <li><a href="./form_elements.html">Form Elements</a></li>
+                <li><a href="./notifications.html">Notifications</a></li> 
+                <li><a href="./stat.html">Stat</a></li>
+                <li><a href="./tables.html">Tables</a></li>
                    
               </ul>
               <ul class="list-unstyled components">
@@ -100,75 +101,145 @@
                 <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
                 
                 <div class="container">
-                    <div class="mt-5"> <!-- BRAND COLORS -->
-                        <div class="row">
-                            <h4 id="brand-colors" class="mb-3">Brand</h4>
-                            <div class="col color-box" style="background-color: var(--pumpkin-500);">
-                                <div class="color-details">
-                                  <p class="color-name">Pumpkin</p>
-                                  <p class="color-name">--pumpkin-500</p>
-                                  <p class="color-code">#ff7119</p>
+                    <div class="row">
+
+                        <!-- Left Side (Column for Card) -->
+                        <div class="col">
+                            <div class="card card-shadow-dark">
+                                <div class="card-body" style="background-color: var(--shark-0);">
+                                    <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                    <div class="line"></div>
+                                    <p class="">
+                                        This card design allows for the inclusion of images, although it doesn't conform to the predefined image layouts such as top, left, or right alignment.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col color-box" style="background-color: var(--pumpkin-50);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-50</p>
-                                    <p class="color-code color-dark">#fff7ed</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-100);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-100</p>
-                                    <p class="color-code color-dark">#ffecd4</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-200);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-200</p>
-                                    <p class="color-code color-dark">#ffd5a8</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-300);">
-                                <div class="color-details ">
-                                    <p class="color-name color-dark ">--pumpkin-300</p>
-                                    <p class="color-code color-dark">#ffb670</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-400);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-400</p>
-                                    <p class="color-code color-dark">#ff8c37</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-600);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-600</p>
-                                    <p class="color-code">#f05006</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-700);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-700</p>
-                                    <p class="color-code">#c73a07</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-800);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-800</p>
-                                    <p class="color-code">#9e2e0e</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-900);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-900</p>
-                                    <p class="color-code">#7f290f</p>
-                                  </div>
+
+                    </div>
+
+                        <!-- Code Snippet Example-->
+                        <div class=" mt-5">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                    <pre style="white-space: pre-line;">
+                                        &lt;-- No Image Card --&gt;
+                                        &lt;div class="card card-shadow-dark"&gt;
+                                            &lt;div class="card-body"&gt;
+                                                &lt;h4 class="card-title"&gt;&lt;/h4&gt;
+                                                &lt;div class="line"&gt;&lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    </pre>
+                                </div>
+                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                    <h4>Notes</h4>
+                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
+                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
+                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                </div>
                             </div>
                         </div>
-                    </div> <!-- END -->
-                </div>
+                    
+                        <div class="row mt-3 mb-2">
+                            <div class="col">
+                                <div class="card-dark card-shadow-dark">
+                                        <h4 class="light-card-title"> Dark Card</h4>
+                                        <div class="line"></div>
+                                        <p class="light-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Code Snippet Example-->
+                         <div class=" mt-5">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                    <pre style="white-space: pre-line;">
+                                        &lt;-- Dark Card --&gt;
+                                        &lt;div class="card-dark card-shadow-dark"&gt;
+                                        &lt;h4 class="light-card-title"&gt; Dark Card&lt;/h4&gt;
+                                        &lt;div class="line"&gt;&lt;/div&gt;
+                                        &lt;p class="light-card-content"&gt;&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    </pre>
+                                </div>
+                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                    <h4>Notes</h4>
+                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
+                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
+                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3 mb-2">
+                            <div class="col">
+                                <div class="card-light card-shadow-light">
+                                        <h4 class="dark-card-title">Light Card</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="dark-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Code Snippet Example-->
+                         <div class=" mt-5">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                    <pre style="white-space: pre-line;">
+                                        &lt;-- Light Card --&gt;
+                                        &lt;div class="card-light card-shadow-light"&gt;
+                                        &lt;h4 class="dark-card-title"&gt;Light Card&lt;/h4&gt;
+                                        &lt;div class="line color-dark"&gt;&lt;/div&gt;
+                                        &lt;p class="dark-card-content"&gt;&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    </pre>
+                                </div>
+                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                    <h4>Notes</h4>
+                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
+                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
+                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3 mb-2">
+                            <div class="col">
+                                <div class="card-gradient card-shadow-gradient">
+                                        <h4 class="dark-card-title">Gradient Card</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="dark-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Code Snippet Example-->
+                         <div class=" mt-5">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                    <pre style="white-space: pre-line;">
+                                        &lt;-- Gradient Card --&gt;
+                                        &lt;div class="card-gradient card-shadow-gradient"&gt;
+                                        &lt;h4 class="dark-card-title"&gt;Gradient Card&lt;/h4&gt;
+                                        &lt;div class="line color-dark"&gt;&lt;/div&gt;
+                                        &lt;p class="dark-card-content"&gt;&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    </pre>
+                                </div>
+                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                    <h4>Notes</h4>
+                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
+                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
+                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </div> <!-- END -->
+              
+                
     
                
             </div> <!-- END Page Contents -->

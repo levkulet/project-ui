@@ -284,6 +284,10 @@ a.article:hover {
     font-weight: 700;
 }
 
+.data-body-text{
+    font-family: var(--font-serif-family);
+}
+
 .other-text{
     color: var(--header-gray);
     font-size: var(--fs-200);
@@ -344,6 +348,27 @@ a.article:hover {
     padding-bottom: 1rem;
 }
 
+/* ---------------------------------------------------
+   PRE TAG STYLE
+----------------------------------------------------- */
+.text-center{
+    text-align: center;
+}
+
+pre{
+    font-size: 12px;
+    color: var(--main-paragraph);
+    background-color: var(--shark-0);
+    margin: 12px;
+    padding: 30px;
+    border: 1px solid #dfe2e5;
+    border-radius: 5px;
+  
+}
+
+ /* ---------------------------------------------------
+   CARD STYLE
+----------------------------------------------------- */
 
 /* ---------------------------------------------------
     ICON STYLE

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
     <!-- ADD YOUR CSS HERE FOR YOUR PART -->
+    <link rel="stylesheet" href="./style/tables.css">
+
 
     
 
@@ -34,16 +36,18 @@
 
               <ul class="list-unstyled components">
                 <h5>FOUNDATIONS</h5>
-                  <li><a href="index.html">Color</a></li>
-                  <li><a href="./typography.html">Typography</a></li>
-                  <li><a href="./page_layout.html">Grid System</a></li>
-                  <li><a href="./data_visualization.html">Data Visualization</a></li>
+                <li><a href="index.html">Color</a></li>
+                <li><a href="./typography.html">Typography</a></li>
+                <li><a href="./page_layout.html">Grid System</a></li>
+                <li><a href="./data_visualization.html">Data Visualization</a></li>
 
-                  <h5>COMPONENTS</h5>
-                  <li><a href="./buttons.html">Buttons</a> </li>
-                  <li><a href="./notifications.html">Notifications</a></li> 
-                  <li><a href="./stat.html">Stat</a></li>
-                  <li><a href="./cards.html">Cards</a></li>
+                <h5>COMPONENTS</h5>
+                <li><a href="./buttons.html">Buttons</a> </li>
+                <li><a href="./cards.html">Cards</a></li>
+                <li><a href="./form_elements.html">Form Elements</a></li>
+                <li><a href="./notifications.html">Notifications</a></li> 
+                <li><a href="./stat.html">Stat</a></li>
+
                   <li class="active"><a href="./tables.html"  data-toggle="collapse" 
                     data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
                     onclick="toggleSubMenu(event)">Tables</a>
@@ -53,8 +57,10 @@
                         </li>
                     </ul>
                   </li>
-                  <li><a href="./form_elements.html">Form Elements</a></li>
+
               </ul>
+
+
               <ul class="list-unstyled components">
                     <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
               </ul>
@@ -89,9 +95,107 @@
             </header>
             
 
-            <!-- 
-                CHANGE THIS PART PLS THANKS
-             -->
+                        <div class="container">
+                <h4>Car Information</h4>
+                <table class="col-10 mb-4" id="carTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Model</th>
+                            <th>Price</th>
+                            <th>Country of Origin</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Toyota Camry</td>
+                            <td>2023</td>
+                            <td>$27,000</td>
+                            <td>Japan</td>
+                        </tr>
+                        <tr>
+                            <td>Ford Mustang</td>
+                            <td>2023</td>
+                            <td>$45,000</td>
+                            <td>United States</td>
+                        </tr>
+                        <tr>
+                            <td>Volkswagen Golf</td>
+                            <td>2023</td>
+                            <td>$23,000</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Honda Civic</td>
+                            <td>2023</td>
+                            <td>$22,000</td>
+                            <td>Japan</td>
+                        </tr>
+                        <tr>
+                            <td>Audi A4</td>
+                            <td>2023</td>
+                            <td>$38,000</td>
+                            <td>Germany</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container d-flex">
+                <pre class="tableCode col-5">
+    &lt;div class="container"&gt;
+    &lt;h1&gt;Car Information&lt;/h1&gt;
+    &lt;table class="table table-bordered"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+                &lt;th&gt;Model&lt;/th&gt;
+                &lt;th&gt;Price&lt;/th&gt;
+                &lt;th&gt;Country of Origin&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Toyota Camry&lt;/td&gt;
+                &lt;td&gt;2023&lt;/td&gt;
+                &lt;td&gt;$27,000&lt;/td&gt;
+                &lt;td&gt;Japan&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Ford Mustang&lt;/td&gt;
+                &lt;td&gt;2023&lt;/td&gt;
+                &lt;td&gt;$45,000&lt;/td&gt;
+                &lt;td&gt;United States&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Volkswagen Golf&lt;/td&gt;
+                &lt;td&gt;2023&lt;/td&gt;
+                &lt;td&gt;$23,000&lt;/td&gt;
+                &lt;td&gt;Germany&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Honda Civic&lt;/td&gt;
+                &lt;td&gt;2023&lt;/td&gt;
+                &lt;td&gt;$22,000&lt;/td&gt;
+                &lt;td&gt;Japan&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Audi A4&lt;/td&gt;
+                &lt;td&gt;2023&lt;/td&gt;
+                &lt;td&gt;$38,000&lt;/td&gt;
+                &lt;td&gt;Germany&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+
+
+                </pre>
+                <div class=" ml-4">
+                    <p id="notes">Notes</p>
+                    <p>This HTML table is designed to showcase details about five different cars, including their names, models, prices, and the countries of origin. The table is styled using Bootstrap, providing a clean and responsive layout.</p>
+                </div>
+            </div>
             
             
              <!-- Page Contents -->
