@@ -74,8 +74,17 @@
     color: white;
 }
 
-.card-secondary{
-
+/*Card Side*/
+.card-dark-md{
+    background-color: var(--main-dark-card);
+    padding: 15px;
+    margin: 50px;
+   /*  border: 0.5px solid var(--mystic-0); */
 }
 
-
+.card-light-md{
+    background-color: var(--main-light-card);
+    padding: 20px;
+    margin: 50px;
+   /*  border: 0.5px solid var(--mystic-0); */
+}
