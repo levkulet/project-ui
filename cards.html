@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/cards.css">
 
-    <!-- Menu Burger Icon -->
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                 <h5>FOUNDATIONS</h5>
                 <li><a href="index.html">Color</a></li>
                 <li><a href="./data_visualization.html">Data Visualization</a></li>
-                <li><a href="./page_layout.html">Grid System</a></li>
+                <li><a href="./grid.html">Grid System</a></li>
                 <li><a href="./typography.html">Typography</a></li>
 
                 <h5>COMPONENTS</h5>
@@ -50,8 +51,9 @@
                     </ul>
                 </li>
                 <li><a href="./form_elements.html">Form Elements</a></li>
+                <li><a href="./lists.html">Lists</a></li>
+                <li><a href="./logo.html">Logo</a></li>
                 <li><a href="./notifications.html">Notifications</a></li> 
-                <li><a href="./stat.html">Stat</a></li>
                 <li><a href="./tables.html">Tables</a></li>
                    
               </ul>
@@ -62,30 +64,39 @@
         </div> <!-- END sidebar -->
         <div class="col flex"><!-- Right Content  -->
         <div id="content">
-             <!-- MAIN HEADER AND NAVIGATION -->
+            <!-- MAIN HEADER AND NAVIGATION -->
             <header>
-                <nav id="navbar"class="navbar navbar-expand-sm">
-                    <div class="container-fluid">
-                        <!-- Navigation Top -->
-                        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item collapse-btn" >
-                                    <!--Burger Menu-->
-                                    <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">UI Library</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Dashboard</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        
-                        <!-- Main Header Logo -->
-                        <img class="header-logo" src="./style/images/logo-wide.png" alt="">
-                    </div>
-                </nav>
+                <div class="container">
+                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                        <div class="container-fluid">
+                            <!-- Navigation Top -->
+                                <div id="head-nav">
+                                    <ul class="nav navbar-nav d-flex ml-auto text-center">
+                                        <li class="nav-item collapse-btn" >
+                                            <!--Sidebar Toggle-->
+                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">
+                                                <span class="large-screen-text">UI Library</span>
+                                                <i class="small-screen-icon material-icons">library_books</i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span class="large-screen-text">Dashboard</span>
+                                                <i class="small-screen-icon material-icons">dashboard</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <div>
+                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </header>
             
 
@@ -110,7 +121,7 @@
                                     <h4 class="card-title">Card that doesn't feature any images.</h4>
                                     <div class="line"></div>
                                     <p class="">
-                                        This card design allows for the inclusion of images, although it doesn't conform to the predefined image layouts such as top, left, or right alignment.
+                                        <p> This card template is intentionally designed without a dedicated image section, offering you the freedom to customize its content without a specific image element."</p>
                                     </p>
                                 </div>
                             </div>
@@ -134,9 +145,7 @@
                                 </div>
                                 <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
-                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
-                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                    <p>This is a dark-themed card with a title and content, featuring a light horizontal line for separation. The content for this card is missing</p>
                                 </div>
                             </div>
                         </div>
@@ -146,7 +155,25 @@
                                 <div class="card-dark card-shadow-dark">
                                         <h4 class="light-card-title"> Dark Card</h4>
                                         <div class="line"></div>
-                                        <p class="light-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                        <p class="light-card-content">This is a dark-themed card with a title and content. It includes a subtle shadow and a horizontal line for separation. The content for this card is missing."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Dark Card Medium Size-->
+                        <div class="row mt-3 mb-2">
+                            <div class="col-md-6">
+                                <div class="card-dark-md card-shadow-dark">
+                                        <h4 class="light-card-title"> Dark Card - Medium Size</h4>
+                                        <div class="line"></div>
+                                        <p class="light-card-content">Medium-sized dark card without an image.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-dark-md card-shadow-dark">
+                                        <h4 class="light-card-title"> Dark Card - Medium Size</h4>
+                                        <div class="line"></div>
+                                        <p class="light-card-content">Medium-sized dark card without an image.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,19 +193,38 @@
                                 </div>
                                 <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
-                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
-                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                    <p>This is a dark-themed card with a title, content, and a horizontal line for separation. The content for this card is currently empty."</p>
                                 </div>
                             </div>
                         </div>
+
+
                         
+
                         <div class="row mt-3 mb-2">
                             <div class="col">
                                 <div class="card-light card-shadow-light">
                                         <h4 class="dark-card-title">Light Card</h4>
                                         <div class="line color-dark"></div>
-                                        <p class="dark-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                        <p class="dark-card-content"> This is a light-themed card with a dark title and content. It features a dark horizontal line for separation and can accommodate images, but not in predefined layouts (top, left, or right).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Light Card Medium Size-->
+                        <div class="row mt-3 mb-2">
+                            <div class="col-md-6">
+                                <div class="card-light-md card-shadow-dark">
+                                        <h4 class="dark-card-title"> Light Card - Medium Size</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="dark-card-content">Medium-sized light card without an image.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-light-md card-shadow-dark">
+                                        <h4 class="dark-card-title"> Light Card - Medium Size</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="dark-card-content">Medium-sized light card without an image.</p>
                                 </div>
                             </div>
                         </div>
@@ -198,9 +244,7 @@
                                 </div>
                                 <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
-                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
-                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                   <p>This is a light-themed card with a dark title and content. It includes a dark horizontal line for separation. The content for this card is currently empty.</p>
                                 </div>
                             </div>
                         </div>
@@ -210,10 +254,29 @@
                                 <div class="card-gradient card-shadow-gradient">
                                         <h4 class="dark-card-title">Gradient Card</h4>
                                         <div class="line color-dark"></div>
-                                        <p class="dark-card-content">This type of card can still have images, however it is not utilizing one of the predefined layouts for images (top, left, or right).</p>
+                                        <p class="dark-card-content"> A gradient-themed card with a dark title and content. It features a dark horizontal line for separation. The content is currently empty.</p>
                                 </div>
                             </div>
                         </div>
+                        <!--Gradient Card Medium Size-->
+                        <div class="row mt-3 mb-2">
+                            <div class="col-md-6">
+                                <div class="card-gradient-md card-shadow-gradient">
+                                        <h4 class="light-card-title">Gradient Card</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="light-card-content">Gradient-sized dark card without an image.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card-gradient-md card-shadow-gradient">
+                                        <h4 class="light-card-title">Gradient Card</h4>
+                                        <div class="line color-dark"></div>
+                                        <p class="light-card-content">Gradient-sized dark card without an image.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
 
                          <!-- Code Snippet Example-->
                          <div class=" mt-5">
@@ -230,9 +293,7 @@
                                 </div>
                                 <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>Encloses the given content within a specially styled container known as a Card.</p>
-                                    <p>If an imageUrl is provided, the Card can style an image in one of three positions: top, left, or right.</p>
-                                    <p>If additional padding is required, it should be explicitly defined using padding utility classes: containerClasses for the Card, contentClasses for any child elements, and imageClasses.</p>
+                                    <p>This is a gradient-themed card with a dark title and content. It includes a dark horizontal line for separation and currently has no specific content.</p>
                                 </div>
                             </div>
                         </div>
@@ -260,18 +321,8 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
+    <!-- Our Main JS -->
+    <script src="./scripts/main.js"></script>
 
-        function toggleSubMenu(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            const submenu = document.getElementById("homeSubmenu");
-            $(submenu).collapse('toggle'); // Toggle the collapse state of the submenu
-        }
-    </script>
 </body>
 </html>

@@ -15,7 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/button.css">
+    <link rel="stylesheet" href="./style/lists.css">
     <!-- ADD YOUR CSS HERE FOR YOUR PART -->
 
     <!-- Google Icons -->
@@ -41,18 +41,22 @@
                   
 
                   <h5>COMPONENTS</h5>
-                  <li class="active"><a href="./buttons.html"  data-toggle="collapse" 
+                  <li><a href="./buttons.html"></a></li>
+                  <li><a href="./cards.html">Cards</a></li>
+                  <li><a href="./form_elements.html">Form Elements</a></li>
+
+                  <li class="active"><a href="./lists.html"
+                    data-toggle="collapse" 
                     data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Buttons</a>
+                    onclick="toggleSubMenu(event)">Lists</a>
+
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a class="active-a" href="#solid">Solid</a>
+                                <a class="active-a" href="#leader">Leader Lists</a>
                             </li>
                         </ul>
                   </li>
-                  <li><a href="./cards.html">Cards</a></li>
-                  <li><a href="./form_elements.html">Form Elements</a></li>
-                  <li><a href="./lists.html">Lists</a></li>
+
                   <li><a href="./logo.html">Logo</a></li>
                   <li><a href="./notifications.html">Notifications</a></li> 
                   <li><a href="./tables.html">Tables</a></li>
@@ -99,7 +103,6 @@
                     </nav>
                 </div>
             </header>
-            
 
             <!-- 
                 CHANGE THIS PART PLS THANKS
@@ -109,85 +112,60 @@
              <!-- Page Contents -->
              <div class="content-container container">
                 <h6>COMPONENTS</h6>
-                <h2>Buttons</h2>
-                <p>Celebrate functionality and design with our button showcase. From sleek and minimalistic to eye-catching and vibrant, explore the art of interactivity.</p>
+                <h2>Lists</h2>
+                <p>Leader lists commonly serve the purpose of presenting statistical information, with labels positioned to the left and corresponding values to the right. These elements are separated by a continuous line of dotted dividers.</p>
             
-                <!-- Buttons - Solid -->
-                <div class="row mt-5 mb-1">
-                    <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
-                    <div class="row row-cols-2 g-0">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 default-button">Default</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 important-button" >Important</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 primary-button">Primary</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="disabled-button btn-border-1" disabled>Disabled</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-2 g-0 mt-3 mb-3">
-                        <div class="col">
-                            <div class=" d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 accept-button">Accept</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 warning-button">Warning</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 danger-button">Danger</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h4 id="leader">Leader Lists</h4>
+                <p>Leader lists commonly serve the purpose of presenting statistical information, with labels positioned to the left and corresponding values to the right. These elements are separated by a continuous line of dotted dividers.</p>
+            
+                <!-- Lists Example-->
+                <h4>Example</h4>
+                <ul class="leaders"> 
+                    <li>
+                      <span class="text">List average</span> 
+                      <span class="dot"></span>
+                      <span class="text font-weight--bold">61.7%</span>
+                    </li> 
+                    <li>
+                      <span class="text">Industry average</span> 
+                      <span class="dot"></span>
+                      <span class="text font-weight--bold">61.7%</span>
+                    </li> 
+                </ul>
 
             <!-- Code Snippet Example-->
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
                         <pre style="white-space: pre-line;">
-                            &lt;!-- Default --&gt;
-                            &lt;button class="btn btn-border-1 default-button"&gt;Default&lt;/button&gt;
-                            &lt;!-- Important --&gt;
-                            &lt;button class="btn btn-border-1 important-button"&gt;Important&lt;/button&gt;
-                            &lt;!-- Primary --&gt;
-                            &lt;button class="btn btn-border-1 primary-button"&gt;Primary&lt;/button&gt;
-                            &lt;!-- Disabled --&gt;
-                            &lt;button class="disabled-button btn-border-1" disabled&gt;Disabled&lt;/button&gt;
-                            &lt;!-- Accept --&gt;
-                            &lt;button class="btn btn-border-1 accept-button"&gt;Accept&lt;/button&gt;
-                            &lt;!-- Warning --&gt;
-                            &lt;button class="btn btn-border-1 warning-button"&gt;Warning&lt;/button&gt;
-                            &lt;!-- Danger --&gt;
-                            &lt;button class="btn btn-border-1 danger-button"&gt;Danger&lt;/button&gt;
+                            &lt;ul class="leaders"&gt; 
+                            &lt;li&gt;
+                            &lt;span class="text"&gt;List average&lt;/span&gt; 
+                            &lt;span class="dot"&gt;&lt;/span&gt;
+                            &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
+                            &lt;/li&gt; 
+                            &lt;li&gt;
+                            &lt;span class="text"&gt;Industry average&lt;/span&gt; 
+                            &lt;span class="dot"&gt;&lt;/span&gt;
+                            &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
+                            &lt;/li&gt; 
+                            &lt;/ul&gt;
                         </pre>
                     </div>
                     <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
                         <h4>Notes</h4>
-                        <p><span style="color: var(--pumpkin-500);">Buttons</span> can be created using the HTML button tag, and their visual design can be customized by applying the <span style="color: var(--pumpkin-500);">button</span> class.</p>
-                        <p>For input elements, you have the option to give them button functionality by adding the <span style="color: var(--pumpkin-500);">button</span> class and defining a button label using the <span style="color: var(--pumpkin-500);">'value'</span> attribute."</p>
+                        <p>Utilize the "leaders" class for the &lt;ul&gt; element and employ &lt;span&gt; tags to encompass labels and values within each list item, with dotted dividers between them.
+                        </p>
                     </div>
                 </div>
             </div>
             
                 <!-- Buttons - Outline -->
                 <div class="row mt-5">
-                    <h4 id="brand-colors" class="mb-3">Buttons - Outline</h4>
+                    <h4 id="brand-colors" class="mb-3">Linear dots</h4>
+                    <p>To make a linear use the linear-list class in a ul element</p>
+                    <!--Linear Example-->
+                    <h4>Example</h4>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 mb-3">
                             <div class="color-box2 d-flex justify-content-center align-items-center">
@@ -214,7 +192,8 @@
             
                 <!-- Buttons - Navigation -->
                 <div class="row mt-5">
-                    <h4 id="brand-colors" class="mb-3">Buttons - Navigation</h4>
+                    <h2 id="brand-colors" class="mb-3">Linear dots</h2>
+                    <h4 class="mb-4">Example</h4>
                     <div class="row">
                         <div class="col-lg-3 col-md-6 mb-3">
                             <div class="color-box2 d-flex justify-content-center align-items-center">
@@ -289,6 +268,5 @@
 
     <!-- Our Main JS -->
     <script src="./scripts/main.js"></script>
-
 </body>
 </html>

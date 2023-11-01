@@ -24,3 +24,7 @@ label{
 .button-small{
     background-color: #ffb670;
 }
+
+pre{
+    white-space: pre-line;
+}

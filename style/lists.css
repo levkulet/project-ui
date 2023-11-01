@@ -21,7 +21,6 @@ p {
     font-weight: 400;
     line-height: 1.7em;
     color: var(--main-paragraph);
-    justify-content: space-evenly;
 }
 
 h1 {
@@ -74,22 +73,19 @@ a:focus {
 }
 
 .navbar {
+/*     padding: 15px 10px; */
     background: var(--main-bg);
     background-color: var(--section-bg);
+/*     border: none;
+    border-radius: 0; */
     margin-bottom: 40px;
-    padding-top: -0.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ /*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
 }
 
 #navbar ul li a {
-    padding: 0.5rem;
+    padding: 10px;
     font-size: var(--fs-400);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-/*     display: block; */
+    display: block;
 }
 
 #navbar ul li a:hover {
@@ -97,10 +93,9 @@ a:focus {
 }
 
 .nav-item{
-    margin: 0.25rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
 }
 
 .nav-link{
@@ -110,7 +105,6 @@ a:focus {
 .active {
     color: var(--section-highlight);
     background-color: var(--button-dark);
-    padding: -0.5rem;
 }
 
 .active-a{
@@ -121,6 +115,8 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
+    padding: 24px;
+    margin: 20px;
 }
 
 .line {
@@ -141,23 +137,6 @@ a:focus {
     background-color: var(--primary-color);
 }
 
-.header-logo {
-    max-width: 100%;
-    height: auto;
-    /* margin-right: 0.12rem; */ /* Adjust the spacing as needed */
-}
-
-/* Default style for the large logo */
-#logo-large {
-    display: block;
-}
-#logo-small{
-    width: 80px;
-}
-
-.navbar .large-screen-text i{
-    color: var(--breaker-bay-400);
-}
 
 /* ---------------------------------------------------
     PAGE STYLE
@@ -195,7 +174,7 @@ a:focus {
 }
 
 #sidebar {
-    /* min-width: 250px; */
+    min-width: 250px;
     max-width: 250px;
     height: 100%;
     /* position: fixed; */
@@ -205,10 +184,6 @@ a:focus {
     transition: all 0.3s;
     overflow: auto;
  /*    overflow-y: scroll; */
-}
-.custom-sidebar {
-    width: 250px; /* Adjust the width as needed */
-    transition: width 0.3s;
 }
 
 .sidebar-header img {
@@ -374,15 +349,6 @@ a.article:hover {
     padding-bottom: 1rem;
 }
 
-#font-show{
-    font-size: 10rem;
-    color: var(--mystic-0);
-}
-
-.logo-container{
-    margin-top: 10px;
-}
-
 /* ---------------------------------------------------
    PRE TAG STYLE
 ----------------------------------------------------- */
@@ -417,14 +383,6 @@ pre{
   'opsz' 24
 }
 
-#sidebarCollapse{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.8rem;
-    color: var(--mystic-0);
-}
-
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -439,72 +397,27 @@ pre{
     #sidebarCollapse span {
         display: none;
     }
-    #logo-large {
-        display: none;
-    }
-    
-    /* Show the small logo on smaller screens */
-    #logo-small {
-        display: block;
-    }
-
-    /* header nav */
-    .navbar {
-        margin-bottom: 12px;
-        display: flex;
-    }
-    
-    #navbar ul li a {
-        padding: 6px;
-        font-size: var(--fs-200);
-    }
-    
-    .nav-item{
-        margin-top: 0.12rem;
-        margin-bottom: 0.12rem;
-        margin-right: 0.25rem;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nav.navbar-nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .custom-sidebar {
-        width: 80px;
-        overflow: auto;
-    }
-
-    #sidebar .sidebar-header {
-        font-size: var(--fs-300);
-        width: auto;
-            
-    }
-    #sidebar h3 {
-        font-size: var(--fs-100);  
-    }
-    #sidebar h5, #sidebar ul li.active{
-        font-size: 0.1rem;
-    }
-    .active-a{
-        font-size: 0.1rem;
-        margin-left: -1rem;
-    }
-    
-    .color-details{
-        font-size: var(--fs-200);
-    }
-
-    .content-container p {
-        white-space: normal;
-        justify-content: space-evenly;
-      }
-
-    #font-show{
-        font-size: 5rem;
-    }
 }
+
+/*list style*/
+
+.leaders {
+    list-style: none;
+    padding: 0;
+  }
+
+  .leaders li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    color: var(--main-paragraph); /* Set the text color to white */
+  }
+
+  .dot {
+    border-bottom: 1px dotted var(--mystic-alpha-65);
+    flex-grow: 1;
+  }
