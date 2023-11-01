@@ -73,19 +73,16 @@ a:focus {
 }
 
 .navbar {
-/*     padding: 15px 10px; */
     background: var(--main-bg);
     background-color: var(--section-bg);
-/*     border: none;
-    border-radius: 0; */
     margin-bottom: 40px;
- /*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); */
+    padding-top: -0.5rem;
 }
 
 #navbar ul li a {
-    padding: 10px;
+    padding: 0.5rem;
     font-size: var(--fs-400);
-    display: block;
+/*     display: block; */
 }
 
 #navbar ul li a:hover {
@@ -93,9 +90,7 @@ a:focus {
 }
 
 .nav-item{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    display: block;
+    margin: 0.25rem;
 }
 
 .nav-link{
@@ -105,6 +100,7 @@ a:focus {
 .active {
     color: var(--section-highlight);
     background-color: var(--button-dark);
+    padding: -0.5rem;
 }
 
 .active-a{
@@ -115,8 +111,8 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
-    padding: 24px;
-    margin: 20px;
+/*     padding: 24px;
+    margin: 20px; */
 }
 
 .line {
@@ -137,6 +133,19 @@ a:focus {
     background-color: var(--primary-color);
 }
 
+.header-logo {
+    max-width: 100%;
+    height: auto;
+    /* margin-right: 0.12rem; */ /* Adjust the spacing as needed */
+}
+
+/* Default style for the large logo */
+#logo-large {
+    display: block;
+}
+#logo-small{
+    width: 80px;
+}
 
 /* ---------------------------------------------------
     PAGE STYLE
@@ -397,4 +406,37 @@ pre{
     #sidebarCollapse span {
         display: none;
     }
+    #logo-large {
+        display: none;
+    }
+    
+    /* Show the small logo on smaller screens */
+    #logo-small {
+        display: block;
+    }
+
+    /* header nav */
+    .navbar {
+        margin-bottom: 12px;
+        display: flex;
+    }
+    
+    #navbar ul li a {
+        padding: 6px;
+        font-size: var(--fs-200);
+    }
+    
+    .nav-item{
+        margin-top: 0.12rem;
+        margin-bottom: 0.12rem;
+        margin-right: 0.25rem;
+        align-items: center;
+    }
+
+    .nav.navbar-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
 }
