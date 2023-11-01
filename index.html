@@ -23,17 +23,26 @@
 
 <body>
     <div class="wrapper">
-        <div class="flex-column ">
+        <div class="flex-wrap">
             <!-- Sidebar  -->
-            <nav id="sidebar" >
+            <nav id="sidebar" class="custom-sidebar">
                 <div class="sidebar-header">
-                    <img src="./style/images/logo-160.png" alt="logo-160"> <h3>UI Library</h3>
+                    <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
+                    <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
+                    <h3>UI Library</h3>
                 </div>
     
                 <ul class="list-unstyled components">
-                    <h5>FOUNDATIONS</h5>
+                    
+                    <span class="large-screen-text"><h5>FOUNDATIONS</h5></span>
+                    <span class="small-screen-icon"><ul class="list-unstyled components"></ul></span>
                     <li class="active">
-                        <a href="index.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">Color</a>
+                        <a href="index.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                            <span class="large-screen-text">
+                                <i class="material-icons">palette</i>
+                                &thinsp;Color</span>
+                            <i class="small-screen-icon material-icons">palette</i>
+                        </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
                                 <a class="active-a" href="#brand-colors">Brand Colors</a>
@@ -55,26 +64,78 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="./data_visualization.html">Data Visualization</a></li>
-                    <li><a href="./grid.html">Grid System</a></li>
-                    <li><a href="./typography.html">Typography</a></li>
+                    <li><a href="./data_visualization.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">query_stats</i>
+                            &thinsp;Data Visualization</span>
+                        <i class="small-screen-icon material-icons">query_stats</i>
+                    </a></li>
+                    <li><a href="./grid.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">apps</i>
+                                &thinsp;Grid System</span>
+                        <i class="small-screen-icon material-icons">apps</i>
+                    </a></li>
+                    <li><a href="./typography.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">text_format</i>
+                                &thinsp;Typography</span>
+                        <i class="small-screen-icon material-icons">text_format</i>
+                    </a></li>
                     
-                    
-   
-                    <h5>COMPONENTS</h5>
-                    <li><a href="./buttons.html">Buttons</a> </li>
-                    <li><a href="./cards.html">Cards</a></li>
-                    <li><a href="./form_elements.html">Form Elements</a></li>
-                    <li><a href="./lists.html">List</a></li>
-                    <li><a href="./logo.html">Logo</a></li>
-                    <li><a href="./lists.html">Lists</a></li>
-                    <li><a href="./notifications.html">Notifications</a></li> 
-                    <li><a href="./tables.html">Tables</a></li>
+                    <span class="large-screen-text"><h5>COMPONENTS</h5></span>
+                    <span class="small-screen-icon"><ul class="list-unstyled components"></ul></span>
+
+                    <li><a href="./buttons.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">smart_button</i>
+                                &thinsp;Buttons</span>
+                        <i class="small-screen-icon material-icons">smart_button</i>
+                    </a></li>
+                    <li><a href="./cards.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">dashboard_customize</i>
+                                &thinsp;Cards</span>
+                        <i class="small-screen-icon material-icons">dashboard_customize</i>
+                    </a></li>
+                    <li><a href="./form_elements.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">check_box</i>
+                                &thinsp;Form Elements</span>
+                        <i class="small-screen-icon material-icons">check_box</i>
+                    </a></li>
+                    <li><a href="./lists.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">list</i>
+                                &thinsp;Lists</span>
+                        <i class="small-screen-icon material-icons">list</i>
+                    </a></li>
+                    <li><a href="./logo.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">image</i>
+                                &thinsp;Logo</span>
+                        <i class="small-screen-icon material-icons">image</i>
+                    </a></li>
+                    <li><a href="./notifications.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">announcement</i>
+                                &thinsp;Notifications</span>
+                        <i class="small-screen-icon material-icons">announcement</i>
+                    </a></li> 
+                    <li><a href="./tables.html">
+                        <span class="large-screen-text">
+                            <i class="material-icons">table_chart</i>
+                                &thinsp;Table</span>
+                        <i class="small-screen-icon material-icons">table_chart</i>
+                    </a></li>
                     
                      
                 </ul>
                 <ul class="list-unstyled components">
-                    <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                    <span class="large-screen-text"> 
+                        <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                    </span>
+                    <span class="small-screen-icon copyright">&copy; LCVTP</span>
                 </ul>
             </nav>
         </div> <!-- end sidebar -->
@@ -90,17 +151,21 @@
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
                                         <li class="nav-item collapse-btn" >
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined" >menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">UI Library</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">library_books</i>
+                                                    &thinsp;UI Library</span>
                                                 <i class="small-screen-icon material-icons">library_books</i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span class="large-screen-text">Dashboard</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">dashboard</i>
+                                                    &thinsp;Dashboard</span>
                                                 <i class="small-screen-icon material-icons">dashboard</i>
                                             </a>
                                         </li>

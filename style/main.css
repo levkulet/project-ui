@@ -77,11 +77,17 @@ a:focus {
     background-color: var(--section-bg);
     margin-bottom: 40px;
     padding-top: -0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #navbar ul li a {
     padding: 0.5rem;
     font-size: var(--fs-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 /*     display: block; */
 }
 
@@ -91,6 +97,9 @@ a:focus {
 
 .nav-item{
     margin: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-link{
@@ -111,8 +120,6 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
-/*     padding: 24px;
-    margin: 20px; */
 }
 
 .line {
@@ -145,6 +152,10 @@ a:focus {
 }
 #logo-small{
     width: 80px;
+}
+
+.navbar .large-screen-text i{
+    color: var(--breaker-bay-400);
 }
 
 /* ---------------------------------------------------
@@ -183,7 +194,7 @@ a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
+    /* min-width: 250px; */
     max-width: 250px;
     height: 100%;
     /* position: fixed; */
@@ -193,6 +204,10 @@ a:focus {
     transition: all 0.3s;
     overflow: auto;
  /*    overflow-y: scroll; */
+}
+.custom-sidebar {
+    width: 250px; /* Adjust the width as needed */
+    transition: width 0.3s;
 }
 
 .sidebar-header img {
@@ -392,6 +407,14 @@ pre{
   'opsz' 24
 }
 
+#sidebarCollapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--mystic-0);
+}
+
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
@@ -431,12 +454,35 @@ pre{
         margin-bottom: 0.12rem;
         margin-right: 0.25rem;
         align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .nav.navbar-nav {
         display: flex;
         flex-direction: row;
         align-items: center;
+    }
+
+    .custom-sidebar {
+        width: 80px;
+        overflow: auto;
+    }
+
+    #sidebar .sidebar-header {
+        font-size: var(--fs-300);
+        width: auto;
+            
+    }
+    #sidebar h3 {
+        font-size: var(--fs-100);  
+    }
+    #sidebar h5, #sidebar ul li.active{
+        font-size: 0.1rem;
+    }
+    .active-a{
+        font-size: 0.1rem;
+        margin-left: -1rem;
     }
     
 }
