@@ -15,6 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/button.css">
 
     <!-- Menu Burger Icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -61,33 +62,39 @@
         </div> <!-- END sidebar -->
         <div class="col flex"><!-- Right Content  -->
         <div id="content">
-             <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                <nav id="navbar"class="navbar navbar-expand-sm">
-                    <div class="container-fluid">
-                        <!-- Navigation Top -->
-                        <nav class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item collapse-btn" >
-                                    <!--Burger Menu-->
-                                    <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
-                                </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">UI Library</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Dashboard</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        
-                        <!-- Main Header Logo -->
-                        <img class="header-logo" src="./style/images/logo-wide.png" alt="">
-                    </div>
-                </nav>
+            <!-- MAIN HEADER AND NAVIGATION -->
+<header>
+    <div class="container">
+        <nav id="navbar" class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <button class=" primary-button navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon" ></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <!-- <li class="nav-item">
+                            <a id="sidebarCollapse" class="nav-link">
+                                <i class="material-symbols-outlined">chevron_left</i>
+                            </a>
+                        </li> -->
+                        <li class="nav-item active">
+                            <a id="sidebarCollapse" class="nav-link"><i class="material-symbols-outlined">chevron_left</i></a>
+                            <a class="nav-link nav-item active" href="index.html">UI Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                    </ul>
                 </div>
-            </header>
+
+                <!-- Main Header Logo (Resize using Bootstrap's img-fluid class) -->
+                <img class="header-logo img-fluid" src="./style/images/logo-wide.png" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
             
 
             <!-- 
