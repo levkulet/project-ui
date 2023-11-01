@@ -21,6 +21,7 @@ p {
     font-weight: 400;
     line-height: 1.7em;
     color: var(--main-paragraph);
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -373,6 +374,15 @@ a.article:hover {
     padding-bottom: 1rem;
 }
 
+#font-show{
+    font-size: 10rem;
+    color: var(--mystic-0);
+}
+
+.logo-container{
+    margin-top: 10px;
+}
+
 /* ---------------------------------------------------
    PRE TAG STYLE
 ----------------------------------------------------- */
@@ -485,4 +495,16 @@ pre{
         margin-left: -1rem;
     }
     
+    .color-details{
+        font-size: var(--fs-200);
+    }
+
+    .content-container p {
+        white-space: normal;
+        justify-content: space-evenly;
+      }
+
+    #font-show{
+        font-size: 5rem;
+    }
 }

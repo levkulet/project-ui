@@ -15,6 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/cards.css">
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -108,76 +109,61 @@
             <div class="content-container container">
                 <h6>COMPONENTS</h6>
                 <h2>Logo</h2>
-                <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
-                
+                <p>A logo is a visual representation of your brand or organization. It plays a crucial role in creating a strong brand identity and leaving a lasting impression on your audience. Here are guidelines on how to use and present the logo effectively:</p>
+
                 <div class="container">
                     <div class="mt-5"> <!-- BRAND COLORS -->
-                        <div class="row">
-                            <h4 id="brand-colors" class="mb-3">Logo</h4>
-                            <div class="col color-box" style="background-color: var(--pumpkin-500);">
-                                <div class="color-details">
-                                  <p class="color-name">Pumpkin</p>
-                                  <p class="color-name">--pumpkin-500</p>
-                                  <p class="color-code">#ff7119</p>
-                                </div>
+                        <h3>Main Logo</h3>
+                        <p>The main logo should be used as the primary representation of your brand. It typically includes both an icon and the brand name. This logo version is suitable for various use cases, including website headers, business cards, and official documents.</p>
+                        
+                            <!-- Header with Logo Variations -->
+                            <header class="row">
+                                    <!-- Logo on Light Background -->
+                            <div class="col logo-container card-light justify-content-center">
+                                <img src="./style/images/logo-square-black.png" alt="Logo on Light Background" class="img-fluid">
+                                <p class="logo-description dark-card-content">Logo on Light Background</p>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col color-box" style="background-color: var(--pumpkin-50);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-50</p>
-                                    <p class="color-code color-dark">#fff7ed</p>
-                                  </div>
+                        
+                            <!-- Logo on Dark Background -->
+                            <div class="col logo-container card-dark justify-content-center">
+                                <img src="./style/images/logo-square.png" alt="Logo on Dark Background" class="img-fluid">
+                                <p class="logo-description light-card-content">Logo on Dark Background</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-100);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-100</p>
-                                    <p class="color-code color-dark">#ffecd4</p>
-                                  </div>
+                        
+                            <h3>Logo as an Icon</h3>
+                            <p>For smaller spaces or when a simplified version of the logo is needed, you can use the logo as an icon. This version usually includes just the icon without the brand name.</p>
+                            
+                        
+                            <!-- Logo as an Icon -->
+                            <div class="col-md-4 logo-container">
+                                <img src="logo-icon.png" alt="Logo as an Icon" class="img-fluid">
+                                <p class="logo-description">Logo as an Icon</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-200);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-200</p>
-                                    <p class="color-code color-dark">#ffd5a8</p>
-                                  </div>
+                        
+                            <!-- Logo with Text -->
+                            <div class="col-md-4 logo-container">
+                                <img src="logo-with-text.png" alt="Logo with Text" class="img-fluid">
+                                <p class="logo-description">Logo with Text</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-300);">
-                                <div class="color-details ">
-                                    <p class="color-name color-dark ">--pumpkin-300</p>
-                                    <p class="color-code color-dark">#ffb670</p>
-                                  </div>
+                        
+                            <!-- Additional Logo Variations -->
+                            <div class="col-md-4 logo-container">
+                                <img src="logo-variation-1.png" alt="Logo Variation 1" class="img-fluid">
+                                <p class="logo-description">Additional Logo Variation 1</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-400);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-400</p>
-                                    <p class="color-code color-dark">#ff8c37</p>
-                                  </div>
+                        
+                            <div class="col-md-4 logo-container">
+                                <img src="logo-variation-2.png" alt="Logo Variation 2" class="img-fluid">
+                                <p class="logo-description">Additional Logo Variation 2</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-600);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-600</p>
-                                    <p class="color-code">#f05006</p>
-                                  </div>
+                        
+                            <div class="col-md-4 logo-container">
+                                <img src="logo-variation-3.png" alt="Logo Variation 3" class="img-fluid">
+                                <p class="logo-description">Additional Logo Variation 3</p>
                             </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-700);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-700</p>
-                                    <p class="color-code">#c73a07</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-800);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-800</p>
-                                    <p class="color-code">#9e2e0e</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-900);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-900</p>
-                                    <p class="color-code">#7f290f</p>
-                                  </div>
-                            </div>
-                        </div>
+                            </header>
+  
+
                     </div> <!-- END -->
                 </div>
     

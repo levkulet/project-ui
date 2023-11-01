@@ -185,13 +185,14 @@
                 <div class="content-container container">
                     <h6>FOUNDATIONS</h6>
                     <h2>Colors</h2>
-                    <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
-                    
+                    <p>Color is the heartbeat of design. Our UI library's color guidelines provide you with a comprehensive palette of CSS variables that you can seamlessly integrate into your projects. These variables enable you to express emotions, set the tone, emphasize critical elements, and establish meaningful associations throughout your designs. Beyond just visual appeal, our color guidelines are a technical resource, empowering you with the tools to craft your own color stories and maintain design consistency.
+                    </p>
                     <section>
                         <div class="container">
                             <div class="mt-5"> <!-- BRAND COLORS -->
                                 <div class="row">
                                     <h4 id="brand-colors" class="mb-3">Brand</h4>
+                                    <p>Explore our brand's signature color, inspired by our logo's distinctive hue.</p>
                                     <div class="col color-box" style="background-color: var(--pumpkin-500);">
                                         <div class="color-details">
                                           <p class="color-name">Pumpkin</p>
@@ -261,6 +262,7 @@
                             <div class="mt-5"> <!-- NEUTRAL COLORS -->
                                 <div class="row">
                                     <h4 id="neutral-colors" class="mb-3">Neutral Colors</h4>
+                                    <p>Dive into our neutral colors – the foundation of versatile design, offering simplicity and elegance for your projects.</p>
                                     <div class="col color-box" style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
                                         <div class="color-details">
                                           <p class="color-name">Shark</p>
@@ -375,6 +377,9 @@
                             <div class="mt-5"><!-- ACCENT COLORS -->
                                 <div class="row">
                                     <h4 id="accent-colors" class="mb-3">Accent Colors</h4>
+                                    <p>
+                                        Accentuate your designs with our vibrant accent colors, adding a touch of personality and flair to your projects.
+                                    </p>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-500);">
                                         <div class="color-details">
                                           <p class="color-name">Breaker Bay</p>
@@ -509,6 +514,7 @@
                             <div class="mt-5"><!-- FEEDBACK COLORS -->
                                 <div class="row">
                                     <h4 id="feedback-colors" class="mb-3">Feedback Colors</h4>
+                                    <p>Elevate user interaction with our feedback colors, signaling informative messages and interactions with clarity and precision.</p>
                                     <div class="col color-box" style="background-color: var(--success-color);">
                                         <div class="color-details">
                                           <p class="color-name">Success</p>
@@ -558,6 +564,7 @@
                             <div class="mt-5"><!-- GRADIENT COLORS -->
                                 <div class="row">
                                     <h4 id="gradient-colors" class="mb-3">Gradient Colors</h4>
+                                    <p>Experience depth and dimension with our gradient colors, adding a dynamic and modern touch to your designs.</p>
                                     <div class="col color-box" style="background: var(--grad-pumpkin);">
                                         <div class="color-details">
                                           <p class="color-name">Gradient Pumpkin</p>
@@ -609,61 +616,69 @@
                                 </div>
                             </div> <!-- END gradient -->
     
-                            <div class="mt-5"><!-- ALPHA COLORS -->
-                                <div class="row"><h4 id="alpha-colors" class="mb-3">Alpha Colors</h4></div>
-                                <div class="row gap-1" style="background-color: var(--mystic-0);">
-                                        <div class="col color-box" style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
+                            <div class="container mt-5"><!-- ALPHA COLORS -->
+                                <div class="row"><h4 id="alpha-colors" class="mb-3">Alpha Colors</h4>
+                                <p>Unlock transparency and depth with our alpha colors, providing a subtle yet impactful layer for your design elements.</p></div>
+
+                                <div>
+                                    <div class="row " style="background-color: var(--mystic-0);">
+                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
                                               <p class="color-name">Shark</p>
                                               <p class="color-name">--shark-100</p>
                                               <p class="color-code">rgba(29, 33, 37, 1)</p>
                                             </div>
                                         </div>
-                                        <div class="col color-box" style="background-color: var(--shark-alpha-50); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-50); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
                                               <p class="color-name">Shark Alpha 50</p>
                                               <p class="color-name">--shark-alpha-50</p>
                                               <p class="color-code">rgba(29, 33, 37, 0.5)</p>
                                             </div>
                                         </div>
-                                        <div class="col color-box" style="background-color: var(--shark-alpha-20); border: 1px solid var(--mystic-0)">
+                                    </div>
+                                    <div class="row" style="background-color: var(--mystic-0);">
+                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-20); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
                                               <p class="color-name color-dark ">Shark Alpha 20</p>
                                               <p class="color-name color-dark ">--shark-100</p>
                                               <p class="color-code color-dark ">rgba(29, 33, 37, 0.2)</p>
                                             </div>
                                         </div>
-                                        <div class="col color-box" style="background-color: var(--shark-alpha-10); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-10); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
                                               <p class="color-name color-dark ">Shark Alpha 10</p>
                                               <p class="color-name color-dark ">--shark-100</p>
                                               <p class="color-code color-dark ">rgba(29, 33, 37, 0.1)</p>
                                             </div>
                                         </div>
+                                    </div>   
                                 </div>
-                                <div class="row gap-1" style="background-color: var(--shark-100);  border: 1px solid var(--mystic-0)">
-                                    <div class="col color-box" style="background-color: var(--mystic-0);">
+                                <div class="row" style="background-color: var(--shark-100);">
+                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-0);">
                                         <div class="color-details">
                                             <p class="color-name color-dark ">Mystic</p>
                                             <p class="color-name color-dark ">--mystic-0</p>
                                             <p class="color-code color-dark">rgba(245, 247, 249, 0.1)</p>
                                             </div>
                                     </div>
-                                    <div class="col color-box" style="background-color: var(--mystic-alpha-65);">
+                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-alpha-65);">
                                         <div class="color-details">
                                           <p class="color-name color-dark ">Mystic Alpha 65</p>
                                           <p class="color-name color-dark ">--shark-100</p>
                                           <p class="color-code color-dark ">rgba(245, 247, 249, 0.65)</p>
                                         </div>
                                     </div>
-                                    <div class="col color-box" style="background-color: var(--mystic-alpha-30);">
+                                </div>
+                                <div class="row" style="background-color: var(--shark-100);">
+                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-alpha-30);">
                                         <div class="color-details">
                                           <p class="color-name">Mystic Alpha 30</p>
                                           <p class="color-name">--shark-100</p>
                                           <p class="color-code">rgba(245, 247, 249, 0.3)</p>
                                         </div>
                                     </div>
-                                    <div class="col color-box" style="background-color: var(--mystic-alpha-15);">
+                                    <div class="col-md-12 col-lg-6  color-box" style="background-color: var(--mystic-alpha-15);">
                                         <div class="color-details">
                                           <p class="color-name">Mystic Alpha 15</p>
                                           <p class="color-name">--shark-100</p>
