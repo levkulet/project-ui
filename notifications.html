@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/button.css">
 
-    <!-- Menu Burger Icon -->
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  
+
 </head>
 
 <body>
@@ -41,8 +42,8 @@
                 <li><a href="./buttons.html">Buttons</a> </li>
                 <li><a href="./cards.html">Cards</a></li>
                 <li><a href="./form_elements.html">Form Elements</a></li>
-                <li><a href="./logo.html">Logo</a></li>
                 <li><a href="./lists.html">Lists</a></li>
+                <li><a href="./logo.html">Logo</a></li>
                 <li class="active"><a href="./notifications.html" data-toggle="collapse" 
                     data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
                     onclick="toggleSubMenu(event)">Notifications</a>
@@ -64,38 +65,39 @@
         <div class="col flex"><!-- Right Content  -->
         <div id="content">
             <!-- MAIN HEADER AND NAVIGATION -->
-<header>
-    <div class="container">
-        <nav id="navbar" class="navbar navbar-expand-sm">
-            <div class="container-fluid">
-                <button class=" primary-button navbar-toggler" type="button" 
-                data-toggle="collapse" data-target="#navbarSupportedContent">
-                    <span class="navbar-toggler-icon" ></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <!-- <li class="nav-item">
-                            <a id="sidebarCollapse" class="nav-link">
-                                <i class="material-symbols-outlined">chevron_left</i>
-                            </a>
-                        </li> -->
-                        <li class="nav-item active">
-                            <a id="sidebarCollapse" class="nav-link"><i class="material-symbols-outlined">chevron_left</i></a>
-                            <a class="nav-link nav-item active" href="index.html">UI Library</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Dashboard</a>
-                        </li>
-                    </ul>
+            <header>
+                <div class="container">
+                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                        <div class="container-fluid">
+                            <!-- Navigation Top -->
+                                <div id="head-nav">
+                                    <ul class="nav navbar-nav d-flex ml-auto text-center">
+                                        <li class="nav-item collapse-btn" >
+                                            <!--Sidebar Toggle-->
+                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="index.html">
+                                                <span class="large-screen-text">UI Library</span>
+                                                <i class="small-screen-icon material-icons">library_books</i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">
+                                                <span class="large-screen-text">Dashboard</span>
+                                                <i class="small-screen-icon material-icons">dashboard</i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <div>
+                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-
-                <!-- Main Header Logo (Resize using Bootstrap's img-fluid class) -->
-                <img class="header-logo img-fluid" src="./style/images/logo-wide.png" alt="">
-            </div>
-        </nav>
-    </div>
-</header>
+            </header>
             
 
             <!-- 
@@ -198,19 +200,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-
-        function toggleSubMenu(event) {
-            event.preventDefault(); // Prevent the default link behavior
-            const submenu = document.getElementById("homeSubmenu");
-            $(submenu).collapse('toggle'); // Toggle the collapse state of the submenu
-        }
-    </script>
+        
+    <!-- Our Main JS -->
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
