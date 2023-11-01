@@ -88,3 +88,9 @@
     margin: 50px;
    /*  border: 0.5px solid var(--mystic-0); */
 }
+
+.card-gradient-md{
+    background: var(--grad-eminence);
+    padding: 15px;
+    margin: 50px;
+}
