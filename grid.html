@@ -57,7 +57,9 @@
                                 &thinsp;Data Visualization</span>
                             <i class="small-screen-icon material-icons">query_stats</i>
                         </a></li>
-                    <li class="active"><a href="./grid.html">
+                    <li class="active"><a href="./grid.html"
+                        data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
+                                                    class="dropdown-toggle" onclick="toggleSubMenu(event)">
                             <span class="large-screen-text">
                                 <i class="material-icons">apps</i>
                                 &thinsp;Grid System</span>
@@ -66,6 +68,15 @@
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
                                 <a class="active-a" href="#grid">Grid</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#column">Column</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#example">Example</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#gutters">Gutters</a>
                             </li>
                         </ul>
                     </li>
@@ -199,7 +210,7 @@
 
                     <section>
                         <div class="container">
-                            <div class="mt-5"> <!-- BRAND COLORS -->
+                            <div class="mt-5"> <!-- GRID -->
                                 <div class="row">
                                     <h4 id="grid" class="mb-3">Grid</h4>
                                 </div>
@@ -267,10 +278,242 @@
                                         <p class="grid-cell">1 of 8</p>
                                     </div>
                                 </div>
+                            </div><!-- end grid -->
 
-                            </div> <!-- END -->
+                            <div class="mt-5 mb-3">
+                                <h4 id="column" class="mb-3">Column Wrapping</h4>
+                                <p> If more than 12 columns are placed within a single row, each group of extra columns
+                                    will, as one unit, wrap onto a new line.</p>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-9 grid-container">
+                                            <p class="grid-cell">.col-9</p>
+                                        </div>
+                                        <div class="col-4 grid-container">
+                                            <p class="grid-cell">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide
+                                                div gets wrapped onto a new line as one contiguous unit.</p>
+                                        </div>
+                                        <div class="col-6 grid-container">
+                                            <p class="grid-cell">.col-6<br>Subsequent columns continue along the new
+                                                line.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="container mt-3">
+                                    <div class="row">
+                                        <pre>
+                                            &lt;div class="container"&gt;
+                                                &lt;div class="row"&gt;
+                                                    &lt;div class="col-9 grid-container"&gt;
+                                                        &lt;p class="grid-cell"&gt;.col-9&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-4 grid-container"&gt;
+                                                        &lt;p class="grid-cell"&gt;.col-4&lt;br&gt;Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                    &lt;div class="col-6 grid-container"&gt;
+                                                        &lt;p class="grid-cell"&gt;.col-6&lt;br&gt;Subsequent columns continue along the new line.&lt;/p&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                            </pre>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-5 mb-3">
+                                <h4 id="examples" class="mb-3">Examples</h4>
+
+                                <div class="row mb-1">
+                                    <div class="col grid-container">
+                                        <p class="grid-cell">Full Width</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-1">
+                                    <div class="col-6 grid-container">
+                                        <p class="grid-cell">1 of 2 (Half Width)</p>
+                                    </div>
+                                    <div class="col-6 grid-container">
+                                        <p class="grid-cell">1 of 2 (Half Width)</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-1">
+                                    <div class="col-2 grid-container">
+                                        <p class="grid-cell">2 of 5</p>
+                                    </div>
+                                    <div class="col-3 grid-container">
+                                        <p class="grid-cell">3 of 5</p>
+                                    </div>
+                                    <div class="col-4 grid-container">
+                                        <p class="grid-cell">4 of 5</p>
+                                    </div>
+                                    <div class="col-1 grid-container">
+                                        <p class="grid-cell">1 of 5</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-1">
+                                    <div class="col-4 grid-container">
+                                        <p class="grid-cell">3 of 6</p>
+                                    </div>
+                                    <div class="col-4 grid-container">
+                                        <p class="grid-cell">3 of 6</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 grid-container">
+                                        <p class="grid-cell">5 of 7</p>
+                                    </div>
+                                    <div class="col-2 grid-container">
+                                        <p class="grid-cell">2 of 7</p>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <pre>
+                                                    &lt;div class="row mb-1"&gt;
+                                                        &lt;!-- Full Width Example --&gt;
+                                                        &lt;div class="col grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;Full Width&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class="row mb-1"&gt;
+                                                        &lt;!-- Half Width Example (1 of 2) --&gt;
+                                                        &lt;div class="col-6 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;1 of 2 (Half Width)&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-6 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;1 of 2 (Half Width)&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class="row mb-1"&gt;
+                                                        &lt;!-- Various Widths Example (2 of 5, 3 of 5, 4 of 5, 1 of 5) --&gt;
+                                                        &lt;div class="col-2 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;2 of 5&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-3 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;3 of 5&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-4 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;4 of 5&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-1 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;1 of 5&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class="row mb-1"&gt;
+                                                        &lt;!-- 3 of 6 Example --&gt;
+                                                        &lt;div class="col-4 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;3 of 6&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-4 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;3 of 6&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                                    &lt;div class="row"&gt;
+                                                        &lt;!-- 5 of 7 Example --&gt;
+                                                        &lt;div class="col-5 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;5 of 7&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-2 grid-container"&gt;
+                                                            &lt;p class="grid-cell"&gt;2 of 7&lt;/p&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                    </pre>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div><!-- end examples -->
+
+                            <div class="mt-5 mb-3">
+                                <h4 id="gutters">Gutters</h4>
+                                <p>Gutters are the padding between your columns, used to responsively space and align
+                                    content in the Bootstrap grid system.</p>
+
+                                <h5>Horizontal & Vertical gutters</h5>
+                                <p>.g-* classes can be used to control the horizontal gutter widths, for the following
+                                    example we use a smaller gutter width, so there won't be a need to add the
+                                    .overflow-hidden wrapper class.</p>
+
+                                <div class="container">
+                                    <div class="row g-2">
+                                        <div class="col-6 ">
+                                            <div class="p-3 grid-container">
+                                                <p class=" grid-cell" style="padding: -6px 0; margin: -6px 0;">Custom
+                                                    column padding</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 ">
+                                            <div class="p-3 grid-container">
+                                                <p class=" grid-cell" style="padding: -6px 0; margin: -6px 0;">Custom
+                                                    column padding</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 ">
+                                            <div class="p-3 grid-container">
+                                                <p class=" grid-cell" style="padding: -6px 0; margin: -6px 0;">Custom
+                                                    column padding</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="p-3 grid-container">
+                                                <p class=" grid-cell" style="padding: -6px 0; margin: -6px 0;">Custom
+                                                    column padding</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <pre>
+                                                &lt;div class="container"&gt;
+                                                    &lt;div class="row g-2"&gt;
+                                                        &lt;div class="col-6 "&gt;
+                                                            &lt;div class="p-3  grid-container"&gt;
+                                                                &lt;p class="grid-cell" style="padding: -6px 0; margin: -6px 0;"&gt;Custom column padding&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-6 "&gt;
+                                                            &lt;div class="p-3 grid-container"&gt;
+                                                                &lt;p class="grid-cell" style="padding: -6px 0; margin: -6px 0;"&gt;Custom column padding&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-6 "&gt;
+                                                            &lt;div class="p-3 grid-container"&gt;
+                                                                &lt;p class="grid-cell" style="padding: -6px 0; margin: -6px 0;"&gt;Custom column padding&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="col-6 "&gt;
+                                                            &lt;div class="p-3 grid-container"&gt;
+                                                                &lt;p class="grid-cell" style="padding: -6px 0; margin: -6px 0;"&gt;Custom column padding&lt;/p&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                                &lt;/div&gt;
+                                                </pre>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div><!-- END container -->
                     </section>
-                </div>
+
+                </div> <!-- END MAIN RIGHT container -->
 
             </div> <!-- END Page Contents -->
         </div> <!--END right side container -->

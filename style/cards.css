@@ -52,15 +52,15 @@
 
 .card-dark{
     background-color: var(--main-dark-card);
-    padding: 15px;
-    margin: 50px;
+    padding: 1rem;
+    margin: 1.7rem;
    /*  border: 0.5px solid var(--mystic-0); */
 }
 
 .card-light{
     background-color: var(--main-light-card);
-    padding: 20px;
-    margin: 50px;
+    padding: 1rem;
+    margin: 1.7rem;
    /*  border: 0.5px solid var(--mystic-0); */
 }
 

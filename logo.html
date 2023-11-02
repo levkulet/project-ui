@@ -102,9 +102,8 @@
                                 &thinsp;Lists</span>
                             <i class="small-screen-icon material-icons">list</i>
                         </a></li>
-                    <li class="active"><a href="./logo.html"
-                        data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
-                        class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                    <li class="active"><a href="./logo.html" data-toggle="collapse" data-target="#homeSubmenu"
+                            aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">
                             <span class="large-screen-text">
                                 <i class="material-icons">image</i>
                                 &thinsp;Logo</span>
@@ -191,11 +190,6 @@
                     </div>
                 </header>
 
-                <!-- 
-                CHANGE THIS PART PLS THANKS
-             -->
-
-
                 <!-- Page Contents -->
                 <div class="content-container container">
                     <h6>COMPONENTS</h6>
@@ -205,66 +199,149 @@
                         guidelines on how to use and present the logo effectively:</p>
 
                     <div class="container">
-                        <div class="mt-5"> <!-- BRAND COLORS -->
-                            <h3>Main Logo</h3>
+                        <div class="mt-5"> <!-- main logo -->
+                            <h3 id="main">Main Logo</h3>
                             <p>The main logo should be used as the primary representation of your brand. It typically
                                 includes both an icon and the brand name. This logo version is suitable for various use
                                 cases, including website headers, business cards, and official documents.</p>
 
                             <!-- Header with Logo Variations -->
-                            <header class="row">
+                            <div class="row mt-3 mb-3 align-items-center">
                                 <!-- Logo on Light Background -->
-                                <div class="col logo-container card-light justify-content-center">
+                                <div class="col logo-container card-light justify-content-center text-center">
                                     <img src="./style/images/logo-square-black.png" alt="Logo on Light Background"
                                         class="img-fluid">
-                                    <p class="logo-description dark-card-content">Logo on Light Background</p>
+                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
+                                    </p>
                                 </div>
 
                                 <!-- Logo on Dark Background -->
-                                <div class="col logo-container card-dark justify-content-center">
+                                <div class="col logo-container card-dark justify-content-center text-center">
                                     <img src="./style/images/logo-square.png" alt="Logo on Dark Background"
                                         class="img-fluid">
-                                    <p class="logo-description light-card-content">Logo on Dark Background</p>
+                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- main logo -->
+
+                        <div class="mt-5"> <!-- wide logo -->
+                            <h3 id="wide">Wide Logo</h3>
+                            <p>This logo is horizontally oriented and is suitable for use in the main header, top
+                                navigation, footers, and large cards.</p>
+
+
+                            <div class="row mt-3 mb-3 align-items-center">
+                                <!-- Logo on Light Background -->
+                                <div class="col logo-container card-light justify-content-center text-center">
+                                    <img src="./style/images/logo-wide-black.png" alt="Logo on Light Background"
+                                        class="img-fluid">
+                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
+                                    </p>
                                 </div>
 
-                                <h3>Logo as an Icon</h3>
-                                <p>For smaller spaces or when a simplified version of the logo is needed, you can use
-                                    the logo as an icon. This version usually includes just the icon without the brand
-                                    name.</p>
+                                <!-- Logo on Dark Background -->
+                                <div class="col logo-container card-dark justify-content-center text-center">
+                                    <img src="./style/images/logo-wide.png" alt="Logo on Dark Background"
+                                        class="img-fluid">
+                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- main logo -->
 
+                        <div class="row mt-5 mb-3">
+                            <h3 id="icon">Logo as an Icon</h3>
+                            <p>For smaller spaces or when a simplified version of the logo is needed, you can use
+                                the logo as an icon. This version usually includes just the icon without the brand
+                                name.</p>
 
-                                <!-- Logo as an Icon -->
-                                <div class="col-md-4 logo-container">
-                                    <img src="logo-icon.png" alt="Logo as an Icon" class="img-fluid">
-                                    <p class="logo-description">Logo as an Icon</p>
+                            <table class="table table-dark" style="background-color: var(--section-bg);">
+                                <tr>
+                                    <!-- Logo as an Icon (240px) -->
+                                    <td class="logo-container">
+                                        <img id="icon-big" src="./style/images/logo-160.png" style="width: 240px;"
+                                            alt="Logo as an Icon" class="img-fluid">
+                                    </td>
+                                    <!-- Description -->
+                                    <td>
+                                        <p class="other-text">Logo as an Icon</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Icon 160px -->
+                                    <td class="logo-container">
+                                        <img id="icon160" src="./style/images/logo-160.png" alt="Icon 160px"
+                                            class="img-fluid">
+                                    </td>
+                                    <!-- Description -->
+                                    <td>
+                                        <p class="other-text">Icon 160px</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Icon 80px -->
+                                    <td class="logo-container">
+                                        <img id="icon80" src="./style/images/logo-160.png" style="width: 80px;"
+                                            alt="Icon 80px" class="img-fluid">
+                                    </td>
+                                    <!-- Description -->
+                                    <td>
+                                        <p class="other-text">Icon 80px</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Icon 40px -->
+                                    <td class="logo-container">
+                                        <img id="icon40" src="./style/images/logo-160.png" style="width: 40px;"
+                                            alt="Icon 40px" class="img-fluid">
+                                    </td>
+                                    <!-- Description -->
+                                    <td>
+                                        <p class="other-text">Icon 40px</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- Favicon (16px) -->
+                                    <td class="logo-container">
+                                        <img id="icon16" src="./style/images/logo-160.png" style="width: 16px;"
+                                            alt="Favicon" class="img-fluid">
+                                    </td>
+                                    <!-- Description -->
+                                    <td>
+                                        <p class="other-text">Favicon</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="mt-5"> <!-- text logo -->
+                            <h3 id="text">Text Logo</h3>
+                            <p>This logo features only the textual part without the icon. It is horizontally oriented
+                                and is suitable for use in the main header, top navigation, footers, and large cards.
+                            </p>
+
+                            <div class="row mt-3 mb-3 align-items-center">
+                                <!-- Logo on Light Background -->
+                                <div class="col logo-container card-light justify-content-center text-center">
+                                    <img src="./style/images/logo-text-black.png" alt="Logo on Light Background"
+                                        class="img-fluid">
+                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
+                                    </p>
                                 </div>
 
-                                <!-- Logo with Text -->
-                                <div class="col-md-4 logo-container">
-                                    <img src="logo-with-text.png" alt="Logo with Text" class="img-fluid">
-                                    <p class="logo-description">Logo with Text</p>
+                                <!-- Logo on Dark Background -->
+                                <div class="col logo-container card-dark justify-content-center text-center">
+                                    <img src="./style/images/logo-text.png" alt="Logo on Dark Background"
+                                        class="img-fluid">
+                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
+                                    </p>
                                 </div>
+                            </div>
+                        </div><!-- text logo -->
 
-                                <!-- Additional Logo Variations -->
-                                <div class="col-md-4 logo-container">
-                                    <img src="logo-variation-1.png" alt="Logo Variation 1" class="img-fluid">
-                                    <p class="logo-description">Additional Logo Variation 1</p>
-                                </div>
-
-                                <div class="col-md-4 logo-container">
-                                    <img src="logo-variation-2.png" alt="Logo Variation 2" class="img-fluid">
-                                    <p class="logo-description">Additional Logo Variation 2</p>
-                                </div>
-
-                                <div class="col-md-4 logo-container">
-                                    <img src="logo-variation-3.png" alt="Logo Variation 3" class="img-fluid">
-                                    <p class="logo-description">Additional Logo Variation 3</p>
-                                </div>
-                            </header>
-
-
-                        </div> <!-- END -->
-                    </div>
+                    </div><!-- END -->
 
 
                 </div> <!-- END Page Contents -->

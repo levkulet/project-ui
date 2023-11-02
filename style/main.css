@@ -25,8 +25,8 @@ p {
 }
 
 h1 {
-    font-family: var(--font-serif-family);
-    font-size: var(--fs-800);
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-750);
     font-weight: 600;
     color: var(--main-paragraph);
 }
@@ -42,6 +42,26 @@ h3 {
     font-size: var(--fs-650);
     font-weight: 600;
     color: var(--main-paragraph);
+}
+
+h4 {
+    font-size: var(--fs-600);
+    font-weight: 600;
+    color: var(--main-paragraph);
+}
+
+h5 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-400);
+    color: var(--main-paragraph);
+    font-weight: 600;
+}
+
+h6 {
+    font-family: var(--font-sans-family);
+    font-size: var(--fs-200);
+    color: var(--header-gray);
+    font-weight: 400;
 }
 
 .sidebar-header h3 {
@@ -62,33 +82,21 @@ h3 {
     color: var(--eminence-500);
 }
 
-h4 {
-    font-size: var(--fs-600);
-    font-weight: 600;
+a{
     color: var(--main-paragraph);
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
-h5 {
-    font-family: var(--font-sans-family);
-    font-size: var(--fs-400);
-    color: var(--main-paragraph);
-    font-weight: 600;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-}
-
-h6 {
-    font-family: var(--font-sans-family);
-    font-size: var(--fs-200);
-    color: var(--header-gray);
-}
-
-a,
 a:hover,
 a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
+}
+
+.link:hover{
+    color: var(--other-text);
 }
 
 .navbar {
@@ -374,6 +382,11 @@ a.article:hover {
     color: var(--dark-text);
 }
 
+code{
+    color: var(--header-gray);
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .color-code {
     margin: 0;
     margin-left: 0.25rem;
@@ -409,14 +422,16 @@ a.article:hover {
 }
 
 pre{
-    font-size: 12px;
+    font-size: 0.8rem;
+    max-height: 300px;
     color: var(--main-paragraph);
     background-color: var(--shark-0);
     margin: 12px;
     padding: 30px;
     border: 1px solid #dfe2e5;
     border-radius: 5px;
-  
+    white-space-collapse: preserve;
+    white-space: pre-line;
 }
 
  /* ---------------------------------------------------
@@ -534,5 +549,20 @@ pre{
 
     #font-show{
         font-size: 5rem;
+    }
+    #icon-big{
+        min-width: 240px;
+    }
+    #icon160{
+        min-width: 160px;
+    }
+    #icon80{
+        min-width: 80px;
+    }
+    #icon40{
+        min-width: 40px;
+    }
+    #icon16{
+        min-width: 16px;
     }
 }

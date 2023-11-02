@@ -62,9 +62,8 @@
                                 &thinsp;Grid System</span>
                             <i class="small-screen-icon material-icons">apps</i>
                         </a></li>
-                    <li class="active"><a href="./typography.html"
-                        data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
-                        class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                    <li class="active"><a href="./typography.html" data-toggle="collapse" data-target="#homeSubmenu"
+                            aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">
                             <span class="large-screen-text">
                                 <i class="material-icons">text_format</i>
                                 &thinsp;Typography</span>
@@ -78,7 +77,10 @@
                                 <a class="active-a" href="#typescale">Type Scale</a>
                             </li>
                             <li>
-                                <a class="active-a" href="#paragraph">Paragraph</a>
+                                <a class="active-a" href="#inline">Inline Elements</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#grouped">Grouped Texts</a>
                             </li>
                         </ul>
                     </li>
@@ -205,6 +207,8 @@
 
                         <div class="container">
                             <h3 id="sans-serif" class="mb-3 highlight">Typeface</h3>
+                            <p>Typeface is the design and style of a font. It defines the look of characters and is
+                                crucial for text aesthetics and communication.</p>
                             <div class="mt-4"> <!-- Sans Serif-->
                                 <div class="row">
                                     <div id="font-show" class="col-6 col-md-4" style="font-family: var(--font-sans-family);
@@ -230,23 +234,38 @@
 
                                 </div>
                                 <div class="row mb-3">
-                                    <h3 id="sans-serif" class="mb-3 highlight">Type Scale</h3>
+                                    <h3 id="type-scale" class="mb-3 highlight">Type Scale</h3>
                                     <p>
 
+                                        Typescale refers to a hierarchy of font sizes used for headings and text
+                                        elements in design. It ensures a consistent and visually appealing structure.
+                                        Heading and text classes enable precise control over font sizes and styling for
+                                        a well-organized layout.
                                     </p>
                                 </div>
                                 <div class="row mb-3">
                                     <table class="table table-dark" style="background-color: var(--section-bg);">
                                         <tbody>
                                             <tr>
+                                                <th>
+                                                    Example
+                                                </th>
+                                                <th>
+                                                    Code
+                                                </th>
+                                                <th>
+                                                    Font
+                                                </th>
+                                            </tr>
+                                            <tr>
                                                 <td>
                                                     <h1>Heading One</h1>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">h1</p>
+                                                    <p class="other-text">&lt; h1 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Poppins Regular</p>
+                                                    <p class="other-text">Poppins Regular - 600</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -254,10 +273,10 @@
                                                     <h2>Heading Two</h2>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">h2</p>
+                                                    <p class="other-text">&lt; h2 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Poppins Regular</p>
+                                                    <p class="other-text">Playfair Regular - 600</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -265,10 +284,10 @@
                                                     <h3>Heading Three</h3>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; h3 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular - 600</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -276,10 +295,10 @@
                                                     <h4>Heading Four</h4>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; h4 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular - 600</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -287,10 +306,10 @@
                                                     <h5>Heading Five</h5>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; h5 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular - 600</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -298,10 +317,10 @@
                                                     <h6>Heading Six</h6>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; h6 &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular - 400</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -310,10 +329,10 @@
                                                     <p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; p class="bold-text" &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular - 700</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -322,7 +341,7 @@
                                                     <p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; p &gt;</p>
                                                 </td>
                                                 <td>
                                                     <p class="other-text">Playfair Regular</p>
@@ -334,7 +353,7 @@
                                                     <p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; p class="data-body-text" &gt;</p>
                                                 </td>
                                                 <td>
                                                     <p class="other-text">Playfair Regular</p>
@@ -346,10 +365,10 @@
                                                     <p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; p class="button-text" &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular</p>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -358,19 +377,116 @@
                                                     <p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">6.25rem</p>
+                                                    <p class="other-text">&lt; p class="other-text" &gt;</p>
                                                 </td>
                                                 <td>
-                                                    <p class="other-text">Playfair Regular</p>
+                                                    <p class="other-text">Poppins Regular</p>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div><!-- end row -->
-                                <div class="row mb-3">
-                                    <h3 id="sans-serif" class="mb-3 highlight">Paragraph</h3>
 
-                                    <p class="bold-text">Example</p>
+                                <div class="row mt-5 mb-3">
+                                    <h3 id="inline" class="mb-3 highlight">Inline Elements</h3>
+                                    <p>Inline elements in HTML are versatile tools for styling text within your web
+                                        content. They enable you to emphasize text using options like bold or italics,
+                                        insert links, create superscripts and subscripts, and change the font size or
+                                        color. These elements are perfect for enhancing the readability and visual
+                                        appeal of your text, making it engaging and informative.</p>
+                                    <h5 class="mb-3">Examples</h5>
+
+                                    <table class="table table-dark" style="background-color: var(--section-bg);">
+                                        <tr>
+                                            <td>
+                                                <p class="link"><a href="#">This is a text link</a></p>
+                                            </td>
+                                            <td><code>&lt;p class="link"&gt;&lt;a href="#"&gt;This is a text link&lt;/a&gt;&lt;/p&gt;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="bold-text">This is a bold text</p>
+                                            </td>
+                                            <td><code>&lt;p class="bold-text"&gt;This is a bold text&lt;/p&gt;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><strong>Strong is used to indicate strong importance</strong></p>
+                                            </td>
+                                            <td><code>&lt;p&gt;&lt;strong&gt;Strong is used to indicate strong importance&lt;/strong&gt;&lt;/p&gt;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><em>This text has added emphasis</em></p>
+                                            </td>
+                                            <td><code>&lt;p&gt;&lt;em&gt;This text has added emphasis&lt;/em&gt;&lt;/p&gt;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>The <b>b inside a p</b> is stylistically different text from normal
+                                                    text, without any special importance</p>
+                                            </td>
+                                            <td><code>The &lt;b&gt;b inside a p&lt;/b&gt; is stylistically different text from normal text, without any special importance</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>The <i>i element</i> is text that is set off from the normal text</p>
+                                            </td>
+                                            <td><code>The &lt;i&gt;i element&lt;/i&gt; is text that is set off from the normal text</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>The <u>u element</u> is text with an unarticulated, though explicitly
+                                                    rendered, non-textual annotation</p>
+                                            </td>
+                                            <td><code>The &lt;u&gt;u element&lt;/u&gt; is text with an unarticulated, though explicitly rendered, non-textual annotation</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p><s>This text is deleted</s> and <u>This text is inserted</u></p>
+                                            </td>
+                                            <td><code>&lt;p&gt;&lt;s&gt;This text is deleted&lt;/s&gt; and &lt;u&gt;This text is inserted&lt;/u&gt;&lt;/p&gt;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Here is a <q>quotation</q> in text.</p>
+                                            </td>
+                                            <td><code>Here is a &lt;q&gt;quotation&lt;/q&gt; in text.</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>This is a <mark>marked element</mark> or highlight.</p>
+                                            </td>
+                                            <td><code>This is a &lt;mark&gt;marked element&lt;/mark&gt; or highlight.</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Inline code: <code>console.log('Hello, World!');</code></p>
+                                            </td>
+                                            <td><code>Inline code: &lt;code&gt;console.log('Hello, World!');&lt;/code&gt;</code>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+
+
+
+                                </div>
+
+                                <div class="row mb-3">
+                                    <h3 id="grouped" class="mb-3 highlight">Grouped Texts</h3>
+                                    <p>An example when the texts are grouped together in a section.</p>
+
+                                    <h5>Example</h5>
                                     <div class="col section-bg">
                                         <h2>Main Title</h2>
 
@@ -412,8 +528,29 @@
                                             est laborum.</p>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
+                                <div class="row mt-3 mb-3">
+                                    <div class="col">
+                                        <pre style="white-space: pre-line;">
+                                            &lt;h2&gt;Main Title&lt;/h2&gt;
 
+                                            &lt;h3&gt;Section Title&lt;/h3&gt;
+                                            &lt;h4&gt;Subsection Title&lt;/h4&gt;
+                                            &lt;p&gt;
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac leo gravida, imperdiet turpis eget, sodales nibh. Integer egestas vitae elit a blandit. Proin varius pulvinar nisi in scelerisque. In imperdiet, nisi ut volutpat aliquam, metus quam egestas sem, id efficitur velit urna at tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras non tincidunt tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque condimentum, ante et fringilla commodo, est metus ornare lacus, non accumsan sapien velit sit amet arcu.
+                                            &lt;/p&gt;
+                                            &lt;p class="bold-text"&gt;Some bold text
+                                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            &lt;/p&gt;
+                                            &lt;h5&gt;Subsection - Data Text&lt;/h5&gt;
+                                            &lt;p class="data-body-text"&gt;
+                                                Fusce pulvinar at enim sed laoreet. Quisque accumsan sem quis enim vehicula, placerat consectetur magna maximus. In ut iaculis arcu. Pellentesque pulvinar justo vitae augue fermentum rhoncus. Aliquam tincidunt purus eget turpis rutrum, eu tincidunt mauris feugiat. Donec risus diam, tincidunt non turpis a, rhoncus iaculis massa.
+                                            &lt;/p&gt;
+                                            &lt;p class="button-text"&gt;Small Meta Text&lt;/p&gt;
+                                            &lt;p class="other-text"&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            &lt;/p&gt;
+                                            
+                                        </pre>
+                                    </div>  
                                 </div>
                             </div> <!-- END -->
                         </div>
