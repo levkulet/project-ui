@@ -17,9 +17,9 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 400;
-    line-height: 1.7em;
+    font-size: 1.1rem;
+    font-weight: 200;
+    line-height: 1.7rem;
     color: var(--main-paragraph);
     justify-content: space-evenly;
 }
@@ -41,22 +41,39 @@ h2 {
 h3 {
     font-size: var(--fs-650);
     font-weight: 600;
+}
+
+.sidebar-header h3 {
+    font-size: var(--fs-650);
+    font-weight: 600;
     color: var(--main-highlight);
+}
+
+.highlight{
+    color: var(--main-highlight);
+}
+
+.highlight2{
+    color: var(--secondary-color);
+}
+
+.highlight3{
+    color: var(--eminence-500);
 }
 
 h4 {
     font-size: var(--fs-600);
-    font-weight: 500;
+    font-weight: 600;
     color: var(--main-paragraph);
-    margin-bottom: 0.25em;
-    margin-top: 1em;
-    font-size: var(--fs-500);
 }
 
 h5 {
     font-family: var(--font-sans-family);
-    font-size: var(--fs-300);
-    color: var(--header-gray);
+    font-size: var(--fs-400);
+    color: var(--main-paragraph);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 
 h6 {
@@ -430,6 +447,10 @@ pre{
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+    p{
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
     #sidebar {
         margin-left: -250px;
     }

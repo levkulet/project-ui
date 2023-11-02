@@ -1,166 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
-  <title>Plug Streaming</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
+    <title>Plug Streaming</title>
 
     <!-- Bootstrap CSS CDN -->
-    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./style/button.css">
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/button.css">
-    <!-- ADD YOUR CSS HERE FOR YOUR PART -->
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
 <body>
-      <div class="wrapper"> <!-- Main wrapper -->
-        <div class="flex-column "> <!-- Sidebar  -->
-          <nav id="sidebar">
-              <div class="sidebar-header">
-                  <img src="./style/images/logo-160.png" alt="logo-160"> <h3>UI Library</h3>
-              </div>
+    <div class="wrapper"> <!-- Main wrapper -->
+        <div class="flex-wrap"> <!-- Sidebar  -->
+            <nav id="sidebar" class="custom-sidebar">
+                <div class="sidebar-header">
+                    <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
+                    <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
+                    <h3>UI Library</h3>
+                </div>
+                <ul class="list-unstyled components">
 
-              <ul class="list-unstyled components">
-                <h5>FOUNDATIONS</h5>
-                  <li><a href="index.html">Color</a></li>
-                  <li><a href="./data_visualization.html">Data Visualization</a></li>
-                  <li><a href="./grid.html">Grid System</a></li>
-                  <li><a href="./typography.html">Typography</a></li>
-                  
+                    <span class="large-screen-text">
+                        <h5>FOUNDATIONS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
+                    <li>
+                        <a href="index.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">palette</i>
+                                &thinsp;Color</span>
+                            <i class="small-screen-icon material-icons">palette</i>
+                        </a>
+                    </li>
+                    <li><a href="./data_visualization.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">query_stats</i>
+                                &thinsp;Data Visualization</span>
+                            <i class="small-screen-icon material-icons">query_stats</i>
+                        </a></li>
+                    <li><a href="./grid.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">apps</i>
+                                &thinsp;Grid System</span>
+                            <i class="small-screen-icon material-icons">apps</i>
+                        </a></li>
+                    <li><a href="./typography.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">text_format</i>
+                                &thinsp;Typography</span>
+                            <i class="small-screen-icon material-icons">text_format</i>
+                        </a></li>
 
-                  <h5>COMPONENTS</h5>
-                  <li class="active"><a href="./buttons.html"  data-toggle="collapse" 
-                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Buttons</a>
+                    <span class="large-screen-text">
+                        <h5>COMPONENTS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
+
+                    <li class="active"><a href="./buttons.html"
+                        data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
+                            class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                            <span class="large-screen-text">
+                                <i class="material-icons">smart_button</i>
+                                &thinsp;Buttons</span>
+                            <i class="small-screen-icon material-icons">smart_button</i>
+                        </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a class="active-a" href="#solid">Solid</a>
+                                <a class="active-a" href="#solid">Solid Buttons</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#outline">Outlined Buttons</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#gradient">Gradient Buttons</a>
                             </li>
                         </ul>
-                  </li>
-                  <li><a href="./cards.html">Cards</a></li>
-                  <li><a href="./form_elements.html">Form Elements</a></li>
-                  <li><a href="./lists.html">Lists</a></li>
-                  <li><a href="./logo.html">Logo</a></li>
-                  <li><a href="./notifications.html">Notifications</a></li> 
-                  <li><a href="./tables.html">Tables</a></li>
-                  
-              </ul>
-              <ul class="list-unstyled components">
-                    <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
-              </ul>
-          </nav>
-        </div> <!-- END sidebar -->
-        <div class="col flex"><!-- Right Content  -->
-        <div id="content">
-            <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                        <div class="container-fluid">
-                            <!-- Navigation Top -->
+                    </li>
+                    <li><a href="./cards.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">dashboard_customize</i>
+                                &thinsp;Cards</span>
+                            <i class="small-screen-icon material-icons">dashboard_customize</i>
+                        </a></li>
+                    <li><a href="./form_elements.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">check_box</i>
+                                &thinsp;Form Elements</span>
+                            <i class="small-screen-icon material-icons">check_box</i>
+                        </a></li>
+                    <li><a href="./lists.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">list</i>
+                                &thinsp;Lists</span>
+                            <i class="small-screen-icon material-icons">list</i>
+                        </a></li>
+                    <li><a href="./logo.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">image</i>
+                                &thinsp;Logo</span>
+                            <i class="small-screen-icon material-icons">image</i>
+                        </a></li>
+                    <li><a href="./notifications.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">announcement</i>
+                                &thinsp;Notifications</span>
+                            <i class="small-screen-icon material-icons">announcement</i>
+                        </a></li>
+                    <li><a href="./tables.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">table_chart</i>
+                                &thinsp;Table</span>
+                            <i class="small-screen-icon material-icons">table_chart</i>
+                        </a></li>
+
+
+                </ul>
+                <ul class="list-unstyled components">
+                    <span class="large-screen-text">
+                        <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                    </span>
+                    <span class="small-screen-icon copyright">&copy; LCVTP</span>
+                </ul>
+            </nav>
+        </div> <!-- end sidebar -->
+        <div class="col flex"> <!-- Right Content  -->
+            <div id="content">
+                <!-- MAIN HEADER AND NAVIGATION -->
+                <header>
+                    <div class="container">
+                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                            <div class="container-fluid">
+                                <!-- Navigation Top -->
                                 <div id="head-nav">
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
-                                        <li class="nav-item collapse-btn" >
+                                        <li class="nav-item collapse-btn">
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                            <a id="sidebarCollapse"
+                                                class="nav-item material-symbols-outlined">menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">UI Library</span>
-                                                <i class="small-screen-icon material-icons">library_books</i>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">library_books</i>
+                                                    &thinsp;UI Library</span>
+                                                    <i class="small-screen-icon material-icons">library_books</i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span class="large-screen-text">Dashboard</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">dashboard</i>
+                                                    &thinsp;Dashboard</span>
                                                 <i class="small-screen-icon material-icons">dashboard</i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                            <div>
-                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                                <div>
+                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                        alt="">
+                                </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            
+                        </nav>
+                    </div>
+                </header>
 
-            <!-- 
+
+                <!-- 
                 CHANGE THIS PART PLS THANKS
              -->
-            
-            
-             <!-- Page Contents -->
-             <div class="content-container container">
-                <h6>COMPONENTS</h6>
-                <h2>Buttons</h2>
-                <p>Celebrate functionality and design with our button showcase. From sleek and minimalistic to eye-catching and vibrant, explore the art of interactivity.</p>
-            
-                <!-- Buttons - Solid -->
-                <div class="row mt-5 mb-1">
-                    <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
-                    <div class="row row-cols-2 g-0">
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 default-button">Default</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 important-button" >Important</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 primary-button">Primary</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="disabled-button btn-border-1" disabled>Disabled</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row row-cols-2 g-0 mt-3 mb-3">
-                        <div class="col">
-                            <div class=" d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 accept-button">Accept</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 warning-button">Warning</button>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 danger-button">Danger</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-            <!-- Code Snippet Example-->
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                        <pre style="white-space: pre-line;">
+
+                <!-- Page Contents -->
+                <div class="content-container container">
+                    <h6>COMPONENTS</h6>
+                    <h2>Buttons</h2>
+                    <p>Celebrate functionality and design with our button showcase. From sleek and minimalistic to
+                        eye-catching and vibrant, explore the art of interactivity.</p>
+
+                    <!-- Buttons - Solid -->
+                    <div class="row mt-5 mb-1">
+                        <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
+                        <div class="row row-cols-2 g-0">
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 default-button">Default</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 important-button">Important</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 primary-button">Primary</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="disabled-button btn-border-1" disabled>Disabled</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-cols-2 g-0 mt-3 mb-3">
+                            <div class="col">
+                                <div class=" d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 accept-button">Accept</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 warning-button">Warning</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button class="btn btn-border-1 danger-button">Danger</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Snippet Example-->
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <pre style="white-space: pre-line;">
                             &lt;!-- Default --&gt;
                             &lt;button class="btn btn-border-1 default-button"&gt;Default&lt;/button&gt;
                             &lt;!-- Important --&gt;
@@ -176,75 +263,90 @@
                             &lt;!-- Danger --&gt;
                             &lt;button class="btn btn-border-1 danger-button"&gt;Danger&lt;/button&gt;
                         </pre>
+                            </div>
+                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <h4>Notes</h4>
+                                <p><span style="color: var(--pumpkin-500);">Buttons</span> can be created using the HTML
+                                    button tag, and their visual design can be customized by applying the <span
+                                        style="color: var(--pumpkin-500);">button</span> class.</p>
+                                <p>For input elements, you have the option to give them button functionality by adding
+                                    the <span style="color: var(--pumpkin-500);">button</span> class and defining a
+                                    button label using the <span style="color: var(--pumpkin-500);">'value'</span>
+                                    attribute."</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                        <h4>Notes</h4>
-                        <p><span style="color: var(--pumpkin-500);">Buttons</span> can be created using the HTML button tag, and their visual design can be customized by applying the <span style="color: var(--pumpkin-500);">button</span> class.</p>
-                        <p>For input elements, you have the option to give them button functionality by adding the <span style="color: var(--pumpkin-500);">button</span> class and defining a button label using the <span style="color: var(--pumpkin-500);">'value'</span> attribute."</p>
+
+                    <!-- Buttons - Outline -->
+                    <div class="row mt-5">
+                        <h4 id="brand-colors" class="mb-3">Buttons - Outline</h4>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="border-color: var(--main-links); background-color: transparent;">Active</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="border-color: var(--pumpkin-300); background-color: transparent;">Hover</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);"
+                                        disabled>Disabled</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons - Navigation -->
+                    <div class="row mt-5">
+                        <h4 id="brand-colors" class="mb-3">Buttons - Navigation</h4>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="background: var(--grad-pumpkin);">Primary</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="background: var(--grad-pb);">Active</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="background: var(--grad-breaker);">Hover</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="color-box2 d-flex justify-content-center align-items-center">
+                                    <button class="custom-button btn btn-border-1"
+                                        style="background: var(--grad-pe); color: var(--main-paragraph);"
+                                        disabled>Disabled</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-                <!-- Buttons - Outline -->
-                <div class="row mt-5">
-                    <h4 id="brand-colors" class="mb-3">Buttons - Outline</h4>
+
+                <!-- Code Snippet Example-->
+                <div class="container mt-4">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--main-links); background-color: transparent;">Active</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-300); background-color: transparent;">Hover</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);" disabled>Disabled</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Buttons - Navigation -->
-                <div class="row mt-5">
-                    <h4 id="brand-colors" class="mb-3">Buttons - Navigation</h4>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pumpkin);">Primary</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pb);">Active</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-breaker);">Hover</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pe); color: var(--main-paragraph);" disabled>Disabled</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Code Snippet Example-->
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                        <pre style="white-space: pre-line;">
+                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                            <pre style="white-space: pre-line;">
                             &lt;!-- Primary --&gt;
                             &lt;button class="custom-button btn btn-border-1" style="background: var(--grad-pumpkin);"&gt;Primary&lt;
                             /button&gt;
@@ -259,21 +361,24 @@
                             /button&gt;
 
                         </pre>
-                    </div>
-                    <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                        <h4>Notes</h4>
-                        <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation elements and are designed with a custom style, featuring a thin border. They are each labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be utilized for navigation or interaction within a user interface.</p>
-                        
+                        </div>
+                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                            <h4>Notes</h4>
+                            <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation
+                                elements and are designed with a custom style, featuring a thin border. They are each
+                                labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be utilized
+                                for navigation or interaction within a user interface.</p>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-               
+
             </div> <!-- END Page Contents -->
-          </div> <!--END right side container -->
-          
+        </div> <!--END right side container -->
+
     </div> <!-- END wrapper -->
-    
-        
+
+
     <!-- 
       !!!!!!!!!!!
       SCRIPTS PLS DONT DELETE BELOW THIS
@@ -281,14 +386,21 @@
     -->
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
 
     <!-- Our Main JS -->
     <script src="./scripts/main.js"></script>
 
 </body>
+
 </html>

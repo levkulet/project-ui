@@ -1,151 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
-  <title>Plug Streaming</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
+    <title>Plug Streaming</title>
 
     <!-- Bootstrap CSS CDN -->
-    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/cards.css">
     <link rel="stylesheet" href="./style/lists.css">
-    <!-- ADD YOUR CSS HERE FOR YOUR PART -->
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
 <body>
-      <div class="wrapper"> <!-- Main wrapper -->
-        <div class="flex-column "> <!-- Sidebar  -->
-          <nav id="sidebar">
-              <div class="sidebar-header">
-                  <img src="./style/images/logo-160.png" alt="logo-160"> <h3>UI Library</h3>
-              </div>
+    <div class="wrapper"><!-- Main wrapper -->
+        <div class="flex-wrap"><!-- Sidebar  -->
+            <nav id="sidebar" class="custom-sidebar">
+                <div class="sidebar-header">
+                    <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
+                    <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
+                    <h3>UI Library</h3>
+                </div>
 
-              <ul class="list-unstyled components">
-                <h5>FOUNDATIONS</h5>
-                  <li><a href="index.html">Color</a></li>
-                  <li><a href="./data_visualization.html">Data Visualization</a></li>
-                  <li><a href="./grid.html">Grid System</a></li>
-                  <li><a href="./typography.html">Typography</a></li>
-                  
+                <ul class="list-unstyled components">
 
-                  <h5>COMPONENTS</h5>
-                  <li><a href="./buttons.html"></a></li>
-                  <li><a href="./cards.html">Cards</a></li>
-                  <li><a href="./form_elements.html">Form Elements</a></li>
+                    <span class="large-screen-text">
+                        <h5>FOUNDATIONS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
+                    <li>
+                        <a href="index.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">palette</i>
+                                &thinsp;Color</span>
+                            <i class="small-screen-icon material-icons">palette</i>
+                        </a>
+                    </li>
+                    <li><a href="./data_visualization.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">query_stats</i>
+                                &thinsp;Data Visualization</span>
+                            <i class="small-screen-icon material-icons">query_stats</i>
+                        </a></li>
+                    <li><a href="./grid.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">apps</i>
+                                &thinsp;Grid System</span>
+                            <i class="small-screen-icon material-icons">apps</i>
+                        </a></li>
+                    <li><a href="./typography.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">text_format</i>
+                                &thinsp;Typography</span>
+                            <i class="small-screen-icon material-icons">text_format</i>
+                        </a></li>
 
-                  <li class="active"><a href="./lists.html"
-                    data-toggle="collapse" 
-                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Lists</a>
+                    <span class="large-screen-text">
+                        <h5>COMPONENTS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
 
+                    <li><a href="./buttons.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">smart_button</i>
+                                &thinsp;Buttons</span>
+                            <i class="small-screen-icon material-icons">smart_button</i>
+                        </a></li>
+                    <li><a href="./cards.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">dashboard_customize</i>
+                                &thinsp;Cards</span>
+                            <i class="small-screen-icon material-icons">dashboard_customize</i>
+                        </a>
+                    </li>
+                    <li><a href="./form_elements.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">check_box</i>
+                                &thinsp;Form Elements</span>
+                            <i class="small-screen-icon material-icons">check_box</i>
+                        </a></li>
+                    <li class="active"><a href="./lists.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
+                        class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                            <span class="large-screen-text">
+                                <i class="material-icons">list</i>
+                                &thinsp;Lists</span>
+                            <i class="small-screen-icon material-icons">list</i>
+                        </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li>
-                                <a class="active-a" href="#leader">Leader Lists</a>
+                                <a class="active-a" href="#"></a>
                             </li>
                         </ul>
-                  </li>
+                    </li>
+                    <li><a href="./logo.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">image</i>
+                                &thinsp;Logo</span>
+                            <i class="small-screen-icon material-icons">image</i>
+                        </a></li>
+                    <li><a href="./notifications.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">announcement</i>
+                                &thinsp;Notifications</span>
+                            <i class="small-screen-icon material-icons">announcement</i>
+                        </a></li>
+                    <li><a href="./tables.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">table_chart</i>
+                                &thinsp;Table</span>
+                            <i class="small-screen-icon material-icons">table_chart</i>
+                        </a></li>
 
-                  <li><a href="./logo.html">Logo</a></li>
-                  <li><a href="./notifications.html">Notifications</a></li> 
-                  <li><a href="./tables.html">Tables</a></li>
-                  
-              </ul>
-              <ul class="list-unstyled components">
-                    <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
-              </ul>
-          </nav>
-        </div> <!-- END sidebar -->
-        <div class="col flex"><!-- Right Content  -->
-        <div id="content">
-            <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                        <div class="container-fluid">
-                            <!-- Navigation Top -->
+
+                </ul>
+                <ul class="list-unstyled components">
+                    <span class="large-screen-text">
+                        <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                    </span>
+                    <span class="small-screen-icon copyright">&copy; LCVTP</span>
+                </ul>
+            </nav>
+        </div> <!-- end sidebar -->
+        <div class="col flex"> <!-- Right Content  -->
+            <div id="content">
+                <!-- MAIN HEADER AND NAVIGATION -->
+                <header>
+                    <div class="container">
+                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                            <div class="container-fluid">
+                                <!-- Navigation Top -->
                                 <div id="head-nav">
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
-                                        <li class="nav-item collapse-btn" >
+                                        <li class="nav-item collapse-btn">
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                            <a id="sidebarCollapse"
+                                                class="nav-item material-symbols-outlined">menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">UI Library</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">library_books</i>
+                                                    &thinsp;UI Library</span>
                                                 <i class="small-screen-icon material-icons">library_books</i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span class="large-screen-text">Dashboard</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">dashboard</i>
+                                                    &thinsp;Dashboard</span>
                                                 <i class="small-screen-icon material-icons">dashboard</i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                            <div>
-                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                                <div>
+                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                        alt="">
+                                </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
+                        </nav>
+                    </div>
+                </header>
 
-            <!-- 
+
+                <!-- 
                 CHANGE THIS PART PLS THANKS
              -->
-            
-            
-             <!-- Page Contents -->
-             <div class="content-container container">
-                <h6>COMPONENTS</h6>
-                <h2>Lists</h2>
-                <p>Leader lists commonly serve the purpose of presenting statistical information, with labels positioned to the left and corresponding values to the right. These elements are separated by a continuous line of dotted dividers.</p>
-            
-                <h4 id="leader">Leader Lists</h4>
-                <p>Leader lists commonly serve the purpose of presenting statistical information, with labels positioned to the left and corresponding values to the right. These elements are separated by a continuous line of dotted dividers.</p>
-            
-                <!-- Lists Example-->
-                <div class="container">
-                    <h4>Example</h4>
-                    <div class="row"> <!-- Add a row to contain the columns -->
-                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                            <ul class="leaders"> <!-- Apply "leaders" class directly to the <ul> element -->
-                                <li>
-                                    <span class="text">List average</span> 
-                                    <span class="dot"></span>
-                                    <span class="text font-weight--bold">61.7%</span>
-                                </li> 
-                                <li>
-                                    <span class="text">Industry average</span> 
-                                    <span class="dot"></span>
-                                    <span class="text font-weight--bold">61.7%</span>
-                                </li> 
-                            </ul>
+
+
+                <!-- Page Contents -->
+                <div class="content-container container">
+                    <h6>COMPONENTS</h6>
+                    <h2>Lists</h2>
+                    <p>Leader lists commonly serve the purpose of presenting statistical information, with labels
+                        positioned to the left and corresponding values to the right. These elements are separated by a
+                        continuous line of dotted dividers.</p>
+
+                    <h4 id="leader" class="mt-3">Leader Lists</h4>
+                    <p>Leader lists commonly serve the purpose of presenting statistical information, with labels
+                        positioned to the left and corresponding values to the right. These elements are separated by a
+                        continuous line of dotted dividers.</p>
+
+                    <!-- Lists Example-->
+                    <div class="container">
+                        <h4>Example</h4>
+                        <div class="row"> <!-- Add a row to contain the columns -->
+                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <ul class="leaders"> <!-- Apply "leaders" class directly to the <ul> element -->
+                                    <li>
+                                        <span class="text">List average</span>
+                                        <span class="dot"></span>
+                                        <span class="text font-weight--bold">61.7%</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Industry average</span>
+                                        <span class="dot"></span>
+                                        <span class="text font-weight--bold">61.7%</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
 
-                <!-- Code Snippet Example-->
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                            <pre style="white-space: pre-line;">
+
+                    <!-- Code Snippet Example-->
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <pre style="white-space: pre-line;">
                                 &lt;ul class="leaders"&gt; 
                                 &lt;li&gt;
                                 &lt;span class="text"&gt;List average&lt;/span&gt; 
@@ -159,130 +241,139 @@
                                 &lt;/li&gt; 
                                 &lt;/ul&gt;
                             </pre>
-                        </div>
-                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                            <h4>Notes</h4>
-                            <p>Utilize the <span style="color: var(--pumpkin-500);">"leaders"</span> class for the  <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and employ <span style="color: var(--pumpkin-500);">&lt;span&gt;</span> tags to encompass labels and values within each list item, with dotted dividers between them.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Buttons - Outline -->
-                <div class="row mt-5">
-                    <h4 id="brand-colors" class="mb-3">Linear dots</h4>
-                    <p>To make a linear use the linear-list class in a ul element</p>
-                    <!--Linear Example-->
-                    <h4>Example</h4>
-                    <div class="row mt-5">
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <ul class="list-group">
-                                <li class="list-group-item">Item 1</li>
-                                <li class="list-group-item">Item 2</li>
-                                <li class="list-group-item">Item 3</li>
-                            </ul>
+                            </div>
+                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <h4>Notes</h4>
+                                <p>Utilize the <span style="color: var(--pumpkin-500);">"leaders"</span> class for the
+                                    <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and employ <span
+                                        style="color: var(--pumpkin-500);">&lt;span&gt;</span> tags to encompass labels
+                                    and values within each list item, with dotted dividers between them.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Code Snippet Example-->
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                            <pre style="white-space: pre-line;">
+                    <!-- Buttons - Outline -->
+                    <div class="row mt-5">
+                        <h4 id="brand-colors" class="mb-3">Linear dots</h4>
+                        <p>To make a linear use the linear-list class in a ul element</p>
+                        <!--Linear Example-->
+                        <h4>Example</h4>
+                        <div class="row mt-5">
+                            <div class="col-lg-3 col-md-6 mb-3">
+                                <ul class="list-group">
+                                    <li class="list-group-item">Item 1</li>
+                                    <li class="list-group-item">Item 2</li>
+                                    <li class="list-group-item">Item 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Snippet Example-->
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <pre style="white-space: pre-line;">
                                 &lt;ul class="list-group"&gt;
                                 &lt;li class="list-group-item"&gt;Item 1&lt;/li&gt;
                                 &lt;li class="list-group-item"&gt;Item 2&lt;/li&gt;
                                 &lt;li class="list-group-item"&gt;Item 3&lt;/li&gt;
                                 &lt;/ul&gt;
                             </pre>
-                        </div>
-                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                            <h4>Notes</h4>
-                            <p>Apply the <span style="color: var(--pumpkin-500);">"list-group"</span> class to the <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and Identify the state of <span style="color: var(--pumpkin-500);">&lt;li&gt;</span> elements with the <span style="color: var(--pumpkin-500);">"selected"</span> class.
+                            </div>
+                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <h4>Notes</h4>
+                                <p>Apply the <span style="color: var(--pumpkin-500);">"list-group"</span> class to the
+                                    <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and Identify the
+                                    state of <span style="color: var(--pumpkin-500);">&lt;li&gt;</span> elements with
+                                    the <span style="color: var(--pumpkin-500);">"selected"</span> class.
+                            </div>
                         </div>
                     </div>
-                </div>
-            
-                <!-- Activity Timeline -->
-                <!--Timeline 1-->
-                <div class="row mt-5">
-                    <div class="col">
-                        <div class="card card-shadow-dark">
-                            <div class="card-body" style="background-color: var(--shark-0);">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <!-- Left side for image input -->
-                                        <!-- Place your image input or content here -->
-                                        <p>Image Input</p>
-                                    </div>
-                                    <div class="col-9">
-                                        <!-- Right side content -->
-                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
-                                        <p>
-                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
-                                        </p>
+
+                    <!-- Activity Timeline -->
+                    <!--Timeline 1-->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card card-shadow-dark">
+                                <div class="card-body" style="background-color: var(--shark-0);">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <!-- Left side for image input -->
+                                            <!-- Place your image input or content here -->
+                                            <p>Image Input</p>
+                                        </div>
+                                        <div class="col-9">
+                                            <!-- Right side content -->
+                                            <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                            <p>
+                                                Nice! Guess people like what you're saying. Here are a few:
+                                                freddie@mailchimp.com.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--Timeline 2-->
-                <div class="row mt-5">
-                    <div class="col">
-                        <div class="card card-shadow-dark">
-                            <div class="card-body" style="background-color: var(--shark-0);">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <!-- Left side for image input -->
-                                        <!-- Place your image input or content here -->
-                                        <p>Image Input</p>
-                                    </div>
-                                    <div class="col-9">
-                                        <!-- Right side content -->
-                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
-                                        <p>
-                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                  
-                
-                <!--Timeline 3-->
-                <div class="row mt-5">
-                    <div class="col">
-                        <div class="card card-shadow-dark">
-                            <div class="card-body" style="background-color: var(--shark-0);">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <!-- Left side for image input -->
-                                        <!-- Place your image input or content here -->
-                                        <p>Image Input</p>
-                                    </div>
-                                    <div class="col-9">
-                                        <!-- Right side content -->
-                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
-                                        <p>
-                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
-                                        </p>
+                    <!--Timeline 2-->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card card-shadow-dark">
+                                <div class="card-body" style="background-color: var(--shark-0);">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <!-- Left side for image input -->
+                                            <!-- Place your image input or content here -->
+                                            <p>Image Input</p>
+                                        </div>
+                                        <div class="col-9">
+                                            <!-- Right side content -->
+                                            <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                            <p>
+                                                Nice! Guess people like what you're saying. Here are a few:
+                                                freddie@mailchimp.com.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            
-            <!-- Code Snippet Example-->
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                        <pre style="white-space: pre-line;">
+
+
+
+                    <!--Timeline 3-->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div class="card card-shadow-dark">
+                                <div class="card-body" style="background-color: var(--shark-0);">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <!-- Left side for image input -->
+                                            <!-- Place your image input or content here -->
+                                            <p>Image Input</p>
+                                        </div>
+                                        <div class="col-9">
+                                            <!-- Right side content -->
+                                            <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                            <p>
+                                                Nice! Guess people like what you're saying. Here are a few:
+                                                freddie@mailchimp.com.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Code Snippet Example-->
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <pre style="white-space: pre-line;">
                             &lt;!-- Primary --&gt;
                             &lt;button class="custom-button btn btn-border-1" style="background: var(--grad-pumpkin);"&gt;Primary&lt;
                             /button&gt;
@@ -297,35 +388,45 @@
                             /button&gt;
 
                         </pre>
+                            </div>
+                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <h4>Notes</h4>
+                                <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation
+                                    elements and are designed with a custom style, featuring a thin border. They are
+                                    each labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be
+                                    utilized for navigation or interaction within a user interface.</p>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                        <h4>Notes</h4>
-                        <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation elements and are designed with a custom style, featuring a thin border. They are each labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be utilized for navigation or interaction within a user interface.</p>
-                        
-                    </div>
-                </div>
-            </div>
-               
-            </div> <!-- END Page Contents -->
-          </div> <!--END right side container -->
-          
-    </div> <!-- END wrapper -->
-    
-        
-    <!-- 
+
+                </div> <!-- END Page Contents -->
+            </div> <!--END right side container -->
+
+        </div> <!-- END wrapper -->
+
+
+        <!-- 
       !!!!!!!!!!!
       SCRIPTS PLS DONT DELETE BELOW THIS
       !!!!!!!!!!!!!
     -->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
 
-    <!-- Our Main JS -->
-    <script src="./scripts/main.js"></script>
+        <!-- Our Main JS -->
+        <script src="./scripts/main.js"></script>
 </body>
+
 </html>

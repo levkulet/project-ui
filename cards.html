@@ -1,138 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
-  <title>Plug Streaming</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
+    <title>Plug Streaming</title>
 
     <!-- Bootstrap CSS CDN -->
-    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./style/cards.css">
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="./style/cards.css">
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
 <body>
-      <div class="wrapper"> <!-- Main wrapper -->
-        <div class="flex-column "> <!-- Sidebar  -->
-          <nav id="sidebar">
-              <div class="sidebar-header">
-                  <img src="./style/images/logo-160.png" alt="logo-160"> <h3>UI Library</h3>
-              </div>
+    <div class="wrapper"><!-- Main wrapper -->
+        <div class="flex-wrap"><!-- Sidebar  -->
+            <nav id="sidebar" class="custom-sidebar">
+                <div class="sidebar-header">
+                    <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
+                    <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
+                    <h3>UI Library</h3>
+                </div>
+                    
+                    <ul class="list-unstyled components">
 
-              <ul class="list-unstyled components">
-                <h5>FOUNDATIONS</h5>
-                <li><a href="index.html">Color</a></li>
-                <li><a href="./data_visualization.html">Data Visualization</a></li>
-                <li><a href="./grid.html">Grid System</a></li>
-                <li><a href="./typography.html">Typography</a></li>
-
-                <h5>COMPONENTS</h5>
-                <li><a href="./buttons.html">Buttons</a> </li>
-                <li class="active">
-                    <a href="./cards.html" data-toggle="collapse" 
-                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Cards</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <span class="large-screen-text">
+                            <h5>FOUNDATIONS</h5>
+                        </span>
+                        <span class="small-screen-icon">
+                            <ul class="list-unstyled components"></ul>
+                        </span>
                         <li>
-                            <a class="active-a" href="#dark-card">Dark Card</a>
+                            <a href="index.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">palette</i>
+                                    &thinsp;Color</span>
+                                <i class="small-screen-icon material-icons">palette</i>
+                            </a>
                         </li>
+                        <li><a href="./data_visualization.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">query_stats</i>
+                                    &thinsp;Data Visualization</span>
+                                <i class="small-screen-icon material-icons">query_stats</i>
+                            </a></li>
+                        <li><a href="./grid.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">apps</i>
+                                    &thinsp;Grid System</span>
+                                <i class="small-screen-icon material-icons">apps</i>
+                            </a></li>
+                        <li><a href="./typography.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">text_format</i>
+                                    &thinsp;Typography</span>
+                                <i class="small-screen-icon material-icons">text_format</i>
+                            </a></li>
+    
+                        <span class="large-screen-text">
+                            <h5>COMPONENTS</h5>
+                        </span>
+                        <span class="small-screen-icon">
+                            <ul class="list-unstyled components"></ul>
+                        </span>
+    
+                        <li><a href="./buttons.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">smart_button</i>
+                                    &thinsp;Buttons</span>
+                                <i class="small-screen-icon material-icons">smart_button</i>
+                            </a></li>
+                    <li class="active">
+                        <a href="./cards.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
+                            class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                            <span class="large-screen-text">
+                                <i class="material-icons">dashboard_customize</i>
+                                &thinsp;Cards</span>
+                            <i class="small-screen-icon material-icons">dashboard_customize</i>
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a class="active-a" href="#dark-card">Dark Card</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#light-card">Light Card</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#gradient-card">Gradient Card</a>
+                            </li>
+                        </ul>
+                    </li> 
+                        <li><a href="./form_elements.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">check_box</i>
+                                    &thinsp;Form Elements</span>
+                                <i class="small-screen-icon material-icons">check_box</i>
+                            </a></li>
+                        <li><a href="./lists.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">list</i>
+                                    &thinsp;Lists</span>
+                                <i class="small-screen-icon material-icons">list</i>
+                            </a></li>
+                        <li><a href="./logo.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">image</i>
+                                    &thinsp;Logo</span>
+                                <i class="small-screen-icon material-icons">image</i>
+                            </a></li>
+                        <li><a href="./notifications.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">announcement</i>
+                                    &thinsp;Notifications</span>
+                                <i class="small-screen-icon material-icons">announcement</i>
+                            </a></li>
+                        <li><a href="./tables.html">
+                                <span class="large-screen-text">
+                                    <i class="material-icons">table_chart</i>
+                                    &thinsp;Table</span>
+                                <i class="small-screen-icon material-icons">table_chart</i>
+                            </a></li>
+    
+    
                     </ul>
-                </li>
-                <li><a href="./form_elements.html">Form Elements</a></li>
-                <li><a href="./lists.html">Lists</a></li>
-                <li><a href="./logo.html">Logo</a></li>
-                <li><a href="./notifications.html">Notifications</a></li> 
-                <li><a href="./tables.html">Tables</a></li>
-                   
-              </ul>
-              <ul class="list-unstyled components">
-                <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
-            </ul>
-          </nav>
-        </div> <!-- END sidebar -->
-        <div class="col flex"><!-- Right Content  -->
-        <div id="content">
-            <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                        <div class="container-fluid">
-                            <!-- Navigation Top -->
+                    <ul class="list-unstyled components">
+                        <span class="large-screen-text">
+                            <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                        </span>
+                        <span class="small-screen-icon copyright">&copy; LCVTP</span>
+                    </ul>      
+            </nav>
+        </div> <!-- end sidebar -->
+        <div class="col flex"> <!-- Right Content  -->
+            <div id="content">
+                <!-- MAIN HEADER AND NAVIGATION -->
+                <header>
+                    <div class="container">
+                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                            <div class="container-fluid">
+                                <!-- Navigation Top -->
                                 <div id="head-nav">
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
-                                        <li class="nav-item collapse-btn" >
+                                        <li class="nav-item collapse-btn">
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                            <a id="sidebarCollapse"
+                                                class="nav-item material-symbols-outlined">menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">UI Library</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">library_books</i>
+                                                    &thinsp;UI Library</span>
                                                 <i class="small-screen-icon material-icons">library_books</i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span class="large-screen-text">Dashboard</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">dashboard</i>
+                                                    &thinsp;Dashboard</span>
                                                 <i class="small-screen-icon material-icons">dashboard</i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                            <div>
-                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            
-
-            <!-- 
-                CHANGE THIS PART PLS THANKS
-             -->
-            
-            
-             <!-- Page Contents -->
-            <div class="content-container container">
-                <h6>COMPONENTS</h6>
-                <h2>Cards</h2>
-                <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
-                
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Left Side (Column for Card) -->
-                        <div class="col">
-                            <div class="card card-shadow-dark">
-                                <div class="card-body" style="background-color: var(--shark-0);">
-                                    <h4 class="card-title">Card that doesn't feature any images.</h4>
-                                    <div class="line"></div>
-                                    <p class="">
-                                        <p> This card template is intentionally designed without a dedicated image section, offering you the freedom to customize its content without a specific image element."</p>
-                                    </p>
+                                <div>
+                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                        alt="">
                                 </div>
                             </div>
-                        </div>
-
+                        </nav>
                     </div>
+                </header>
+
+
+                <!-- 
+                CHANGE THIS PART PLS THANKS
+             -->
+
+
+                <!-- Page Contents -->
+                <div class="content-container container">
+                    <h6>COMPONENTS</h6>
+                    <h2>Cards</h2>
+                    <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis
+                        and create associations. Color should only be used to attract attention.</p>
+
+                    <div class="container">
+                        <div class="row">
+
+                            <!-- Left Side (Column for Card) -->
+                            <div class="col">
+                                <div class="card card-shadow-dark">
+                                    <div class="card-body" style="background-color: var(--shark-0);">
+                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                        <div class="line"></div>
+                                        <p class="">
+                                        <p> This card template is intentionally designed without a dedicated image
+                                            section, offering you the freedom to customize its content without a
+                                            specific image element."</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
 
                         <!-- Code Snippet Example-->
                         <div class=" mt-5">
                             <div class="row">
-                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <div class="col-md-7 col-sm-12">
+                                    <!-- Larger column for pre on medium and small screens -->
                                     <pre style="white-space: pre-line;">
                                         &lt;-- No Image Card --&gt;
                                         &lt;div class="card card-shadow-dark"&gt;
@@ -143,19 +235,23 @@
                                         &lt;/div&gt;
                                     </pre>
                                 </div>
-                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>This is a dark-themed card with a title and content, featuring a light horizontal line for separation. The content for this card is missing</p>
+                                    <p>This is a dark-themed card with a title and content, featuring a light horizontal
+                                        line for separation. The content for this card is missing</p>
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="row mt-3 mb-2">
                             <div class="col">
                                 <div class="card-dark card-shadow-dark">
-                                        <h4 class="light-card-title"> Dark Card</h4>
-                                        <div class="line"></div>
-                                        <p class="light-card-content">This is a dark-themed card with a title and content. It includes a subtle shadow and a horizontal line for separation. The content for this card is missing."</p>
+                                    <h4 id="dark-card" class="light-card-title"> Dark Card</h4>
+                                    <div class="line"></div>
+                                    <p class="light-card-content">This is a dark-themed card with a title and content.
+                                        It includes a subtle shadow and a horizontal line for separation. The content
+                                        for this card is missing."</p>
                                 </div>
                             </div>
                         </div>
@@ -163,25 +259,26 @@
                         <div class="row mt-3 mb-2">
                             <div class="col-md-6">
                                 <div class="card-dark-md card-shadow-dark">
-                                        <h4 class="light-card-title"> Dark Card - Medium Size</h4>
-                                        <div class="line"></div>
-                                        <p class="light-card-content">Medium-sized dark card without an image.</p>
+                                    <h4 class="light-card-title"> Dark Card - Medium Size</h4>
+                                    <div class="line"></div>
+                                    <p class="light-card-content">Medium-sized dark card without an image.</p>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="card-dark-md card-shadow-dark">
-                                        <h4 class="light-card-title"> Dark Card - Medium Size</h4>
-                                        <div class="line"></div>
-                                        <p class="light-card-content">Medium-sized dark card without an image.</p>
+                                    <h4 class="light-card-title"> Dark Card - Medium Size</h4>
+                                    <div class="line"></div>
+                                    <p class="light-card-content">Medium-sized dark card without an image.</p>
                                 </div>
                             </div>
                         </div>
 
-                         <!-- Code Snippet Example-->
-                         <div class=" mt-5">
+                        <!-- Code Snippet Example-->
+                        <div class=" mt-5">
                             <div class="row">
-                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <div class="col-md-7 col-sm-12">
+                                    <!-- Larger column for pre on medium and small screens -->
                                     <pre style="white-space: pre-line;">
                                         &lt;-- Dark Card --&gt;
                                         &lt;div class="card-dark card-shadow-dark"&gt;
@@ -191,22 +288,26 @@
                                         &lt;/div&gt;
                                     </pre>
                                 </div>
-                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>This is a dark-themed card with a title, content, and a horizontal line for separation. The content for this card is currently empty."</p>
+                                    <p>This is a dark-themed card with a title, content, and a horizontal line for
+                                        separation. The content for this card is currently empty."</p>
                                 </div>
                             </div>
                         </div>
 
 
-                        
+
 
                         <div class="row mt-3 mb-2">
                             <div class="col">
                                 <div class="card-light card-shadow-light">
-                                        <h4 class="dark-card-title">Light Card</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="dark-card-content"> This is a light-themed card with a dark title and content. It features a dark horizontal line for separation and can accommodate images, but not in predefined layouts (top, left, or right).</p>
+                                    <h4 id="light-card" class="dark-card-title">Light Card</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="dark-card-content"> This is a light-themed card with a dark title and
+                                        content. It features a dark horizontal line for separation and can accommodate
+                                        images, but not in predefined layouts (top, left, or right).</p>
                                 </div>
                             </div>
                         </div>
@@ -214,25 +315,26 @@
                         <div class="row mt-3 mb-2">
                             <div class="col-md-6">
                                 <div class="card-light-md card-shadow-dark">
-                                        <h4 class="dark-card-title"> Light Card - Medium Size</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="dark-card-content">Medium-sized light card without an image.</p>
+                                    <h4 class="dark-card-title"> Light Card - Medium Size</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="dark-card-content">Medium-sized light card without an image.</p>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="card-light-md card-shadow-dark">
-                                        <h4 class="dark-card-title"> Light Card - Medium Size</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="dark-card-content">Medium-sized light card without an image.</p>
+                                    <h4 class="dark-card-title"> Light Card - Medium Size</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="dark-card-content">Medium-sized light card without an image.</p>
                                 </div>
                             </div>
                         </div>
 
-                         <!-- Code Snippet Example-->
-                         <div class=" mt-5">
+                        <!-- Code Snippet Example-->
+                        <div class=" mt-5">
                             <div class="row">
-                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <div class="col-md-7 col-sm-12">
+                                    <!-- Larger column for pre on medium and small screens -->
                                     <pre style="white-space: pre-line;">
                                         &lt;-- Light Card --&gt;
                                         &lt;div class="card-light card-shadow-light"&gt;
@@ -242,9 +344,12 @@
                                         &lt;/div&gt;
                                     </pre>
                                 </div>
-                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                   <p>This is a light-themed card with a dark title and content. It includes a dark horizontal line for separation. The content for this card is currently empty.</p>
+                                    <p>This is a light-themed card with a dark title and content. It includes a dark
+                                        horizontal line for separation. The content for this card is currently empty.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -252,9 +357,11 @@
                         <div class="row mt-3 mb-2">
                             <div class="col">
                                 <div class="card-gradient card-shadow-gradient">
-                                        <h4 class="dark-card-title">Gradient Card</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="dark-card-content"> A gradient-themed card with a dark title and content. It features a dark horizontal line for separation. The content is currently empty.</p>
+                                    <h4 id="gradient-card" class="dark-card-title">Gradient Card</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="dark-card-content"> A gradient-themed card with a dark title and content.
+                                        It features a dark horizontal line for separation. The content is currently
+                                        empty.</p>
                                 </div>
                             </div>
                         </div>
@@ -262,26 +369,27 @@
                         <div class="row mt-3 mb-2">
                             <div class="col-md-6">
                                 <div class="card-gradient-md card-shadow-gradient">
-                                        <h4 class="light-card-title">Gradient Card</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="light-card-content">Gradient-sized dark card without an image.</p>
+                                    <h4 class="light-card-title">Gradient Card</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="light-card-content">Gradient-sized dark card without an image.</p>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="card-gradient-md card-shadow-gradient">
-                                        <h4 class="light-card-title">Gradient Card</h4>
-                                        <div class="line color-dark"></div>
-                                        <p class="light-card-content">Gradient-sized dark card without an image.</p>
+                                    <h4 class="light-card-title">Gradient Card</h4>
+                                    <div class="line color-dark"></div>
+                                    <p class="light-card-content">Gradient-sized dark card without an image.</p>
                                 </div>
                             </div>
                         </div>
-                        
 
-                         <!-- Code Snippet Example-->
-                         <div class=" mt-5">
+
+                        <!-- Code Snippet Example-->
+                        <div class=" mt-5">
                             <div class="row">
-                                <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                                <div class="col-md-7 col-sm-12">
+                                    <!-- Larger column for pre on medium and small screens -->
                                     <pre style="white-space: pre-line;">
                                         &lt;-- Gradient Card --&gt;
                                         &lt;div class="card-gradient card-shadow-gradient"&gt;
@@ -291,38 +399,47 @@
                                         &lt;/div&gt;
                                     </pre>
                                 </div>
-                                <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Smaller column for p on medium and small screens -->
                                     <h4>Notes</h4>
-                                    <p>This is a gradient-themed card with a dark title and content. It includes a dark horizontal line for separation and currently has no specific content.</p>
+                                    <p>This is a gradient-themed card with a dark title and content. It includes a dark
+                                        horizontal line for separation and currently has no specific content.</p>
                                 </div>
                             </div>
                         </div>
-                        
-                </div> <!-- END -->
-              
-                
-    
-               
-            </div> <!-- END Page Contents -->
-          </div> <!--END right side container -->
-    </div> <!-- END wrapper -->
+
+                    </div> <!-- END -->
 
 
-    <!-- 
+
+
+                </div> <!-- END Page Contents -->
+            </div> <!--END right side container -->
+        </div> <!-- END wrapper -->
+
+
+        <!-- 
       !!!!!!!!!!!
       SCRIPTS PLS DONT DELETE BELOW THIS
       !!!!!!!!!!!!!
     -->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
 
-    <!-- Our Main JS -->
-    <script src="./scripts/main.js"></script>
+        <!-- Our Main JS -->
+        <script src="./scripts/main.js"></script>
 
 </body>
+
 </html>

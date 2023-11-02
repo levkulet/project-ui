@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
     <title>Plug Streaming</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
@@ -17,27 +19,32 @@
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="flex-wrap">
-            <!-- Sidebar  -->
+    <div class="wrapper"><!-- Main wrapper -->
+        <div class="flex-wrap"><!-- Sidebar  -->
             <nav id="sidebar" class="custom-sidebar">
                 <div class="sidebar-header">
                     <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
                     <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
                     <h3>UI Library</h3>
                 </div>
-    
+
                 <ul class="list-unstyled components">
-                    
-                    <span class="large-screen-text"><h5>FOUNDATIONS</h5></span>
-                    <span class="small-screen-icon"><ul class="list-unstyled components"></ul></span>
+
+                    <span class="large-screen-text">
+                        <h5>FOUNDATIONS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
                     <li class="active">
-                        <a href="index.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                        <a href="index.html" data-toggle="collapse" data-target="#homeSubmenu" aria-expanded="true"
+                            class="dropdown-toggle" onclick="toggleSubMenu(event)">
                             <span class="large-screen-text">
                                 <i class="material-icons">palette</i>
                                 &thinsp;Color</span>
@@ -48,91 +55,96 @@
                                 <a class="active-a" href="#brand-colors">Brand Colors</a>
                             </li>
                             <li>
-                                <a  class="active-a" href="#neutral-colors">Neutral Colors</a>
+                                <a class="active-a" href="#neutral-colors">Neutral Colors</a>
                             </li>
                             <li>
-                                <a  class="active-a" href="#accent-colors">Accent Colors</a>
+                                <a class="active-a" href="#accent-colors">Accent Colors</a>
                             </li>
                             <li>
-                                <a  class="active-a" href="#feedback-colors">Feedback Colors</a>
+                                <a class="active-a" href="#feedback-colors">Feedback Colors</a>
                             </li>
                             <li>
-                                <a  class="active-a" href="#gradient-colors">Gradient Colors</a>
+                                <a class="active-a" href="#gradient-colors">Gradient Colors</a>
                             </li>
                             <li>
-                                <a  class="active-a" href="#alpha-colors">Alpha Colors</a>
+                                <a class="active-a" href="#alpha-colors">Alpha Colors</a>
                             </li>
                         </ul>
                     </li>
                     <li><a href="./data_visualization.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">query_stats</i>
-                            &thinsp;Data Visualization</span>
-                        <i class="small-screen-icon material-icons">query_stats</i>
-                    </a></li>
+                            <span class="large-screen-text">
+                                <i class="material-icons">query_stats</i>
+                                &thinsp;Data Visualization</span>
+                            <i class="small-screen-icon material-icons">query_stats</i>
+                        </a></li>
                     <li><a href="./grid.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">apps</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">apps</i>
                                 &thinsp;Grid System</span>
-                        <i class="small-screen-icon material-icons">apps</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">apps</i>
+                        </a></li>
                     <li><a href="./typography.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">text_format</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">text_format</i>
                                 &thinsp;Typography</span>
-                        <i class="small-screen-icon material-icons">text_format</i>
-                    </a></li>
-                    
-                    <span class="large-screen-text"><h5>COMPONENTS</h5></span>
-                    <span class="small-screen-icon"><ul class="list-unstyled components"></ul></span>
+                            <i class="small-screen-icon material-icons">text_format</i>
+                        </a></li>
+
+                    <span class="large-screen-text">
+                        <h5>COMPONENTS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
 
                     <li><a href="./buttons.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">smart_button</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">smart_button</i>
                                 &thinsp;Buttons</span>
-                        <i class="small-screen-icon material-icons">smart_button</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">smart_button</i>
+                        </a></li>
                     <li><a href="./cards.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">dashboard_customize</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">dashboard_customize</i>
                                 &thinsp;Cards</span>
-                        <i class="small-screen-icon material-icons">dashboard_customize</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">dashboard_customize</i>
+                        </a>
+                    </li>
                     <li><a href="./form_elements.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">check_box</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">check_box</i>
                                 &thinsp;Form Elements</span>
-                        <i class="small-screen-icon material-icons">check_box</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">check_box</i>
+                        </a></li>
                     <li><a href="./lists.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">list</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">list</i>
                                 &thinsp;Lists</span>
-                        <i class="small-screen-icon material-icons">list</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">list</i>
+                        </a></li>
                     <li><a href="./logo.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">image</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">image</i>
                                 &thinsp;Logo</span>
-                        <i class="small-screen-icon material-icons">image</i>
-                    </a></li>
+                            <i class="small-screen-icon material-icons">image</i>
+                        </a></li>
                     <li><a href="./notifications.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">announcement</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">announcement</i>
                                 &thinsp;Notifications</span>
-                        <i class="small-screen-icon material-icons">announcement</i>
-                    </a></li> 
+                            <i class="small-screen-icon material-icons">announcement</i>
+                        </a></li>
                     <li><a href="./tables.html">
-                        <span class="large-screen-text">
-                            <i class="material-icons">table_chart</i>
+                            <span class="large-screen-text">
+                                <i class="material-icons">table_chart</i>
                                 &thinsp;Table</span>
-                        <i class="small-screen-icon material-icons">table_chart</i>
-                    </a></li>
-                    
-                     
+                            <i class="small-screen-icon material-icons">table_chart</i>
+                        </a></li>
+
+
                 </ul>
                 <ul class="list-unstyled components">
-                    <span class="large-screen-text"> 
+                    <span class="large-screen-text">
                         <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
                     </span>
                     <span class="small-screen-icon copyright">&copy; LCVTP</span>
@@ -141,17 +153,18 @@
         </div> <!-- end sidebar -->
         <div class="col flex"> <!-- Right Content  -->
             <div id="content">
-            <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                        <div class="container-fluid">
-                            <!-- Navigation Top -->
+                <!-- MAIN HEADER AND NAVIGATION -->
+                <header>
+                    <div class="container">
+                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                            <div class="container-fluid">
+                                <!-- Navigation Top -->
                                 <div id="head-nav">
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
-                                        <li class="nav-item collapse-btn" >
+                                        <li class="nav-item collapse-btn">
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined" >menu_open</a>
+                                            <a id="sidebarCollapse"
+                                                class="nav-item material-symbols-outlined">menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
@@ -171,21 +184,27 @@
                                         </li>
                                     </ul>
                                 </div>
-                            <div>
-                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                                <div>
+                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                        alt="">
+                                </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            
-                
+                        </nav>
+                    </div>
+                </header>
+
+
                 <!-- Page Contents -->
                 <div class="content-container container">
                     <h6>FOUNDATIONS</h6>
                     <h2>Colors</h2>
-                    <p>Color is the heartbeat of design. Our UI library's color guidelines provide you with a comprehensive palette of CSS variables that you can seamlessly integrate into your projects. These variables enable you to express emotions, set the tone, emphasize critical elements, and establish meaningful associations throughout your designs. Beyond just visual appeal, our color guidelines are a technical resource, empowering you with the tools to craft your own color stories and maintain design consistency.
+                    <p>Color is the heartbeat of design. Our UI library's color guidelines provide you with a
+                        comprehensive palette of CSS variables that you can seamlessly integrate into your projects.
+                        These variables enable you to express emotions, set the tone, emphasize critical elements, and
+                        establish meaningful associations throughout your designs. Beyond just visual appeal, our color
+                        guidelines are a technical resource, empowering you with the tools to craft your own color
+                        stories and maintain design consistency.
                     </p>
                     <section>
                         <div class="container">
@@ -195,9 +214,9 @@
                                     <p>Explore our brand's signature color, inspired by our logo's distinctive hue.</p>
                                     <div class="col color-box" style="background-color: var(--pumpkin-500);">
                                         <div class="color-details">
-                                          <p class="color-name">Pumpkin</p>
-                                          <p class="color-name">--pumpkin-500</p>
-                                          <p class="color-code">#ff7119</p>
+                                            <p class="color-name">Pumpkin</p>
+                                            <p class="color-name">--pumpkin-500</p>
+                                            <p class="color-code">#ff7119</p>
                                         </div>
                                     </div>
                                 </div>
@@ -206,68 +225,70 @@
                                         <div class="color-details">
                                             <p class="color-name color-dark ">--pumpkin-50</p>
                                             <p class="color-code color-dark">#fff7ed</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-100);">
                                         <div class="color-details">
                                             <p class="color-name color-dark ">--pumpkin-100</p>
                                             <p class="color-code color-dark">#ffecd4</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-200);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--pumpkin-200</p>
                                             <p class="color-code color-dark">#ffd5a8</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-300);">
                                         <div class="color-details ">
                                             <p class="color-name color-dark ">--pumpkin-300</p>
                                             <p class="color-code color-dark">#ffb670</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-400);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--pumpkin-400</p>
                                             <p class="color-code color-dark">#ff8c37</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-600);">
                                         <div class="color-details">
                                             <p class="color-name">--pumpkin-600</p>
                                             <p class="color-code">#f05006</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-700);">
                                         <div class="color-details">
                                             <p class="color-name">--pumpkin-700</p>
                                             <p class="color-code">#c73a07</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-800);">
                                         <div class="color-details">
                                             <p class="color-name">--pumpkin-800</p>
                                             <p class="color-code">#9e2e0e</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--pumpkin-900);">
                                         <div class="color-details">
                                             <p class="color-name">--pumpkin-900</p>
                                             <p class="color-code">#7f290f</p>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div> <!-- END -->
-    
+
                             <div class="mt-5"> <!-- NEUTRAL COLORS -->
                                 <div class="row">
                                     <h4 id="neutral-colors" class="mb-3">Neutral Colors</h4>
-                                    <p>Dive into our neutral colors – the foundation of versatile design, offering simplicity and elegance for your projects.</p>
-                                    <div class="col color-box" style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
+                                    <p>Dive into our neutral colors – the foundation of versatile design, offering
+                                        simplicity and elegance for your projects.</p>
+                                    <div class="col color-box"
+                                        style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
                                         <div class="color-details">
-                                          <p class="color-name">Shark</p>
-                                          <p class="color-name">--shark-100</p>
-                                          <p class="color-code">#1D2125</p>
+                                            <p class="color-name">Shark</p>
+                                            <p class="color-name">--shark-100</p>
+                                            <p class="color-code">#1D2125</p>
                                         </div>
                                     </div>
                                 </div>
@@ -276,49 +297,49 @@
                                         <div class="color-details">
                                             <p class="color-name color-dark ">--mystic-0</p>
                                             <p class="color-code color-dark">#f5f7f9</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-1100);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--shark-1100</p>
                                             <p class="color-code color-dark">#dee4ea</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-1000);">
                                         <div class="color-details ">
                                             <p class="color-name color-dark ">--shark-1000</p>
                                             <p class="color-code color-dark">#C7D1DB</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-900);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--shark-900</p>
                                             <p class="color-code color-dark">#B6C2CF</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-800);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-800</p>
                                             <p class="color-code">#9FADBC</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-700);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-700</p>
                                             <p class="color-code">#8C9BAB</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-600);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-600</p>
                                             <p class="color-code">#738496</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-500);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-500</p>
                                             <p class="color-code">#596773</p>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div> <!-- row -->
                                 <div class="row">
@@ -326,65 +347,66 @@
                                         <div class="color-details">
                                             <p class="color-name ">--shark-400</p>
                                             <p class="color-code ">#454F59</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-350);">
                                         <div class="color-details">
                                             <p class="color-name ">--shark-350</p>
                                             <p class="color-code ">#38414A</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-300);">
                                         <div class="color-details ">
                                             <p class="color-name">--shark-300</p>
                                             <p class="color-code">#2C333A</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-250);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-250</p>
                                             <p class="color-code">#282E33</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-200);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-200</p>
                                             <p class="color-code">#22272B</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-100);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-100</p>
                                             <p class="color-code">#1D2125</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-0);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-0</p>
                                             <p class="color-code">#161A1D</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--shark-less100);">
                                         <div class="color-details">
                                             <p class="color-name">--shark-less100</p>
                                             <p class="color-code">#101214</p>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div> <!-- row -->
-                                
+
                             </div> <!-- END neutral-->
-    
+
                             <div class="mt-5"><!-- ACCENT COLORS -->
                                 <div class="row">
                                     <h4 id="accent-colors" class="mb-3">Accent Colors</h4>
                                     <p>
-                                        Accentuate your designs with our vibrant accent colors, adding a touch of personality and flair to your projects.
+                                        Accentuate your designs with our vibrant accent colors, adding a touch of
+                                        personality and flair to your projects.
                                     </p>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-500);">
                                         <div class="color-details">
-                                          <p class="color-name">Breaker Bay</p>
-                                          <p class="color-name">--breaker-bay-500</p>
-                                          <p class="color-code">#2fa4a8</p>
+                                            <p class="color-name">Breaker Bay</p>
+                                            <p class="color-name">--breaker-bay-500</p>
+                                            <p class="color-code">#2fa4a8</p>
                                         </div>
                                     </div>
                                 </div>
@@ -393,63 +415,63 @@
                                         <div class="color-details">
                                             <p class="color-name color-dark">--breaker-bay-50</p>
                                             <p class="color-code color-dark">#f2fbfa</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-100);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--breaker-bay-100</p>
                                             <p class="color-code color-dark">#d3f4f2</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-200);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--breaker-bay-200</p>
                                             <p class="color-code color-dark">#a7e8e4</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-300);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--breaker-bay-300</p>
                                             <p class="color-code color-dark">#73d5d4</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-400);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--breaker-bay-400</p>
                                             <p class="color-code color-dark">#46b9bb</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-600);">
                                         <div class="color-details">
                                             <p class="color-name">--breaker-bay-600</p>
                                             <p class="color-code">#217b80</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-700);">
                                         <div class="color-details">
                                             <p class="color-name">--breaker-bay-700</p>
                                             <p class="color-code">#1e6367</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-800);">
                                         <div class="color-details">
                                             <p class="color-name">--breaker-bay-800</p>
                                             <p class="color-code">#1d4d52</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--breaker-bay-900);">
                                         <div class="color-details">
                                             <p class="color-name">--breaker-bay-900</p>
                                             <p class="color-code">#1c4245</p>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background-color: var(--eminence-900);">
                                         <div class="color-details">
-                                          <p class="color-name">Eminence</p>
-                                          <p class="color-name">--eminence-900</p>
-                                          <p class="color-code">#5f2680</p>
+                                            <p class="color-name">Eminence</p>
+                                            <p class="color-name">--eminence-900</p>
+                                            <p class="color-code">#5f2680</p>
                                         </div>
                                     </div>
                                 </div>
@@ -458,236 +480,249 @@
                                         <div class="color-details">
                                             <p class="color-name color-dark">--eminence-50</p>
                                             <p class="color-code color-dark">#fbf6fe</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-100);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--eminence-100</p>
                                             <p class="color-code color-dark">#f4eafd</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-200);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--eminence-200</p>
                                             <p class="color-code color-dark">#ebd9fb</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-300);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--eminence-300</p>
                                             <p class="color-code color-dark">#ddbaf8</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-400);">
                                         <div class="color-details">
                                             <p class="color-name color-dark">--eminence-400</p>
                                             <p class="color-code color-dark">#c78ef2</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-600);">
                                         <div class="color-details">
                                             <p class="color-name">--eminence-600</p>
                                             <p class="color-code">#9d43da</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-700);">
                                         <div class="color-details">
                                             <p class="color-name">--eminence-700</p>
                                             <p class="color-code">#8731bf</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-800);">
                                         <div class="color-details">
                                             <p class="color-name">--eminence-800</p>
                                             <p class="color-code">#722d9c</p>
-                                          </div>
+                                        </div>
                                     </div>
                                     <div class="col color-box" style="background-color: var(--eminence-900);">
                                         <div class="color-details">
                                             <p class="color-name">--eminence-900</p>
                                             <p class="color-code">#5f2680</p>
-                                          </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div> <!-- END accent -->
-                        
+
                             <div class="mt-5"><!-- FEEDBACK COLORS -->
                                 <div class="row">
                                     <h4 id="feedback-colors" class="mb-3">Feedback Colors</h4>
-                                    <p>Elevate user interaction with our feedback colors, signaling informative messages and interactions with clarity and precision.</p>
+                                    <p>Elevate user interaction with our feedback colors, signaling informative messages
+                                        and interactions with clarity and precision.</p>
                                     <div class="col color-box" style="background-color: var(--success-color);">
                                         <div class="color-details">
-                                          <p class="color-name">Success</p>
-                                          <p class="color-name">--success-color</p>
-                                          <p class="color-code">#299d13</p>
+                                            <p class="color-name">Success</p>
+                                            <p class="color-name">--success-color</p>
+                                            <p class="color-code">#299d13</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background-color: var(--info-color);">
                                         <div class="color-details">
-                                          <p class="color-name">Info</p>
-                                          <p class="color-name">--info-color</p>
-                                          <p class="color-code">#46b9bb</p>
+                                            <p class="color-name">Info</p>
+                                            <p class="color-name">--info-color</p>
+                                            <p class="color-code">#46b9bb</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background-color: var(--warning-color);">
                                         <div class="color-details">
-                                          <p class="color-name">Warning</p>
-                                          <p class="color-name">--warning-color</p>
-                                          <p class="color-code">#2fa4a8</p>
+                                            <p class="color-name">Warning</p>
+                                            <p class="color-name">--warning-color</p>
+                                            <p class="color-code">#2fa4a8</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background-color: var(--danger-color);">
                                         <div class="color-details">
-                                          <p class="color-name">Danger</p>
-                                          <p class="color-name">--danger-color</p>
-                                          <p class="color-code">#fe3e11</p>
+                                            <p class="color-name">Danger</p>
+                                            <p class="color-name">--danger-color</p>
+                                            <p class="color-code">#fe3e11</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background-color: var(--neutral-color);">
                                         <div class="color-details">
-                                          <p class="color-name">Neutral</p>
-                                          <p class="color-name">--neutral-color</p>
-                                          <p class="color-code">#738496</p>
+                                            <p class="color-name">Neutral</p>
+                                            <p class="color-name">--neutral-color</p>
+                                            <p class="color-code">#738496</p>
                                         </div>
                                     </div>
                                 </div>
                             </div><!-- END feedback -->
-    
+
                             <div class="mt-5"><!-- GRADIENT COLORS -->
                                 <div class="row">
                                     <h4 id="gradient-colors" class="mb-3">Gradient Colors</h4>
-                                    <p>Experience depth and dimension with our gradient colors, adding a dynamic and modern touch to your designs.</p>
+                                    <p>Experience depth and dimension with our gradient colors, adding a dynamic and
+                                        modern touch to your designs.</p>
                                     <div class="col color-box" style="background: var(--grad-pumpkin);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient Pumpkin</p>
-                                          <p class="color-name">--grad-pumpkin</p>
+                                            <p class="color-name">Gradient Pumpkin</p>
+                                            <p class="color-name">--grad-pumpkin</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background: var(--grad-pb);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient PB</p>
-                                          <p class="color-name">--grad-pb</p>
+                                            <p class="color-name">Gradient PB</p>
+                                            <p class="color-name">--grad-pb</p>
                                         </div>
                                     </div>
                                     <div class="col color-box" style="background: var(--grad-breaker);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient Breaker Bay</p>
-                                          <p class="color-name">--grad-breaker</p>
+                                            <p class="color-name">Gradient Breaker Bay</p>
+                                            <p class="color-name">--grad-breaker</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background: var(--grad-pe);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient PE</p>
-                                          <p class="color-name">--grad-pe</p>
+                                            <p class="color-name">Gradient PE</p>
+                                            <p class="color-name">--grad-pe</p>
                                         </div>
                                     </div>
                                     <div class="col color-box" style="background: var(--grad-eminence);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient Eminence</p>
-                                          <p class="color-name">--grad-eminence</p>
+                                            <p class="color-name">Gradient Eminence</p>
+                                            <p class="color-name">--grad-eminence</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col color-box" style="background: var(--grad-ps);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient PS</p>
-                                          <p class="color-name">--grad-ps</p>
+                                            <p class="color-name">Gradient PS</p>
+                                            <p class="color-name">--grad-ps</p>
                                         </div>
                                     </div>
                                     <div class="col color-box" style="background: var(--grad-sm);">
                                         <div class="color-details">
-                                          <p class="color-name">Gradient SM</p>
-                                          <p class="color-name">--grad-sm</p>
+                                            <p class="color-name">Gradient SM</p>
+                                            <p class="color-name">--grad-sm</p>
                                         </div>
                                     </div>
                                 </div>
                             </div> <!-- END gradient -->
-    
+
                             <div class="container mt-5"><!-- ALPHA COLORS -->
-                                <div class="row"><h4 id="alpha-colors" class="mb-3">Alpha Colors</h4>
-                                <p>Unlock transparency and depth with our alpha colors, providing a subtle yet impactful layer for your design elements.</p></div>
+                                <div class="row">
+                                    <h4 id="alpha-colors" class="mb-3">Alpha Colors</h4>
+                                    <p>Unlock transparency and depth with our alpha colors, providing a subtle yet
+                                        impactful layer for your design elements.</p>
+                                </div>
 
                                 <div>
                                     <div class="row " style="background-color: var(--mystic-0);">
-                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box"
+                                            style="background-color: var(--shark-100); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
-                                              <p class="color-name">Shark</p>
-                                              <p class="color-name">--shark-100</p>
-                                              <p class="color-code">rgba(29, 33, 37, 1)</p>
+                                                <p class="color-name">Shark</p>
+                                                <p class="color-name">--shark-100</p>
+                                                <p class="color-code">rgba(29, 33, 37, 1)</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-50); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box"
+                                            style="background-color: var(--shark-alpha-50); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
-                                              <p class="color-name">Shark Alpha 50</p>
-                                              <p class="color-name">--shark-alpha-50</p>
-                                              <p class="color-code">rgba(29, 33, 37, 0.5)</p>
+                                                <p class="color-name">Shark Alpha 50</p>
+                                                <p class="color-name">--shark-alpha-50</p>
+                                                <p class="color-code">rgba(29, 33, 37, 0.5)</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row" style="background-color: var(--mystic-0);">
-                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-20); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box"
+                                            style="background-color: var(--shark-alpha-20); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
-                                              <p class="color-name color-dark ">Shark Alpha 20</p>
-                                              <p class="color-name color-dark ">--shark-100</p>
-                                              <p class="color-code color-dark ">rgba(29, 33, 37, 0.2)</p>
+                                                <p class="color-name color-dark ">Shark Alpha 20</p>
+                                                <p class="color-name color-dark ">--shark-100</p>
+                                                <p class="color-code color-dark ">rgba(29, 33, 37, 0.2)</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--shark-alpha-10); border: 1px solid var(--mystic-0)">
+                                        <div class="col-md-12 col-lg-6 color-box"
+                                            style="background-color: var(--shark-alpha-10); border: 1px solid var(--mystic-0)">
                                             <div class="color-details">
-                                              <p class="color-name color-dark ">Shark Alpha 10</p>
-                                              <p class="color-name color-dark ">--shark-100</p>
-                                              <p class="color-code color-dark ">rgba(29, 33, 37, 0.1)</p>
+                                                <p class="color-name color-dark ">Shark Alpha 10</p>
+                                                <p class="color-name color-dark ">--shark-100</p>
+                                                <p class="color-code color-dark ">rgba(29, 33, 37, 0.1)</p>
                                             </div>
                                         </div>
-                                    </div>   
+                                    </div>
                                 </div>
                                 <div class="row" style="background-color: var(--shark-100);">
-                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-0);">
+                                    <div class="col-md-12 col-lg-6 color-box"
+                                        style="background-color: var(--mystic-0);">
                                         <div class="color-details">
                                             <p class="color-name color-dark ">Mystic</p>
                                             <p class="color-name color-dark ">--mystic-0</p>
                                             <p class="color-code color-dark">rgba(245, 247, 249, 0.1)</p>
-                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-alpha-65);">
+                                    <div class="col-md-12 col-lg-6 color-box"
+                                        style="background-color: var(--mystic-alpha-65);">
                                         <div class="color-details">
-                                          <p class="color-name color-dark ">Mystic Alpha 65</p>
-                                          <p class="color-name color-dark ">--shark-100</p>
-                                          <p class="color-code color-dark ">rgba(245, 247, 249, 0.65)</p>
+                                            <p class="color-name color-dark ">Mystic Alpha 65</p>
+                                            <p class="color-name color-dark ">--shark-100</p>
+                                            <p class="color-code color-dark ">rgba(245, 247, 249, 0.65)</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row" style="background-color: var(--shark-100);">
-                                    <div class="col-md-12 col-lg-6 color-box" style="background-color: var(--mystic-alpha-30);">
+                                    <div class="col-md-12 col-lg-6 color-box"
+                                        style="background-color: var(--mystic-alpha-30);">
                                         <div class="color-details">
-                                          <p class="color-name">Mystic Alpha 30</p>
-                                          <p class="color-name">--shark-100</p>
-                                          <p class="color-code">rgba(245, 247, 249, 0.3)</p>
+                                            <p class="color-name">Mystic Alpha 30</p>
+                                            <p class="color-name">--shark-100</p>
+                                            <p class="color-code">rgba(245, 247, 249, 0.3)</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 col-lg-6  color-box" style="background-color: var(--mystic-alpha-15);">
+                                    <div class="col-md-12 col-lg-6  color-box"
+                                        style="background-color: var(--mystic-alpha-15);">
                                         <div class="color-details">
-                                          <p class="color-name">Mystic Alpha 15</p>
-                                          <p class="color-name">--shark-100</p>
-                                          <p class="color-code">rgba(245, 247, 249, 0.15)</p>
+                                            <p class="color-name">Mystic Alpha 15</p>
+                                            <p class="color-name">--shark-100</p>
+                                            <p class="color-code">rgba(245, 247, 249, 0.15)</p>
                                         </div>
                                     </div>
-                            </div>
+                                </div>
                             </div> <!-- END alpha -->
-                          </div> <!-- container -->
+                        </div> <!-- container -->
                     </section>
                 </div>
             </div>
@@ -697,14 +732,21 @@
 
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
     <!-- Our Main JS -->
     <script src="./scripts/main.js"></script>
 
 </body>
+
 </html>
