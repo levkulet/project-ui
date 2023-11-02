@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
-  <title>Plug Streaming</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="./style/images/logo-32.png" type="image/x-icon">
+    <title>Plug Streaming</title>
 
     <!-- Bootstrap CSS CDN -->
-    <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
@@ -20,178 +21,276 @@
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 
 <body>
-      <div class="wrapper"> <!-- Main wrapper -->
-        <div class="flex-column "> <!-- Sidebar  -->
-          <nav id="sidebar">
-              <div class="sidebar-header">
-                  <img src="./style/images/logo-160.png" alt="logo-160"> <h3>UI Library</h3>
-              </div>
+    <div class="wrapper"><!-- Main wrapper -->
+        <div class="flex-wrap"><!-- Sidebar  -->
+            <nav id="sidebar" class="custom-sidebar">
+                <div class="sidebar-header">
+                    <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
+                    <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
+                    <h3>UI Library</h3>
+                </div>
 
-              <ul class="list-unstyled components">
-                <h5>FOUNDATIONS</h5>
-                <li><a href="index.html">Color</a></li>
-                <li><a href="./data_visualization.html">Data Visualization</a></li>
-                <li><a href="./grid.html">Grid System</a></li>
-                <li><a href="./typography.html">Typography</a></li>
+                <ul class="list-unstyled components text-wrap">
 
-                <h5>COMPONENTS</h5>
-                <li><a href="./buttons.html">Buttons</a> </li>
-                <li><a href="./cards.html">Cards</a></li>
-                <li><a href="./form_elements.html">Form Elements</a></li>
-                <li><a href="./lists.html">Lists</a></li>
-                <li><a href="./logo.html">Logo</a></li>
-                <li class="active"><a href="./notifications.html" data-toggle="collapse" 
-                    data-target="#homeSubmenu" aria-expanded="true" class="dropdown-toggle" 
-                    onclick="toggleSubMenu(event)">Notifications</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a class="active-a" href="#brand-colors">Brand Colors</a>
-                        </li>
-                    </ul>
-                </li>
+                    <span class="large-screen-text">
+                        <h5>FOUNDATIONS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
+                    <li>
+                        <a href="index.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">palette</i>
+                                &thinsp;Color</span>
+                            <i class="small-screen-icon material-icons">palette</i>
+                        </a>
+                    </li>
+                    <li><a href="./data_visualization.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">query_stats</i>
+                                &thinsp;Data Visualization</span>
+                            <i class="small-screen-icon material-icons">query_stats</i>
+                        </a></li>
+                    <li><a href="./grid.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">apps</i>
+                                &thinsp;Grid System</span>
+                            <i class="small-screen-icon material-icons">apps</i>
+                        </a></li>
+                    <li><a href="./typography.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">text_format</i>
+                                &thinsp;Typography</span>
+                            <i class="small-screen-icon material-icons">text_format</i>
+                        </a></li>
 
-                <li><a href="./tables.html">Tables</a></li>
+                    <span class="large-screen-text">
+                        <h5>COMPONENTS</h5>
+                    </span>
+                    <span class="small-screen-icon">
+                        <ul class="list-unstyled components"></ul>
+                    </span>
 
-              </ul>
-              <ul class="list-unstyled components">
-                <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
-              </ul>
-          </nav>
-        </div> <!-- END sidebar -->
-        <div class="col flex"><!-- Right Content  -->
-        <div id="content">
-            <!-- MAIN HEADER AND NAVIGATION -->
-            <header>
-                <div class="container">
-                    <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                        <div class="container-fluid">
-                            <!-- Navigation Top -->
+                    <li><a href="./buttons.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">smart_button</i>
+                                &thinsp;Buttons</span>
+                            <i class="small-screen-icon material-icons">smart_button</i>
+                        </a></li>
+                    <li><a href="./cards.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">dashboard_customize</i>
+                                &thinsp;Cards</span>
+                            <i class="small-screen-icon material-icons">dashboard_customize</i>
+                        </a>
+                    </li>
+                    <li><a href="./form_elements.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">check_box</i>
+                                &thinsp;Form Elements</span>
+                            <i class="small-screen-icon material-icons">check_box</i>
+                        </a></li>
+                    <li><a href="./lists.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">list</i>
+                                &thinsp;Lists</span>
+                            <i class="small-screen-icon material-icons">list</i>
+                        </a></li>
+                    <li><a href="./logo.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">image</i>
+                                &thinsp;Logo</span>
+                            <i class="small-screen-icon material-icons">image</i>
+                        </a></li>
+                    <li class="active"><a href="./notifications.html" data-toggle="collapse" data-target="#homeSubmenu"
+                            aria-expanded="true" class="dropdown-toggle" onclick="toggleSubMenu(event)">
+                            <span class="large-screen-text">
+                                <i class="material-icons">announcement</i>
+                                &thinsp;Notifications</span>
+                            <i class="small-screen-icon material-icons">announcement</i>
+                        </a>
+                        <ul class="collapse list-unstyled text-wrap" id="homeSubmenu">
+                            <li>
+                                <a class="active-a" href="#feedback-blocks">Feedback</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#notifications">Notifications</a>
+                            </li>
+                            <li>
+                                <a class="active-a" href="#badges-blocks">Badges</a>
+                            </li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li><a href="./tables.html">
+                            <span class="large-screen-text">
+                                <i class="material-icons">table_chart</i>
+                                &thinsp;Table</span>
+                            <i class="small-screen-icon material-icons">table_chart</i>
+                        </a></li>
+
+
+                </ul>
+                <ul class="list-unstyled components">
+                    <span class="large-screen-text">
+                        <p class="copyright">This UI Library was made by Leviel, Chad, Vishnu, Tanya, and Parham.</p>
+                    </span>
+                    <span class="small-screen-icon copyright">&copy; LCVTP</span>
+                </ul>
+            </nav>
+        </div> <!-- end sidebar -->
+        <div class="col flex"> <!-- Right Content  -->
+            <div id="content">
+                <!-- MAIN HEADER AND NAVIGATION -->
+                <header>
+                    <div class="container">
+                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                            <div class="container-fluid">
+                                <!-- Navigation Top -->
                                 <div id="head-nav">
                                     <ul class="nav navbar-nav d-flex ml-auto text-center">
-                                        <li class="nav-item collapse-btn" >
+                                        <li class="nav-item collapse-btn">
                                             <!--Sidebar Toggle-->
-                                            <a id="sidebarCollapse" class="nav-item material-symbols-outlined"> menu</a>
+                                            <a id="sidebarCollapse"
+                                                class="nav-item material-symbols-outlined">menu_open</a>
                                         </li>
                                         <li class="nav-item active">
                                             <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">UI Library</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">library_books</i>
+                                                    &thinsp;UI Library</span>
                                                 <i class="small-screen-icon material-icons">library_books</i>
                                             </a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">
-                                                <span class="large-screen-text">Dashboard</span>
+                                                <span class="large-screen-text">
+                                                    <i class="material-icons">dashboard</i>
+                                                    &thinsp;Dashboard</span>
                                                 <i class="small-screen-icon material-icons">dashboard</i>
                                             </a>
                                         </li>
                                     </ul>
                                 </div>
-                            <div>
-                                <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                <img class="header-logo" id="logo-small" src="./style/images/logo-square.png" alt="">
+                                <div>
+                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
+                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                        alt="">
+                                </div>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            
+                        </nav>
+                    </div>
+                </header>
 
-            <!-- 
+
+                <!-- 
                 CHANGE THIS PART PLS THANKS
              -->
-            
-            
-             <!-- Page Contents -->
-            <div class="content-container container">
-                <h6>COMPONENTS</h6>
-                <h2>Notifications</h2>
-                <p>Color brings a design to life. It is used to express emotion and tone, as well as place emphasis and create associations. Color should only be used to attract attention.</p>    
-                
-                <!--Feedback Blocks-->
-                <div class="container">
-                    <div class="row">
-                        <h3 id="feedback-blocks">Feedback blocks</h3>
-                        <h4>Examples</h4>
 
-                        <!--Success-->
-                        <div class="col color-box" style="background-color: var(--success-color);">
-                            <span class="material-symbols-outlined">
-                                check_circle
-                            </span>
-                            <div class="row symbol-and-text">
-                                <p id= "account-status" class="bold-text">Account Status</p>
-                                <p id= "current-status "class="data-body-text">Everything is Awesome!</p>
+
+                <!-- Page Contents -->
+                <div class="content-container container">
+                    <h6>COMPONENTS</h6>
+                    <h2>Notifications</h2>
+                    <p>Notifications and feedback are essential elements in user interfaces. They serve to keep users
+                        informed and engaged while giving them the opportunity to express their thoughts and concerns.
+                    </p>
+
+                    <!--Feedback Blocks-->
+                    <div class="container mt-5">
+                        <div class="row">
+                            <h4 id="feedback-blocks">Feedback blocks</h4>
+                            <p>Feedback Blocks are interactive sections where users can share comments, suggestions, or
+                                concerns. They facilitate user input, encouraging communication between users and the
+                                platform or service, which can lead to improvements and a better user experience.</p>
+                            <h5 class="mt-1">Example</h5>
+
+                            <!--Success-->
+                            <div class="col color-box" style="background-color: var(--success-color);">
+                                <span class="material-symbols-outlined">
+                                    check_circle
+                                </span>
+                                <div class="row symbol-and-text">
+                                    <p id="account-status" class="bold-text">Account Status</p>
+                                    <p id="current-status " class="data-body-text">Everything is Awesome!</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                         <!--Warning-->
-                         <div class="col color-box" style="background-color: var(--warning-color);">
-                            <span class="material-symbols-outlined">
-                                error
-                            </span>
-                            <div class="row symbol-and-text">
-                                <p id= "account-status" class="bold-text">Account Status</p>
-                                <p id= "current-status "class="data-body-text text-dark">Somethings seems to be missing or wrong with your account. Please check that all your informations are correct.</p>
+                        <div class="row">
+                            <!--Warning-->
+                            <div class="col color-box" style="background-color: var(--warning-color);">
+                                <span class="material-symbols-outlined">
+                                    error
+                                </span>
+                                <div class="row symbol-and-text">
+                                    <p id="account-status" class="bold-text">Account Status</p>
+                                    <p id="current-status " class="data-body-text text-dark">Somethings seems to be
+                                        missing or wrong with your account. Please check that all your informations are
+                                        correct.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <!--Danger-->
-                        <div class="col color-box" style="background-color: var(--danger-color);">
-                            <span class="material-symbols-outlined">
-                                dangerous
-                            </span>
-                           <div class="row symbol-and-text">
-                               <p id= "account-status" class="bold-text">Account Status</p>
-                               <p id= "current-status "class="data-body-text bold-text">PLEASE IMMEDIATELY CHECK YOUR ACCOUNT <a href="#"> <u>HERE</u> </a></p>
-                           </div>
-                       </div>
-                   </div>
-
-                   <div class="row">
-                    <!--Info-->
-                    <div class="col color-box" style="background-color: var(--info-color);">
-                        <span class="material-symbols-outlined">
-                            info
-                        </span>
-                       <div class="row symbol-and-text">
-                           <p id= "account-status" class="bold-text">Account Status</p>
-                           <p id= "current-status "class="data-body-text">Default style of an info style feedback</p>
-                       </div>
-                   </div>
-
-                    <div class="row">
-                    <!--Neutral/Button-->
-                    <div class="col color-box" style="background-color: var(--neutral-color);">
-                        <span class="material-symbols-outlined">
-                            info
-                        </span>
-                       <div class="row symbol-and-text">
-                        <div class="col">
-                            <p id= "current-status "class="data-body-text">This a neutral feedback. It may also contains Button(s)</p>
-                        </div>
-                        <!--button-->
-                        <div class="col-8">
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button class="btn btn-border-1 important-button" >Important</button>
+                        <div class="row">
+                            <!--Danger-->
+                            <div class="col color-box" style="background-color: var(--danger-color);">
+                                <span class="material-symbols-outlined">
+                                    dangerous
+                                </span>
+                                <div class="row symbol-and-text">
+                                    <p id="account-status" class="bold-text">Account Status</p>
+                                    <p id="current-status " class="data-body-text bold-text">PLEASE IMMEDIATELY CHECK
+                                        YOUR ACCOUNT <a href="#"> <u>HERE</u> </a></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <!-- Feedback Code Snippet Example Container-->
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12"> 
-                            <pre style="white-space: pre-line;">
+                        <div class="row">
+                            <!--Info-->
+                            <div class="col color-box" style="background-color: var(--info-color);">
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                                <div class="row symbol-and-text">
+                                    <p id="account-status" class="bold-text">Account Status</p>
+                                    <p id="current-status " class="data-body-text">Default style of an info style
+                                        feedback</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--Neutral/Button-->
+                            <div class="col color-box" style="background-color: var(--neutral-color);">
+                                <span class="material-symbols-outlined">
+                                    info
+                                </span>
+                                <div class="row symbol-and-text">
+                                    <div class="col">
+                                        <p id="current-status " class="data-body-text">This a neutral feedback. It
+                                            may also contains Button(s)</p>
+                                    </div>
+                                    <!--button-->
+                                    <div class="col-8">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 important-button">Important</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <!-- Feedback Code Snippet Example Container-->
+                                <div class="container mt-5">
+                                    <div class="row">
+                                        <div class="col">
+                                            <pre style="white-space: pre-line;">
                                 &lt;div class="col color-box" style="background-color: var(--info-color);"&gt
                                 &lt;span class="material-symbols-outlined"&gt
                                         info
@@ -201,136 +300,167 @@
                                     &lt;p id= "current-status "class="data-body-text">Default style of an info style feedback &lt;/p&gt
                                     &lt;/div&gt
                                     &lt;/div&gt
-                            </pre>
-                        </div>
-                        <!--Notes-->
-                        <div class="col-md-5 col-sm-12">
-                            <h4>Notes</h4>
-                            <p>Feedback blocks are used to provide action-based feedback messages or to convey informational and/or critical account-related messages.</p>
-                            <p>Feedback messages are categorized into four types based on severity:</p>
-                            <p><strong>Success:</strong> indicates that an action processed successfully or that there are no account-related issues. The --success-color helper class gives this block its green color.</p>
-                            <p><strong>Warning:</strong> indicates that an action failed at this time that otherwise would be processed correctly. If the message is related to an account status then campaign sending ability might be affected to some extent. Use the --warning-color class for the yellow background color.</p>
-                            <p><strong>Error:</strong> indicates that an action failed completely. If the message is related to an account status then the campaigns will definitley not send. Use the --danger-color class for the red background color.</p>
-                            <p><strong>Info:</strong> just provides information related to a performed action. Use the --info-color class for the blue background color.</p>
-                            <p><strong>Neutral:</strong> just provides neutral related to a performed action.It also can contained a button. Use the --neutral-color class for the blue background color.</p>
-                        </div>
-                    </div>
-                </div>
+                                            </pre>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!--Notes-->
+                                        <div class="col mt-3">
+                                            <h4>Notes</h4>
+                                            <p>Feedback blocks are used to provide action-based feedback messages or to
+                                                convey informational and/or critical account-related messages.</p>
+                                            <p>Feedback messages are categorized into four types based on severity:</p>
+                                            <p><strong class="highlight">Success:</strong> indicates that an action
+                                                processed successfully
+                                                or that there are no account-related issues. The --success-color helper
+                                                class gives this block its green color.</p>
+                                            <p><strong class="highlight">Warning:</strong> indicates that an action
+                                                failed at this time
+                                                that otherwise would be processed correctly. If the message is related
+                                                to an account status then campaign sending ability might be affected to
+                                                some extent. Use the --warning-color class for the yellow background
+                                                color.</p>
+                                            <p><strong class="highlight">Error:</strong> indicates that an action failed
+                                                completely. If
+                                                the message is related to an account status then the campaigns will
+                                                definitley not send. Use the --danger-color class for the red background
+                                                color.</p>
+                                            <p><strong class="highlight">Info:</strong> just provides information
+                                                related to a performed
+                                                action. Use the --info-color class for the blue background color.</p>
+                                            <p><strong class="highlight">Neutral:</strong> just provides neutral related
+                                                to a performed
+                                                action.It also can contained a button. Use the --neutral-color class for
+                                                the blue background color.</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <div class="container">
-                    <div class="row">
-                        <h3 id="badges-blocks">Notifications</h3>
-                        <h4>Examples</h4>
+                                <div class="container">
+                                    <div class="row mt-5">
+                                        <h4 id="badges-blocks">Notifications</h4>
+                                        <h5 class="mt-3">Example</h5>
 
-                        <div class="col">
-                            <button type="button" class="btn btn-border-1 primary-button">
-                                Notifications <span class="badge badge-light">4</span>
-                            </button>
-                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-border-1 primary-button">
+                                                Notifications <span class="badge badge-light">4</span>
+                                            </button>
+                                        </div>
 
-                        <div class="col">
-                            <button type="button" class="btn btn-border-1 important-button">
-                                Notifications <span class="badge badge-light">1</span>
-                            </button>
-                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-border-1 important-button">
+                                                Notifications <span class="badge badge-light">1</span>
+                                            </button>
+                                        </div>
 
-                        <div class="col">
-                            <button type="button" class="btn btn-border-1 warning-button">
-                                Notifications <span class="badge badge-warning">
-                                    <span class="material-symbols-outlined">
-                                    warning
-                                    </span>
-                                </span>
-                            </button>
-                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-border-1 warning-button">
+                                                Notifications <span class="badge badge-warning">
+                                                    <span class="material-symbols-outlined">
+                                                        warning
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
 
-                        <div class="col">
-                            <button type="button" class="btn btn-border-1 danger-button">
-                                Notifications <span class="badge badge-danger">
-                                    <span class="material-symbols-outlined">
-                                    priority_high
-                                    </span>
-                                </span>
-                            </button>
-                        </div>
-                    </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-border-1 danger-button">
+                                                Notifications <span class="badge badge-danger">
+                                                    <span class="material-symbols-outlined">
+                                                        priority_high
+                                                    </span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
 
-                    <!-- Notif Code Snippet Example Container-->
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-7 col-sm-12"> 
-                                <pre style="white-space: pre-line;">
+                                    <!-- Notif Code Snippet Example Container-->
+                                    <div class="container mt-5">
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-12">
+                                                <pre style="white-space: pre-line;">
                                     &lt;div class="col"&gt
                                     &lt;button type="button" class="btn btn-border-1 danger-button"&gt
                                         Notifications &lt;span class="badge badge-light">!&lt;/span&gt
                                         &lt;/button&gt
                                     &lt;/div&gt
                                 </pre>
-                            </div>
-                            <!--Notes-->
-                            <div class="col-md-5 col-sm-12">
-                                <h4>Notes</h4>
-                                <p>Feedback blocks are used to provide action-based feedback messages or to convey informational and/or critical account-related messages.</p>
-                                <p>Feedback messages are categorized into four types based on severity:</p>
-                                <p><strong>Teal:</strong> notificies the user that they have some non-urgent un-read notification(s).</p>
-                                <p><strong>Purple:</strong> indicates tto the user that they have some important un-read notification(s).</p>
-                                <p><strong>Yellow:</strong> indicates tto the user that they have some un-read warning notification(s).</p>
-                                <p><strong>Red:</strong> indicates tto the user that they have some extremely important un-read notification(s) that they should attnd too immediately.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
+                                            </div>
+                                            <!--Notes-->
+                                            <div class="col-md-5 col-sm-12">
+                                                <h4>Notes</h4>
+                                                <p>Feedback blocks are used to provide action-based feedback messages or
+                                                    to convey informational and/or critical account-related messages.
+                                                </p>
+                                                <p>Feedback messages are categorized into four types based on severity:
+                                                </p>
+                                                <p><strong class="highlight">Teal:</strong> notificies the user that
+                                                    they have some
+                                                    non-urgent un-read notification(s).</p>
+                                                <p><strong class="highlight">Purple:</strong> indicates tto the user
+                                                    that they have some
+                                                    important un-read notification(s).</p>
+                                                <p><strong class="highlight">Yellow:</strong> indicates tto the user
+                                                    that they have some
+                                                    un-read warning notification(s).</p>
+                                                <p><strong class="highlight">Red:</strong> indicates tto the user that
+                                                    they have some
+                                                    extremely important un-read notification(s) that they should attnd
+                                                    too immediately.</p>
+                                            </div>
+                                        </div>
+                                    </div>
 
+                                </div>
 
-                <div class="container">
-                    <div class="row">
-                        <h3 id="badges-blocks">Badges</h3>
-                        <h4>Examples</h4>
+                                <div class="container mt-5">
+                                    <div class="row">
+                                        <h4 id="badges-blocks">Badges</h4>
+                                        <h5 class="mt-3 mb-3">Example</h5>
 
-                        <!--Success-->
-                        <div class="col">
-                            <span class="badge" style="background-color: var(--success-color);">
-                                <span class="material-symbols-outlined">
-                                check_circle
-                            </span>
-                        </div>
+                                        <!--Success-->
+                                        <div class="col">
+                                            <span class="badge" style="background-color: var(--success-color);">
+                                                <span class="material-symbols-outlined">
+                                                    check_circle
+                                                </span>
+                                        </div>
 
-                        <!--Warning-->
-                        <div class="col">
-                            <span class="badge" style="background-color: var(--warning-color);">
-                                <span class="material-symbols-outlined">
-                                error
-                                </span>
-                            </span>
-                        </div>
+                                        <!--Warning-->
+                                        <div class="col">
+                                            <span class="badge" style="background-color: var(--warning-color);">
+                                                <span class="material-symbols-outlined">
+                                                    error
+                                                </span>
+                                            </span>
+                                        </div>
 
-                        <!--Error-->
-                        <div class="col">
-                            <span class="badge" style="background-color: var(--danger-color);">
-                                <span class="material-symbols-outlined">
-                                dangerous
-                                </span>
-                            </span>
-                        </div>
+                                        <!--Error-->
+                                        <div class="col">
+                                            <span class="badge" style="background-color: var(--danger-color);">
+                                                <span class="material-symbols-outlined">
+                                                    dangerous
+                                                </span>
+                                            </span>
+                                        </div>
 
-                        <!--Information-->
-                        <div class="col">
-                            <span class="badge" style="background-color: var(--info-color);">
-                                <span class="material-symbols-outlined">
-                                info
-                                </span>
-                            </span>
-                        </div>
-                    </div>
-                    
-                </div>
+                                        <!--Information-->
+                                        <div class="col">
+                                            <span class="badge" style="background-color: var(--info-color);">
+                                                <span class="material-symbols-outlined">
+                                                    info
+                                                </span>
+                                            </span>
+                                        </div>
+                                    </div>
 
-                <!-- Badges Code Snippet Example Container-->
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12"> 
-                            <pre style="white-space: pre-line;">
+                                </div>
+
+                                <!-- Badges Code Snippet Example Container-->
+                                <div class="container mt-5">
+                                    <div class="row">
+                                        <div class="col-md-7 col-sm-12">
+                                            <pre style="white-space: pre-line;">
 
                                 &lt;div class="col"&gt
                                 &lt;span class="badge" style="background-color: var(--info-color);"&gt
@@ -340,114 +470,48 @@
                                 &lt;/span&gt
                                 &lt;/div&gt
                             </pre>
-                        </div>
-                        <!--Notes-->
-                        <div class="col-md-5 col-sm-12">
-                            <h4>Notes</h4>
-                            <p>Badges are used as a form of inline feedback and labeling. They are typically used to provide additional context to components already on the page.</p>                    
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container"></div>
-            </div>
-        </div>
-
-              
-
-               <!-- BRAND COLORS -->
-                <!---
-                <div class="container">
-                    <div class="mt-5"> 
-                        <div class="row">
-                            <h3 id="brand-colors" class="mb-3">Brand</h3>
-                            <div class="col color-box" style="background-color: var(--pumpkin-500);">
-                                <div class="color-details">
-                                  <p class="color-name">Pumpkin</p>
-                                  <p class="color-name">--pumpkin-500</p>
-                                  <p class="color-code">#ff7119</p>
+                                        </div>
+                                        <!--Notes-->
+                                        <div class="col-md-5 col-sm-12">
+                                            <h4>Notes</h4>
+                                            <p>Badges are used as a form of inline feedback and labeling. They are
+                                                typically used to provide additional context to components already on
+                                                the page.</p>
+                                        </div>
+                                    </div>
                                 </div>
+
+                                <div class="container"></div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col color-box" style="background-color: var(--pumpkin-50);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-50</p>
-                                    <p class="color-code color-dark">#fff7ed</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-100);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark ">--pumpkin-100</p>
-                                    <p class="color-code color-dark">#ffecd4</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-200);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-200</p>
-                                    <p class="color-code color-dark">#ffd5a8</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-300);">
-                                <div class="color-details ">
-                                    <p class="color-name color-dark ">--pumpkin-300</p>
-                                    <p class="color-code color-dark">#ffb670</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-400);">
-                                <div class="color-details">
-                                    <p class="color-name color-dark">--pumpkin-400</p>
-                                    <p class="color-code color-dark">#ff8c37</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-600);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-600</p>
-                                    <p class="color-code">#f05006</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-700);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-700</p>
-                                    <p class="color-code">#c73a07</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-800);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-800</p>
-                                    <p class="color-code">#9e2e0e</p>
-                                  </div>
-                            </div>
-                            <div class="col color-box" style="background-color: var(--pumpkin-900);">
-                                <div class="color-details">
-                                    <p class="color-name">--pumpkin-900</p>
-                                    <p class="color-code">#7f290f</p>
-                                  </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>END -->
-    
-               
-            </div> <!-- END Page Contents -->
-          </div> <!--END right side container -->
-    </div> <!-- END wrapper -->
 
 
-    <!-- 
+                    </div> <!-- END Page Contents -->
+                </div> <!--END right side container -->
+            </div> <!-- END wrapper -->
+
+
+            <!-- 
       !!!!!!!!!!!
       SCRIPTS PLS DONT DELETE BELOW THIS
       !!!!!!!!!!!!!
     -->
 
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-        
-    <!-- Our Main JS -->
-    <script src="./scripts/main.js"></script>
+            <!-- jQuery CDN - Slim version (=without AJAX) -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <!-- Popper.JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+                integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+                crossorigin="anonymous"></script>
+            <!-- Bootstrap JS -->
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+                integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+                crossorigin="anonymous"></script>
+
+            <!-- Our Main JS -->
+            <script src="./scripts/main.js"></script>
 </body>
+
 </html>

@@ -41,6 +41,7 @@ h2 {
 h3 {
     font-size: var(--fs-650);
     font-weight: 600;
+    color: var(--main-paragraph);
 }
 
 .sidebar-header h3 {
@@ -508,12 +509,18 @@ pre{
     #sidebar h3 {
         font-size: var(--fs-100);  
     }
-    #sidebar h5, #sidebar ul li.active{
+    #sidebar h5{
         font-size: 0.1rem;
     }
     .active-a{
-        font-size: 0.1rem;
+        font-size: 0.3rem;
         margin-left: -1rem;
+        text-overflow: ellipsis;
+    }
+
+    .list-unstyled{
+        text-overflow: ellipsis;
+        word-wrap: break-word;
     }
     
     .color-details{

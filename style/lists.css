@@ -23,6 +23,9 @@
   }
 /*Linear List items Style */
   .list-group-item {
+    padding: 8px;
+    margin-right: 4px;
+    margin-left: 4px;
     color: var(--main-paragraph); /* Set text color */
     background-color: var(--shark-100); /* Set background color */
     transition: background-color 0.3s; /* Add a transition for smooth hover effect */
@@ -34,9 +37,10 @@
 
   .list-group-item {
     border: none; /* This removes the border entirely */
-}
+  }
 
 .dotted-list-item {
+  padding: 8px;
     list-style-type: none; /* Remove default list item marker */
   }
 
@@ -48,7 +52,7 @@
 /* Define a custom class for list items with white dotted separators */
 .white-dotted-list li {
     list-style-type: none; /* Remove default list item marker */
-    padding: 0; /* Remove any padding or margin */
+    padding: 8px; /* Remove any padding or margin */
     display: flex;
     align-items: center; /* Center vertically within each list item */
   }
