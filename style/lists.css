@@ -421,3 +421,15 @@ pre{
     border-bottom: 1px dotted var(--mystic-alpha-65);
     flex-grow: 1;
   }
+/*Linear List items Style */
+  .list-group-item {
+    color: var(--main-paragraph); /* Set text color */
+    background-color: var(--shark-100); /* Set background color */
+    transition: background-color 0.3s; /* Add a transition for smooth hover effect */
+  }
+
+  .list-group-item:hover {
+    background-color: var(--shark-0); /* Change background color on hover */
+  }
+
+/*Timeline Card */

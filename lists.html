@@ -15,6 +15,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/cards.css">
     <link rel="stylesheet" href="./style/lists.css">
     <!-- ADD YOUR CSS HERE FOR YOUR PART -->
 
@@ -119,46 +120,53 @@
                 <p>Leader lists commonly serve the purpose of presenting statistical information, with labels positioned to the left and corresponding values to the right. These elements are separated by a continuous line of dotted dividers.</p>
             
                 <!-- Lists Example-->
-                <h4>Example</h4>
-                <ul class="leaders"> 
-                    <li>
-                      <span class="text">List average</span> 
-                      <span class="dot"></span>
-                      <span class="text font-weight--bold">61.7%</span>
-                    </li> 
-                    <li>
-                      <span class="text">Industry average</span> 
-                      <span class="dot"></span>
-                      <span class="text font-weight--bold">61.7%</span>
-                    </li> 
-                </ul>
-
-            <!-- Code Snippet Example-->
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                        <pre style="white-space: pre-line;">
-                            &lt;ul class="leaders"&gt; 
-                            &lt;li&gt;
-                            &lt;span class="text"&gt;List average&lt;/span&gt; 
-                            &lt;span class="dot"&gt;&lt;/span&gt;
-                            &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
-                            &lt;/li&gt; 
-                            &lt;li&gt;
-                            &lt;span class="text"&gt;Industry average&lt;/span&gt; 
-                            &lt;span class="dot"&gt;&lt;/span&gt;
-                            &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
-                            &lt;/li&gt; 
-                            &lt;/ul&gt;
-                        </pre>
-                    </div>
-                    <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                        <h4>Notes</h4>
-                        <p>Utilize the "leaders" class for the &lt;ul&gt; element and employ &lt;span&gt; tags to encompass labels and values within each list item, with dotted dividers between them.
-                        </p>
+                <div class="container">
+                    <h4>Example</h4>
+                    <div class="row"> <!-- Add a row to contain the columns -->
+                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                            <ul class="leaders"> <!-- Apply "leaders" class directly to the <ul> element -->
+                                <li>
+                                    <span class="text">List average</span> 
+                                    <span class="dot"></span>
+                                    <span class="text font-weight--bold">61.7%</span>
+                                </li> 
+                                <li>
+                                    <span class="text">Industry average</span> 
+                                    <span class="dot"></span>
+                                    <span class="text font-weight--bold">61.7%</span>
+                                </li> 
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
+                
+
+                <!-- Code Snippet Example-->
+                <div class="container mt-5">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                            <pre style="white-space: pre-line;">
+                                &lt;ul class="leaders"&gt; 
+                                &lt;li&gt;
+                                &lt;span class="text"&gt;List average&lt;/span&gt; 
+                                &lt;span class="dot"&gt;&lt;/span&gt;
+                                &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
+                                &lt;/li&gt; 
+                                &lt;li&gt;
+                                &lt;span class="text"&gt;Industry average&lt;/span&gt; 
+                                &lt;span class="dot"&gt;&lt;/span&gt;
+                                &lt;span class="text font-weight--bold"&gt;61.7%&lt;/span&gt;
+                                &lt;/li&gt; 
+                                &lt;/ul&gt;
+                            </pre>
+                        </div>
+                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                            <h4>Notes</h4>
+                            <p>Utilize the <span style="color: var(--pumpkin-500);">"leaders"</span> class for the  <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and employ <span style="color: var(--pumpkin-500);">&lt;span&gt;</span> tags to encompass labels and values within each list item, with dotted dividers between them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             
                 <!-- Buttons - Outline -->
                 <div class="row mt-5">
@@ -166,58 +174,109 @@
                     <p>To make a linear use the linear-list class in a ul element</p>
                     <!--Linear Example-->
                     <h4>Example</h4>
+                    <div class="row mt-5">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">Item 1</li>
+                                <li class="list-group-item">Item 2</li>
+                                <li class="list-group-item">Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Snippet Example-->
+                <div class="container mt-5">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
-                            </div>
+                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
+                            <pre style="white-space: pre-line;">
+                                &lt;ul class="list-group"&gt;
+                                &lt;li class="list-group-item"&gt;Item 1&lt;/li&gt;
+                                &lt;li class="list-group-item"&gt;Item 2&lt;/li&gt;
+                                &lt;li class="list-group-item"&gt;Item 3&lt;/li&gt;
+                                &lt;/ul&gt;
+                            </pre>
                         </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--main-links); background-color: transparent;">Active</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--pumpkin-300); background-color: transparent;">Hover</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);" disabled>Disabled</button>
-                            </div>
+                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
+                            <h4>Notes</h4>
+                            <p>Apply the <span style="color: var(--pumpkin-500);">"list-group"</span> class to the <span style="color: var(--pumpkin-500);">&lt;ul&gt;</span> element and Identify the state of <span style="color: var(--pumpkin-500);">&lt;li&gt;</span> elements with the <span style="color: var(--pumpkin-500);">"selected"</span> class.
                         </div>
                     </div>
                 </div>
             
-                <!-- Buttons - Navigation -->
+                <!-- Activity Timeline -->
+                <!--Timeline 1-->
                 <div class="row mt-5">
-                    <h2 id="brand-colors" class="mb-3">Linear dots</h2>
-                    <h4 class="mb-4">Example</h4>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pumpkin);">Primary</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pb);">Active</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 mb-3">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-breaker);">Hover</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="color-box2 d-flex justify-content-center align-items-center">
-                                <button class="custom-button btn btn-border-1" style="background: var(--grad-pe); color: var(--main-paragraph);" disabled>Disabled</button>
+                    <div class="col">
+                        <div class="card card-shadow-dark">
+                            <div class="card-body" style="background-color: var(--shark-0);">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Left side for image input -->
+                                        <!-- Place your image input or content here -->
+                                        <p>Image Input</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <!-- Right side content -->
+                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                        <p>
+                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                <!--Timeline 2-->
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="card card-shadow-dark">
+                            <div class="card-body" style="background-color: var(--shark-0);">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Left side for image input -->
+                                        <!-- Place your image input or content here -->
+                                        <p>Image Input</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <!-- Right side content -->
+                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                        <p>
+                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  
+                
+                <!--Timeline 3-->
+                <div class="row mt-5">
+                    <div class="col">
+                        <div class="card card-shadow-dark">
+                            <div class="card-body" style="background-color: var(--shark-0);">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <!-- Left side for image input -->
+                                        <!-- Place your image input or content here -->
+                                        <p>Image Input</p>
+                                    </div>
+                                    <div class="col-9">
+                                        <!-- Right side content -->
+                                        <h4 class="card-title">Card that doesn't feature any images.</h4>
+                                        <p>
+                                            Nice! Guess people like what you're saying. Here are a few: freddie@mailchimp.com.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             
             <!-- Code Snippet Example-->
             <div class="container mt-4">
