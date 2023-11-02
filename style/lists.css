@@ -432,4 +432,29 @@ pre{
     background-color: var(--shark-0); /* Change background color on hover */
   }
 
-/*Timeline Card */
+  .list-group-item {
+    border: none; /* This removes the border entirely */
+}
+
+.dotted-list-item {
+    list-style-type: none; /* Remove default list item marker */
+  }
+
+  .dotted-list-item::before {
+    content: "\00b7"; /* Use a dot (·) or any other character you prefer */
+    margin: 0 0.5rem; /* Adjust the spacing as needed */
+  }
+
+/* Define a custom class for list items with white dotted separators */
+.white-dotted-list li {
+    list-style-type: none; /* Remove default list item marker */
+    padding: 0; /* Remove any padding or margin */
+    display: flex;
+    align-items: center; /* Center vertically within each list item */
+  }
+  
+  .white-dotted-list li::before {
+    content: '\00b7'; /* Use a white dot (·) or any other character you prefer */
+    margin: 0 0.25rem; /* Adjust the horizontal spacing as needed */
+    color: var(--main-paragraph); /* Set the color to white for the separator */
+  }
