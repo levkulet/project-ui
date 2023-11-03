@@ -1,7 +1,10 @@
 html {
     box-sizing: border-box;
-  }
-*, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -10,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-y: auto;
-/*     overflow-x: relative; */
+    /*     overflow-x: relative; */
     font-family: 'Poppins', sans-serif;
     background: var(--main-bg);
 }
@@ -70,19 +73,19 @@ h6 {
     color: var(--main-highlight);
 }
 
-.highlight{
+.highlight {
     color: var(--main-highlight);
 }
 
-.highlight2{
+.highlight2 {
     color: var(--secondary-color);
 }
 
-.highlight3{
+.highlight3 {
     color: var(--eminence-500);
 }
 
-a{
+a {
     color: var(--main-paragraph);
     text-decoration: none;
     transition: all 0.3s;
@@ -95,7 +98,7 @@ a:focus {
     transition: all 0.3s;
 }
 
-.link:hover{
+.link:hover {
     color: var(--other-text);
 }
 
@@ -115,21 +118,21 @@ a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-/*     display: block; */
+    /*     display: block; */
 }
 
 #navbar ul li a:hover {
     color: var(--other-text);
 }
 
-.nav-item{
+.nav-item {
     margin: 0.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-link{
+.nav-link {
     color: var(--main-links);
 }
 
@@ -139,7 +142,7 @@ a:focus {
     padding: -0.5rem;
 }
 
-.active-a{
+.active-a {
     color: var(--other-highlight);
 }
 
@@ -158,30 +161,35 @@ a:focus {
 
 .sticky {
     position: sticky;
-    top: 0; /* Adjust the top position as needed */
-    z-index: 1; /* Adjust the z-index if necessary */
-    transition: top 0.3s; /* Add a smooth transition effect */
-  }
+    top: 0;
+    /* Adjust the top position as needed */
+    z-index: 1;
+    /* Adjust the z-index if necessary */
+    transition: top 0.3s;
+    /* Add a smooth transition effect */
+}
 
-.collapse-btn{
+.collapse-btn {
     background-color: var(--primary-color);
 }
 
 .header-logo {
     max-width: 100%;
     height: auto;
-    /* margin-right: 0.12rem; */ /* Adjust the spacing as needed */
+    /* margin-right: 0.12rem; */
+    /* Adjust the spacing as needed */
 }
 
 /* Default style for the large logo */
 #logo-large {
     display: block;
 }
-#logo-small{
+
+#logo-small {
     width: 80px;
 }
 
-.navbar .large-screen-text i{
+.navbar .large-screen-text i {
     color: var(--breaker-bay-400);
 }
 
@@ -189,16 +197,16 @@ a:focus {
     PAGE STYLE
 ----------------------------------------------------- */
 .row {
-    display:        flex;
-    flex-wrap:      wrap;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items:    flex-start;
+    align-items: flex-start;
 }
 
 .col {
     flex-basis: 0px;
-    flex-grow:  1;
-  }
+    flex-grow: 1;
+}
 
 .flex {
     display: flex;
@@ -209,6 +217,7 @@ a:focus {
     display: grid;
     gap: var(--gap, 1rem);
 }
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -226,14 +235,16 @@ a:focus {
     height: 100%;
     /* position: fixed; */
     /* position: sticky; */
-    background:  var(--section-bg);
+    background: var(--section-bg);
     color: var(--main-paragraph);
     transition: all 0.3s;
     overflow: auto;
- /*    overflow-y: scroll; */
+    /*    overflow-y: scroll; */
 }
+
 .custom-sidebar {
-    width: 250px; /* Adjust the width as needed */
+    width: 250px;
+    /* Adjust the width as needed */
     transition: width 0.3s;
 }
 
@@ -249,10 +260,10 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-/*     padding: 10px 20px 10px 20px; */
+    /*     padding: 10px 20px 10px 20px; */
     background: var(--section-bg);
     text-align: center;
-    
+
 }
 
 #sidebar ul.components {
@@ -320,7 +331,7 @@ a.article:hover {
     color: var(--main-links) !important;
 }
 
-.copyright{
+.copyright {
     color: var(--header-gray);
     font-size: var(--fs-100);
 }
@@ -328,19 +339,23 @@ a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
-.button-text{
+button {
+    white-space: nowrap;
+}
+
+.button-text {
     font-size: var(--fs-200);
 }
 
-.bold-text{
+.bold-text {
     font-weight: 700;
 }
 
-.data-body-text{
+.data-body-text {
     font-family: var(--font-serif-family);
 }
 
-.other-text{
+.other-text {
     color: var(--header-gray);
     font-size: var(--fs-200);
 }
@@ -362,11 +377,11 @@ a.article:hover {
     border: 1px solid var(--section-bg);
     height: 120px;
 }
-  
+
 .color-details {
     flex-grow: 1;
 }
-  
+
 .color-name {
     font-weight: bold;
     margin: 0;
@@ -378,11 +393,11 @@ a.article:hover {
     font-size: 0.9em;
 }
 
-.color-dark{
+.color-dark {
     color: var(--dark-text);
 }
 
-code{
+code {
     color: var(--header-gray);
     font-family: 'Courier New', Courier, monospace;
 }
@@ -393,35 +408,42 @@ code{
     text-transform: uppercase;
     padding: auto;
 }
-.section{
+
+.section {
     margin-bottom: var(--gap-section);
 }
-.section-bg{
+
+.section-bg {
     background-color: var(--section-bg);
 }
-.light-card-bg{
+
+.light-card-bg {
     background-color: var(--main-light-card);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-#font-show{
+#font-show {
     font-size: 10rem;
     color: var(--mystic-0);
 }
 
-.logo-container{
+.logo-container {
     margin-top: 10px;
+}
+
+.no-text-break {
+    white-space: nowrap;
 }
 
 /* ---------------------------------------------------
    PRE TAG STYLE
 ----------------------------------------------------- */
-.text-center{
+.text-center {
     text-align: center;
 }
 
-pre{
+pre {
     font-size: 0.8rem;
     max-height: 300px;
     color: var(--main-paragraph);
@@ -434,7 +456,7 @@ pre{
     white-space: pre-line;
 }
 
- /* ---------------------------------------------------
+/* ---------------------------------------------------
    CARD STYLE
 ----------------------------------------------------- */
 
@@ -443,14 +465,14 @@ pre{
 ----------------------------------------------------- */
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 24
 }
 
-#sidebarCollapse{
+#sidebarCollapse {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -463,24 +485,42 @@ pre{
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    p{
+
+    h1,
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3,
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p {
         font-size: 0.9rem;
         line-height: 1.5rem;
     }
+
     #sidebar {
         margin-left: -250px;
     }
+
     #sidebar.active {
         margin-left: 0;
     }
+
     #sidebarCollapse span {
         display: none;
     }
+
     #logo-large {
         display: none;
     }
-    
-    /* Show the small logo on smaller screens */
+
     #logo-small {
         display: block;
     }
@@ -490,13 +530,13 @@ pre{
         margin-bottom: 12px;
         display: flex;
     }
-    
+
     #navbar ul li a {
         padding: 6px;
         font-size: var(--fs-200);
     }
-    
-    .nav-item{
+
+    .nav-item {
         margin-top: 0.12rem;
         margin-bottom: 0.12rem;
         margin-right: 0.25rem;
@@ -519,50 +559,88 @@ pre{
     #sidebar .sidebar-header {
         font-size: var(--fs-300);
         width: auto;
-            
+
     }
+
     #sidebar h3 {
-        font-size: var(--fs-100);  
+        font-size: var(--fs-100);
     }
-    #sidebar h5{
+
+    #sidebar h5 {
         font-size: 0.1rem;
     }
-    .active-a{
+
+    .active-a {
         font-size: 0.3rem;
         margin-left: -1rem;
         text-overflow: ellipsis;
     }
 
-    .list-unstyled{
+    .list-unstyled {
         text-overflow: ellipsis;
         word-wrap: break-word;
     }
-    
-    .color-details{
+
+    .color-details {
         font-size: var(--fs-200);
     }
 
     .content-container p {
         white-space: normal;
         justify-content: space-evenly;
-      }
+    }
+    .content-container{
+        max-width: 100%;
+        overflow-wrap: normal;
+    }
 
-    #font-show{
+    #font-show {
         font-size: 5rem;
     }
-    #icon-big{
+
+    #icon-big {
         min-width: 240px;
     }
-    #icon160{
+
+    #icon160 {
         min-width: 160px;
     }
-    #icon80{
+
+    #icon80 {
         min-width: 80px;
     }
-    #icon40{
+
+    #icon40 {
         min-width: 40px;
     }
-    #icon16{
+
+    #icon16 {
         min-width: 16px;
+    }
+
+    .logo-container img {
+        min-width: 100px;
+    }
+    #data-viz img{
+        min-width: 100px;
+    }
+}
+
+@media (max-width:400px) {
+    #font-show {
+        font-size: 3rem;
+    }
+    #logo-small {
+        display: block;
+        width: 40px;
+    }
+    .logo-container img {
+        min-width: 100px;
+    }
+    #data-viz img{
+        min-width: 100px;
+    }
+    #sidebar {
+        margin-left: -350px;
     }
 }

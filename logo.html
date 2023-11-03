@@ -190,15 +190,18 @@
                     </div>
                 </header>
 
+
                 <!-- Page Contents -->
-                <div class="content-container container">
+                <div class="content-container container word-wrap text-break">
                     <h6>COMPONENTS</h6>
                     <h2>Logo</h2>
                     <p>A logo is a visual representation of your brand or organization. It plays a crucial role in
                         creating a strong brand identity and leaving a lasting impression on your audience. Here are
                         guidelines on how to use and present the logo effectively:</p>
 
-                    <div class="container">
+                    <section>
+                    <div class="container-fluid">
+                        <div class="container">
                         <div class="mt-5"> <!-- main logo -->
                             <h3 id="main">Main Logo</h3>
                             <p>The main logo should be used as the primary representation of your brand. It typically
@@ -206,23 +209,25 @@
                                 cases, including website headers, business cards, and official documents.</p>
 
                             <!-- Header with Logo Variations -->
-                            <div class="row mt-3 mb-3 align-items-center">
-                                <!-- Logo on Light Background -->
-                                <div class="col logo-container card-light justify-content-center text-center">
-                                    <img src="./style/images/logo-square-black.png" alt="Logo on Light Background"
-                                        class="img-fluid">
-                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
-                                    </p>
-                                </div>
-
-                                <!-- Logo on Dark Background -->
-                                <div class="col logo-container card-dark justify-content-center text-center">
-                                    <img src="./style/images/logo-square.png" alt="Logo on Dark Background"
-                                        class="img-fluid">
-                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
-                                    </p>
-                                </div>
-                            </div>
+                            <table class="table table-dark" style="background-color: var(--section-bg);">
+                                <tr>
+                                    <td class="logo-container text-center " style="background-color: var(--main-light-card);">
+                                        <img src="./style/images/logo-square-black.png" alt="Logo on Light Background" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <p class="logo-description other-text no-text-break">Logo on Light Background</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="logo-container text-center">
+                                        <img src="./style/images/logo-square.png" alt="Logo on Dark Background" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <p class="logo-description other-text no-text-break">Logo on Dark Background</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
                         </div><!-- main logo -->
 
                         <div class="mt-5"> <!-- wide logo -->
@@ -230,25 +235,27 @@
                             <p>This logo is horizontally oriented and is suitable for use in the main header, top
                                 navigation, footers, and large cards.</p>
 
-
-                            <div class="row mt-3 mb-3 align-items-center">
-                                <!-- Logo on Light Background -->
-                                <div class="col logo-container card-light justify-content-center text-center">
-                                    <img src="./style/images/logo-wide-black.png" alt="Logo on Light Background"
-                                        class="img-fluid">
-                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
-                                    </p>
-                                </div>
-
-                                <!-- Logo on Dark Background -->
-                                <div class="col logo-container card-dark justify-content-center text-center">
-                                    <img src="./style/images/logo-wide.png" alt="Logo on Dark Background"
-                                        class="img-fluid">
-                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
-                                    </p>
-                                </div>
-                            </div>
-                        </div><!-- main logo -->
+                                <table class="table table-dark no-text-break" style="background-color: var(--section-bg);">
+                                    <tr> 
+                                        <td class="logo-container text-center" style="background-color: var(--main-light-card);">
+                                            <img src="./style/images/logo-wide-black.png" alt="Logo on Light Background" class="img-fluid">
+                                        </td>
+                                        <td>
+                                            <p class="logo-description other-text no-text-break">Logo on Light Background</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="logo-container text-center">
+                                            <img src="./style/images/logo-wide.png" alt="Logo on Dark Background" class="img-fluid">
+                                        </td>
+                                        <td>
+                                            <p class="logo-description other-text no-text-break">Logo on Dark Background</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                            
+                        </div><!-- wide logo -->
 
                         <div class="row mt-5 mb-3">
                             <h3 id="icon">Logo as an Icon</h3>
@@ -322,28 +329,30 @@
                                 and is suitable for use in the main header, top navigation, footers, and large cards.
                             </p>
 
-                            <div class="row mt-3 mb-3 align-items-center">
-                                <!-- Logo on Light Background -->
-                                <div class="col logo-container card-light justify-content-center text-center">
-                                    <img src="./style/images/logo-text-black.png" alt="Logo on Light Background"
-                                        class="img-fluid">
-                                    <p class="logo-description dark-card-content text-center">Logo on Light Background
-                                    </p>
-                                </div>
-
-                                <!-- Logo on Dark Background -->
-                                <div class="col logo-container card-dark justify-content-center text-center">
-                                    <img src="./style/images/logo-text.png" alt="Logo on Dark Background"
-                                        class="img-fluid">
-                                    <p class="logo-description light-card-content text-center">Logo on Dark Background
-                                    </p>
-                                </div>
-                            </div>
+                            <table class="table table-dark" style="background-color: var(--section-bg);">
+                                <tr>
+                                    <td class="logo-container text-center" style="background-color: var(--main-light-card);">
+                                        <img src="./style/images/logo-text-black.png" alt="Logo on Light Background" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <p class="other-text">Logo on Light Background</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="logo-container text-center">
+                                        <img src="./style/images/logo-text.png" alt="Logo on Dark Background" class="img-fluid">
+                                    </td>
+                                    <td>
+                                        <p class="other-text">Logo on Dark Background</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
                         </div><!-- text logo -->
 
                     </div><!-- END -->
-
-
+                </div>
+                </section>
                 </div> <!-- END Page Contents -->
             </div> <!--END right side container -->
         </div> <!-- END wrapper -->

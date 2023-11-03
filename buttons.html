@@ -26,14 +26,15 @@
 </head>
 
 <body>
-    <div class="wrapper"> <!-- Main wrapper -->
-        <div class="flex-wrap"> <!-- Sidebar  -->
+    <div class="wrapper"><!-- Main wrapper -->
+        <div class="flex-wrap"><!-- Sidebar  -->
             <nav id="sidebar" class="custom-sidebar">
                 <div class="sidebar-header">
                     <img class="large-screen-text" src="./style/images/logo-160.png" alt="logo-160">
                     <img class="small-screen-icon" src="./style/images/logo-32.png" alt="logo-160">
                     <h3>UI Library</h3>
                 </div>
+
                 <ul class="list-unstyled components">
 
                     <span class="large-screen-text">
@@ -100,7 +101,8 @@
                                 <i class="material-icons">dashboard_customize</i>
                                 &thinsp;Cards</span>
                             <i class="small-screen-icon material-icons">dashboard_customize</i>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="./form_elements.html">
                             <span class="large-screen-text">
                                 <i class="material-icons">check_box</i>
@@ -185,68 +187,70 @@
                     </div>
                 </header>
 
-
                 <!-- 
                 CHANGE THIS PART PLS THANKS
              -->
 
 
                 <!-- Page Contents -->
-                <div class="content-container container">
+                <div class="content-container container word-wrap text-break">
                     <h6>COMPONENTS</h6>
                     <h2>Buttons</h2>
                     <p>Celebrate functionality and design with our button showcase. From sleek and minimalistic to
                         eye-catching and vibrant, explore the art of interactivity.</p>
+                    <section>
 
-                    <!-- Buttons - Solid -->
-                    <div class="row mt-5 mb-1">
-                        <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
-                        <div class="row row-cols-2 g-0">
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 default-button">Default</button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 important-button">Important</button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 primary-button">Primary</button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="disabled-button btn-border-1" disabled>Disabled</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row row-cols-2 g-0 mt-3 mb-3">
-                            <div class="col">
-                                <div class=" d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 accept-button">Accept</button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 warning-button">Warning</button>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <button class="btn btn-border-1 danger-button">Danger</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="container">
+                            <!-- Buttons - Solid -->
+                            <div class="row align-items-center mt-5 mb-1">
+                                <h4 id="solid" class="mb-5">Buttons - Solid (With Hover)</h4>
 
-                    <!-- Code Snippet Example-->
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                                <pre style="white-space: pre-line;">
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 default-button">Default</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 important-button">Important</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 primary-button">Primary</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="disabled-button btn-border-1" disabled>Disabled</button>
+                                        </div>
+                                    </div>
+                      
+                                <div class="w-100"></div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class=" d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 accept-button">Accept</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 warning-button">Warning</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <button class="btn btn-border-1 danger-button">Danger</button>
+                                        </div>
+                                    </div>
+                               
+                            </div>
+
+                            <!-- Code Snippet Example-->
+                            <div class="container mt-5">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <!-- Larger column for pre on medium and small screens -->
+                                        <pre style="white-space: pre-line;">
                             &lt;!-- Default --&gt;
                             &lt;button class="btn btn-border-1 default-button"&gt;Default&lt;/button&gt;
                             &lt;!-- Important --&gt;
@@ -262,56 +266,62 @@
                             &lt;!-- Danger --&gt;
                             &lt;button class="btn btn-border-1 danger-button"&gt;Danger&lt;/button&gt;
                         </pre>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <!-- Smaller column for p on medium and small screens -->
+                                        <h4>Notes</h4>
+                                        <p><span style="color: var(--pumpkin-500);">Buttons</span> can be created using
+                                            the HTML
+                                            button tag, and their visual design can be customized by applying the <span
+                                                style="color: var(--pumpkin-500);">button</span> class.</p>
+                                        <p>For input elements, you have the option to give them button functionality by
+                                            adding
+                                            the <span style="color: var(--pumpkin-500);">button</span> class and
+                                            defining a
+                                            button label using the <span
+                                                style="color: var(--pumpkin-500);">'value'</span>
+                                            attribute."</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                                <h4>Notes</h4>
-                                <p><span style="color: var(--pumpkin-500);">Buttons</span> can be created using the HTML
-                                    button tag, and their visual design can be customized by applying the <span
-                                        style="color: var(--pumpkin-500);">button</span> class.</p>
-                                <p>For input elements, you have the option to give them button functionality by adding
-                                    the <span style="color: var(--pumpkin-500);">button</span> class and defining a
-                                    button label using the <span style="color: var(--pumpkin-500);">'value'</span>
-                                    attribute."</p>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Buttons - Outline -->
-                    <div class="row mt-5">
-                        <h4 id="outline" class="mb-3">Buttons - Outline</h4>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1"
-                                        style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
+                            <!-- Buttons - Outline -->
+                            <div class="row mt-5">
+                                <h4 id="outline" class="mb-3">Buttons - Outline</h4>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1"
+                                                style="border-color: var(--pumpkin-500); background-color: transparent;">Primary</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1"
+                                                style="border-color: var(--main-links); background-color: transparent;">Secondary</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1"
+                                                style="border-color: var(--pumpkin-300); background-color: transparent;">Other</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1"
+                                                style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);"
+                                                disabled>Disabled</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1"
-                                        style="border-color: var(--main-links); background-color: transparent;">Secondary</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1"
-                                        style="border-color: var(--pumpkin-300); background-color: transparent;">Other</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1"
-                                        style="border-color: var(--shark-800); background-color: transparent; color: var(--main-paragraph);"
-                                        disabled>Disabled</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Code Snippet Example-->
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                                <pre style="white-space: pre-line;">
+                            <!-- Code Snippet Example-->
+                            <div class="container mt-4">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12">
+                                        <!-- Larger column for pre on medium and small screens -->
+                                        <pre style="white-space: pre-line;">
                             &lt;!-- Primary --&gt;
                             &lt;button class="custom-button btn btn-border-1 "
                             style="border-color: var(--pumpkin-500); background-color: transparent;"&gt;Primary&lt;/button&gt;
@@ -326,58 +336,63 @@
                             /button&gt;
 
                         </pre>
-                            </div>
-                            <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                                <h4>Notes</h4>
-                                <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation
-                                    elements and are designed with a custom style, featuring a thin border. They are
-                                    each
-                                    labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be
-                                    utilized
-                                    for navigation or interaction within a user interface.</p>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <!-- Smaller column for p on medium and small screens -->
+                                        <h4>Notes</h4>
+                                        <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as
+                                            navigation
+                                            elements and are designed with a custom style, featuring a thin border. They
+                                            are
+                                            each
+                                            labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can
+                                            be
+                                            utilized
+                                            for navigation or interaction within a user interface.</p>
 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Buttons - Gradient -->
+                            <div class="row mt-5">
+                                <h4 id="gradient" class="mb-3">Buttons - Gradient</h4>
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center ">
+                                            <button class="custom-button btn btn-border-1 text-black"
+                                                style="background: var(--grad-pumpkin);">Primary</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1 text-black"
+                                                style="background: var(--grad-pb);">Secondary</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 mb-3">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1 text-black"
+                                                style="background: var(--grad-breaker);">Other</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="color-box2 d-flex justify-content-center align-items-center">
+                                            <button class="custom-button btn btn-border-1"
+                                                style="background: var(--grad-pe); color: var(--main-paragraph);"
+                                                disabled>Disabled</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Buttons - Gradient -->
-                    <div class="row mt-5">
-                        <h4 id="gradient" class="mb-3">Buttons - Gradient</h4>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center ">
-                                    <button class="custom-button btn btn-border-1 text-black"
-                                        style="background: var(--grad-pumpkin);">Primary</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1 text-black"
-                                        style="background: var(--grad-pb);">Secondary</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6 mb-3">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1 text-black"
-                                        style="background: var(--grad-breaker);">Other</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="color-box2 d-flex justify-content-center align-items-center">
-                                    <button class="custom-button btn btn-border-1"
-                                        style="background: var(--grad-pe); color: var(--main-paragraph);"
-                                        disabled>Disabled</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Code Snippet Example-->
-                <div class="container mt-4">
-                    <div class="row">
-                        <div class="col-md-7 col-sm-12"> <!-- Larger column for pre on medium and small screens -->
-                            <pre style="white-space: pre-line;">
+                        <!-- Code Snippet Example-->
+                        <div class="container mt-4">
+                            <div class="row">
+                                <div class="col-md-7 col-sm-12">
+                                    <!-- Larger column for pre on medium and small screens -->
+                                    <pre style="white-space: pre-line;">
                             &lt;!-- Primary --&gt;
                             &lt;button class="custom-button btn btn-border-1 "
                                 style="background: var(--grad-pumpkin);"&gt;Primary&lt;/button&gt;
@@ -392,18 +407,23 @@
                             /button&gt;
 
                         </pre>
-                        </div>
-                        <div class="col-md-5 col-sm-12"> <!-- Smaller column for p on medium and small screens -->
-                            <h4>Notes</h4>
-                            <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as navigation
-                                elements and are designed with a custom style, featuring a thin border. They are each
-                                labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be utilized
-                                for navigation or interaction within a user interface.</p>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <!-- Smaller column for p on medium and small screens -->
+                                    <h4>Notes</h4>
+                                    <p> These <span style="color: var(--pumpkin-500);">buttons</span> serve as
+                                        navigation
+                                        elements and are designed with a custom style, featuring a thin border. They are
+                                        each
+                                        labeled as <span style="color: var(--pumpkin-500);">'Active'</span> and can be
+                                        utilized
+                                        for navigation or interaction within a user interface.</p>
 
+                                </div>
+                            </div>
                         </div>
-                    </div>
                 </div>
-
+                </section>
             </div> <!-- END Page Contents -->
         </div> <!--END right side container -->
 
