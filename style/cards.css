@@ -77,15 +77,16 @@
 /*Card Side*/
 .card-dark-md{
     background-color: var(--main-dark-card);
-    padding: 15px;
-    margin: 50px;
+    padding: 1rem;
+   /*  margin: 50px; */
    /*  border: 0.5px solid var(--mystic-0); */
 }
 
 .card-light-md{
     background-color: var(--main-light-card);
-    padding: 20px;
-    margin: 50px;
+    padding: 1rem;
+    margin: 1rem;
+/*     margin: 50px; */
    /*  border: 0.5px solid var(--mystic-0); */
 }
 
@@ -93,4 +94,20 @@
     background: var(--grad-eminence);
     padding: 15px;
     margin: 50px;
+}
+
+.fixed-height{
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .fixed-height{
+        height: 300px;
+    }
+}
+
+@media (max-width:400px) {
+    .fixed-height{
+        max-height: 300px;
+    }
 }
