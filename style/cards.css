@@ -78,6 +78,8 @@
 .card-dark-md{
     background-color: var(--main-dark-card);
     padding: 1rem;
+    padding: 1rem;
+    margin: 1rem;
    /*  margin: 50px; */
    /*  border: 0.5px solid var(--mystic-0); */
 }
@@ -99,7 +101,9 @@
 .fixed-height{
     height: 400px;
 }
-
+.fixed-height-small{
+    height: 150px;
+}
 @media (max-width: 768px) {
     .fixed-height{
         height: 300px;
