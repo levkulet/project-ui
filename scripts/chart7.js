@@ -120,11 +120,11 @@ d3.csv("./data/top_100_youtubers.csv").then(function(data) {
         .style('opacity', 0)
         .style('position', 'absolute')
         .style("background", "#ffffff")
-    .style("border", "solid")
-    .style("border-width", "1px")
-    .style("border-radius", "5px")
-    .style("padding", "5px")
-    .style('font-size','.7rem');
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+        .style('font-size','.7rem');
 
     // Add interactivity to the arcs
     arcGroup.on('mouseover', function(event, d) {
