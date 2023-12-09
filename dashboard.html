@@ -28,8 +28,12 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
+        
+        
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="https://d3js.org/d3.v6.min.js"></script>
+        
+        
         <style>
             #VishnuChart {
                 max-width: 100%;
@@ -306,108 +310,9 @@
                                             <!-- Other country options will be added dynamically -->
                                         </select>
                                     </div>
-                                    
 
                                     <div id="VishnuChart"></div>
-
-                                    <script>
-                                        var margin = {top: 20, right: 20, bottom: 100, left: 80},
-                                        width = 960 - margin.left - margin.right,
-                                        height = 400 - margin.top - margin.bottom,
-                                        barWidth = 40;  // Set a fixed width for the bars
-
-                                        var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
-                                            y = d3.scaleLinear().rangeRound([height, 0]);
-
-                                        d3.csv("./data/top_100_youtubers.csv").then(function(data) {
-                                            var countries = [...new Set(data.map(row => row.Country))];
-                                            var select = d3.select("#countrySelect");
-                                            select.selectAll('option')
-                                                    .data(countries)
-                                                    .enter()
-                                                    .append('option')
-                                                    .text(function (d) { return d; });
-
-                                            select.on("change", function(d) {
-                                                var value = d3.select(this).property("value");
-                                                updateChart(value);
-                                            });
-
-                                            updateChart("IN");
-
-                                            function updateChart(country) {
-                                            // Remove the old chart
-                                                d3.select("#VishnuChart").selectAll("*").remove();
-
-                                                var svg = d3.select("#VishnuChart").append("svg")
-                                                            .attr("preserveAspectRatio", "xMinYMin meet")
-                                                            .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom))
-                                                            .classed("svg-content", true)
-                                                            .append("g")
-                                                            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-                                                d3.select("#chartTitle").text(`Count of YouTube Channels by Country (${country})`);
-                                                var filteredData = data.filter(row => row.Country === country);
-                                                var categories = d3.nest()
-                                                                    .key(function(d) { return d.Category; })
-                                                                    .entries(filteredData);
-
-                                                x.domain(categories.map(function(d) { return d.key; }));
-                                                y.domain([0, d3.max(categories, function(d) { return d.values.length+1; })]);
-
-                                                svg.append("g")
-                                                    .attr("class", "axis axis--x")
-                                                    .attr("transform", "translate(0," + height + ")")
-                                                    .call(d3.axisBottom(x))
-                                                    .selectAll("text")
-                                                    .style("text-anchor", "end")
-                                                    .attr("dx", "-.8em")
-                                                    .attr("dy", ".15em")
-                                                    .attr("transform", "rotate(-45)");
-
-                                                svg.append("text")             
-                                                    .attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 70) + ")")
-                                                    .style("fill",'white')
-                                                    .style("text-anchor", "middle")
-                                                    .text("Categories"),
-                    
-
-                                                svg.append("g")
-                                                    .attr("class", "axis axis--y")
-                                                    .call(d3.axisLeft(y).ticks(11))
-                                                    .append("text")
-                                                    .attr("transform", "rotate(-90)")
-                                                    .attr("y", 200)
-                                                    .attr("x", 10)
-                                                    .attr("dy", "1em")
-                                                    .style("text-anchor", "middle")
-                                                    .text("Number of YouTube Channels");
-
-                                                svg.selectAll(".bar")
-                                                    .data(categories)
-                                                    .enter().append("rect")
-                                                    .attr("class", "bar")
-                                                    .attr("x", function(d) { return x(d.key) + (x.bandwidth() - barWidth) / 2; })  // Adjust the x position
-                                                    .attr("y", function(d) { return y(d.values.length); })
-                                                    .attr("width", barWidth)  // Use the fixed bar width
-                                                    .attr("height", function(d) { return height - y(d.values.length); })
-                                                    .attr("fill", '#ff7119')  // Set the color of the bars 
-                                                    .on("mouseover", function(d) {
-                                                        var xPos = x(d.key) + x.bandwidth() / 2;
-                                                        var yPos = y(d.values.length) + 15; // Adjust position inside the bar
-                                                        svg.append("text")
-                                                            .attr("class", "value-label")
-                                                            .attr("x", xPos)
-                                                            .attr("y", yPos)
-                                                            .text(d.values.length)
-                                                            .style("text-anchor", "middle");
-                                                    })
-                                                    .on("mouseout", function() {
-                                                        svg.selectAll(".value-label").remove();
-                                                    });
-                                            }
-                                        });
-                                </script>
+                                    
                                 </div>
                                 <!-- Your sixth chart content here -->
                             </div>
@@ -427,103 +332,6 @@
                                         <div id="vishnupiechart"></div>
                                         <div id="vishnupiechartlegend"></div>
                                     </div>
-                                    
-                                    <script>
-                                        // Load the CSV file
-                                        d3.csv("./data/top_100_youtubers.csv").then(function(data) {
-                                    
-                                            // Group the data by the 'Category' column
-                                            var grouped = d3.group(data, d => d.Category);
-                                    
-                                            // Convert the Map to an array of [key, value] pairs
-                                            var groupedArray = Array.from(grouped);
-                                    
-                                            // For each group, sum the 'followers'
-                                            var sums = groupedArray.map(([key, value]) => {
-                                                return {
-                                                    category: key,
-                                                    totalFollowers: d3.sum(value, d => +d.followers)
-                                                };
-                                            });
-                                    
-                                            // Set dimensions based on the parent container
-                                            var containerWidth = document.getElementById('pie-chart-contain').offsetWidth;
-                                            var containerHeight = document.getElementById('pie-chart-contain').offsetHeight;
-                                            var width = containerWidth;
-                                            var height = containerWidth-320;
-                                            var radius = Math.min(width, height) / 2;
-                                    
-                                            var svg = d3.select('#vishnupiechart')
-                                                .append('svg')
-                                                .attr('preserveAspectRatio', 'xMinYMin meet')
-                                                .attr('viewBox', '0 0 ' + width + ' ' + height)
-                                                .classed('svg-content', true)
-                                                .append('g')
-                                                .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')');
-                                    
-                                            // Define your own color scale
-                                            var color = d3.scaleOrdinal()
-                                                .domain(sums.map(d => d.category).sort())
-                                                .range(["#734a10", "#fe3e11", "#fff7ed", "#a47604", "#1e6367", "#b263e9", "#ff7119", "#46b9bb", "#efd103"]);  // Add more colors if needed
-                                    
-                                            var pie = d3.pie().value(function(d) { return d.totalFollowers; });
-                                            var path = d3.arc().outerRadius(radius - 10).innerRadius(0);
-                                            var label = d3.arc().outerRadius(radius - 40).innerRadius(radius - 40);
-                                    
-                                            var arc = svg.selectAll('.arc')
-                                                .data(pie(sums))
-                                                .enter().append('g')
-                                                .attr('class', 'arc');
-                                    
-                                            arc.append('path')
-                                                .attr('d', path)
-                                                .attr('fill', function(d) { return color(d.data.category); });
-                                    
-                                            // Add a legend
-                                            var legendRectSize = 10;
-                                            var legendSpacing = 10;
-                                            var legendPerRow = 3;
-                                            var legendHeight = Math.ceil(color.domain().length / legendPerRow) * (legendRectSize + legendSpacing);
-                                    
-                                            var legendSvg = d3.select('#vishnupiechartlegend')
-                                                .append('svg')
-                                                .attr('preserveAspectRatio', 'xMinYMin meet')
-                                                .attr('viewBox', '0 0 ' + width + ' ' + legendHeight)
-                                                .classed('svg-content', true)
-                                                .selectAll('.vishnupiechartlegend')
-                                                .data(color.domain())
-                                                .enter()
-                                                .append('g')
-                                                .attr('class', 'vishnupiechartlegend')
-                                                .attr('transform', function(d, i) {
-                                                    // Calculate total width of legend items
-                                                    var totalWidth = legendPerRow * (legendRectSize + legendSpacing) * 6;
-
-                                                    // Center the legend items
-                                                    var horz = (width - totalWidth) / 2 + (i % legendPerRow) * (legendRectSize + legendSpacing) * 6;
-                                                    var vert = Math.floor(i / legendPerRow) * (legendRectSize + legendSpacing);
-
-                                                    return 'translate(' + horz + ',' + vert + ')';
-                                                });
-
-                                    
-                                            legendSvg.append('rect')
-                                                .attr('width', legendRectSize)
-                                                .attr('height', legendRectSize)
-                                                .style('fill', color)
-                                                .style('stroke', color);
-                                    
-                                            legendSvg.append('text')
-                                                .attr('x', legendRectSize + legendSpacing)
-                                                .attr('y', legendRectSize)
-                                                .style('font-size', '10px')
-                                                .style('fill','white')
-                                                .text(function(d) { return d; });
-                                        }).catch(function(error){
-                                           console.log(error);
-                                        });
-                                    </script>
-                                    
                                     
                                 </div>
                                 <!-- Your seventh chart content here -->
