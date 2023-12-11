@@ -1,4 +1,4 @@
-.card .card-body h4 {
+.card .card-body {
     color: var(--main-paragraph);
 }
 
@@ -12,7 +12,7 @@
 }
 
 .card-shadow-dark {
-  box-shadow: 0 5px 15px var(--bg-secondary-900), 0 15px 12px var(--bg-secondary-900);
+  box-shadow: 0 6px 12px var(--shark-250), 0 6px 6px var(--shark-900);
 }
 
 .card-shadow-light {
@@ -78,10 +78,15 @@
 .card-dark-md{
     background-color: var(--main-dark-card);
     padding: 1rem;
-    padding: 1rem;
     margin: 1rem;
-   /*  margin: 50px; */
-   /*  border: 0.5px solid var(--mystic-0); */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-dark-sm{
+    background-color: var(--main-dark-card);
+    padding: 1rem;
+    margin: 0.25rem;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .card-light-md{
@@ -98,20 +103,55 @@
     margin: 50px;
 }
 
+.card, .card-header, .card-body{
+    padding: 0.25rem;
+}
+
+.card-header{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+.card-body-small{
+    padding-top: 2.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
 .fixed-height{
-    height: 400px;
+    height: 500px;
 }
 .fixed-height-small{
-    height: 150px;
+    height: 250px;
 }
+
 @media (max-width: 768px) {
-    .fixed-height{
-        height: 300px;
+
+    .fixed-height-small{
+        height: 250px;
+    }
+    .card-header,.card-body-small{
+        padding-top: 1rem;
     }
 }
 
 @media (max-width:400px) {
-    .fixed-height{
-        max-height: 300px;
+
+    .fixed-height-small{
+        height: 100px;
+    }
+    .card-header,.card-body-small{
+        padding-top: 1rem;
+    }
+    .card-body-small{
+        padding-top: .2rem;
+        padding-left: .25rem;
+        padding-right: .25rem;
+    }
+
+    .card-dark-sm{
+        padding: 0.125rem;
+        margin: 0.125rem;
     }
 }

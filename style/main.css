@@ -353,6 +353,7 @@ button {
 
 .data-body-text {
     font-family: var(--font-serif-family);
+    font-size: 20px;
 }
 
 .other-text {

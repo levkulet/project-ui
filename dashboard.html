@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./style/library.css">
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/cards.css">
+    <!--    <link rel="stylesheet" href="./src/radar-chart.css"> -->
 
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -28,31 +29,62 @@
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        
-        
-        <script src="https://d3js.org/d3.v5.min.js"></script>
-        <script src="https://d3js.org/d3.v6.min.js"></script>
-        
-        
-        <style>
-            #VishnuChart {
-                max-width: 100%;
-                margin: 0 auto;
-                color: white;
-            }
-    
-            .value-label {
-                
-                font-size: 12px;
-                fill: white;
-                text-anchor: middle;
-            }
-            #vishnupiechart-container {
-                max-width: 100%;
-                margin: 0 auto;
-            }
 
-        </style>
+    <!-- d3.JS -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- <script src="./src/radar-chart.js"></script>
+    <script src="https://rawgit.com/alangrafu/radar-chart-d3/master/src/radar-chart.js"></script>
+    <link rel="stylesheet" href="https://rawgit.com/alangrafu/radar-chart-d3/master/src/radar-chart.css"> -->
+
+
+
+    <!-- Our CHARTS JS -->
+    <script src="./scripts/chart1.js"></script>
+    <script src="./scripts/chart2.js"></script>
+    <script src="./scripts/chart3.js"></script>
+    <script src="./scripts/chart4.js"></script>
+    <script src="./scripts/chart5.js"></script>
+    <script src="./scripts/chart6.js"></script>
+    <script src="./scripts/chart7.js"></script>
+    <script src="./scripts/chart8.js"></script>
+    <script src="./scripts/sv1.js"></script>
+    <script src="./scripts/sv2.js"></script>
+    <script src="./scripts/sv3.js"></script>
+    <script src="./scripts/sv4.js"></script>
+
+
+    <style>
+        #VishnuChart {
+            max-width: 100%;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .value-label {
+
+            font-size: 12px;
+            fill: white;
+            text-anchor: middle;
+        }
+
+        #vishnupiechart-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .radar-chart .area {
+            fill-opacity: 0.7;
+        }
+
+        .radar-chart.focus .area {
+            fill-opacity: 0.3;
+        }
+
+        .radar-chart.focus .area.focused {
+            fill-opacity: 0.9;
+        }
+    </style>
 </head>
 
 <body>
@@ -61,7 +93,7 @@
             <div id="content">
                 <!-- MAIN HEADER AND NAVIGATION -->
                 <header>
-                    <div class="container">
+                    <div class="content-container">
                         <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
                             <div class="container-fluid">
                                 <!-- Navigation Top -->
@@ -98,211 +130,182 @@
 
 
                 <!-- Page Contents -->
-                <div class="content-container container">
+                <div class="content-container">
                     <h6>Dashboard</h6>
                     <h2>Dashboard</h2>
 
 
-                    <div class="container">
+                    <div class="content-container">
 
                         <!--SV Content Row -->
-                        <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-
+                        <div class="row flex-row justify-content-center ">
+                            <div id="tooltip"></div>
                             <!-- SV1 Card Example -->
-                            <div class="col-xl-3 col-md-6 mb-4">
-                                <div class="card-dark-md fixed-height-small card-shadow-dark">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col mr-2">
-                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                    Channel With Most Subscribers</div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div
+                                    class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
+                                    <div class="card-header text-center" id="sv1Title"></div>
+                                    <div class="card-body-small">
+
+                                        <div class="text-center" id="sv1SubTitle"></div>
+                                        <div class="text-center" id="subNum"></div>
+                                        <span class="" id="subNumDesc"></span>
+
                                     </div>
                                 </div>
                             </div>
 
+
                             <!-- SV2 Card Example -->
-                            <div class="col-xl-3 col-md-6 mb-4">
-                                <div class="card-dark-md fixed-height-small card-shadow-dark">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col mr-2">
-                                                <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                    Video With Highest Views
-                                                </div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div
+                                    class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
+                                    <div class="card-header text-center" id="sv2Title"></div>
+                                    <div class="card-body-small">
+
+                                        <div class="text-center" id="sv2SubTitle"></div>
+                                        <div class="text-center" id="sub2Num"></div>
+                                        <span class="" id="sub2NumDesc"></span>
+
                                     </div>
                                 </div>
                             </div>
 
 
                             <!-- SV3 Card Example -->
-                            <div class="col-xl-3 col-md-6 mb-4">
-                                <div class="card-dark-md fixed-height-small card-shadow-dark">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col mr-2">
-                                                <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                    Video With Highest Earnings
-                                                </div>
-                                                <div class="row no-gutters align-items-center">
-                                                    <div class="col-auto">
-                                                        <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%
-                                                        </div>
-                                                    </div>
-                                                    <div class="col">
-                                                        <div class="progress progress-sm mr-2">
-                                                            <div class="progress-bar bg-info" role="progressbar"
-                                                                style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                                                aria-valuemax="100"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div
+                                    class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
+                                    <div class="card-header text-center" id="sv3Title"></div>
+                                    <div class="card-body-small">
+
+                                        <div class="text-center" id="sv3SubTitle"></div>
+                                        <div class="text-center" id="sub3Num"></div>
+                                        <span class="" id="sub3NumDesc"></span>
+
                                     </div>
                                 </div>
                             </div>
 
                             <!-- SV4 Card Example -->
-                            <div class="col-xl-3 col-md-6 mb-4">
-                                <div class="card-dark-md fixed-height-small card-shadow-dark">
-                                    <div class="card-body">
-                                        <div class="row no-gutters align-items-center">
-                                            <div class="col mr-2">
-                                                <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                    Video With Highest Engagement
-                                                </div>
-                                                <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                            </div>
-                                            <div class="col-auto">
-                                                <i class="fas fa-comments fa-2x text-gray-300"></i>
-                                            </div>
-                                        </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 ">
+                                <div
+                                    class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
+                                    <div class="card-header text-center" id="sv4Title"></div>
+                                    <div class="card-body-small">
+
+                                        <div class="text-center" id="sv4SubTitle"></div>
+                                        <div class="text-center" id="sub4Num"></div>
+                                        <span class="" id="sub4NumDesc"></span>
+
                                     </div>
                                 </div>
                             </div>
+
                         </div> <!-- End SV row -->
 
                         <!-- First Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-                            <div class="col col-md-6 card-dark-md card-shadow-dark fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart 1</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart1Title">
+                                    <h5 class="highlight"> Chart 1 </h5>
                                 </div>
+                                <div class="card-body" id="chart1Container">
+                                    <div id="chart1">
 
-                                <div class="chart-one">
-                                    
-                                    <img src="./style/images/charts/spider_chart_1.png"  class="img-fluid"
-                                        alt="Pie chart 1">
-                                </div>
+                                    </div>
+                                    <div id="chart1Legend">
 
-                                <div id="chart1">
-                                    
+                                    </div>
                                 </div>
-                                <!-- Your first chart content here -->
                             </div>
 
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart 2</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart2Title">
+                                    <h5 class="highlight"> Chart 2 </h5>
                                 </div>
+                                <div class="card-body" id="chart2Container">
+                                    <div id="chart2">
+                                        <img src="./style/images/charts/line_chart_2.png" class="img-fluid"
+                                            alt="Pie chart 2">
+                                    </div>
+                                    <div id="chart2Legend">
 
-                                <div class="chart-two">
-                                    
-                                    <img src="./style/images/charts/line_chart_2.png" class="img-fluid"
-                                        alt="Pie chart 2">
+                                    </div>
                                 </div>
-                                <div id="chart2">
-                                    
-                                </div>
-                                <!-- Your second chart content here -->
                             </div>
                         </div> <!-- End Row 1 -->
 
                         <!-- Second Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary" >Chart 3</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart3Title">
+                                    <h5 class="highlight"> Chart 3 </h5>
                                 </div>
+                                <div class="card-body" id="chart3Container">
+                                    <div id="chart3">
 
-                                <div class="chart-three">
-                                    
-                                    <img src="./style/images/charts/bar_chart_1.png" style="max-height: 300px;"class="img-fluid"
-                                    alt="Pie chart 3">
-                                    
-                                </div>
+                                        <img src="./style/images/charts/bar_chart_1.png" style="max-height: 300px;"
+                                            class="img-fluid" alt="Pie chart 3">
+                                    </div>
+                                    <div id="chart3Legend">
 
-                                <div id="chart3">
-                                    
+                                    </div>
                                 </div>
-                                <!-- Your third chart content here -->
                             </div>
 
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart 4</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart4Title">
+                                    <h5 class="highlight"> Chart 4 </h5>
                                 </div>
+                                <div class="card-body" id="chart4Container">
+                                    <div id="chart4">
 
-                                <div class="chart-four">
-                                    
-                                    <img src="./style/images/charts/line_chart_1.png" class="img-fluid"
-                                        alt="Pie chart 4">
-                                </div>
+                                        <img src="./style/images/charts/line_chart_1.png" class="img-fluid"
+                                            alt="Pie chart 4">
+                                    </div>
+                                    <div id="chart4Legend">
 
-                                <div id="chart4">
-                                    
+                                    </div>
                                 </div>
-                                <!-- Your fourth chart content here -->
                             </div>
+
                         </div>
 
                         <!-- Third Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart 5</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart5Title">
+                                    <h5 class="highlight"> Chart 5 </h5>
                                 </div>
+                                <div class="card-body" id="chart5Container">
+                                    <div id="chart5">
 
-                                <div class="chart-five">
-                                    
-                                    <img src="./style/images/charts/bar_chart_2.png" class="img-fluid"
-                                        alt="Pie chart 5">
-                                </div>
+                                        <img src="./style/images/charts/bar_chart_2.png" class="img-fluid"
+                                            alt="Pie chart 5">
+                                    </div>
+                                    <div id="chart5Legend">
 
-                                <div id="chart5">
-                                    
+                                    </div>
                                 </div>
-                                <!-- Your fifth chart content here -->
                             </div>
 
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
+
+                            <div class="card col col-md-6 card-dark-md card-shadow-light fixed-height">
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary" id="chartTitle">YouTube Channels by Category (IN)</h6>
+                                    <h5 class="highlight2" id="chartTitle">
+                                        YouTube Channels by Category (IN)
+                                    </h5>
                                 </div>
 
-                                <div class="chart-six">
-                                    
+                                <div class="chart-six card-body">
+
                                     <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                         Select Country:
                                         <select id="countrySelect">
@@ -312,7 +315,7 @@
                                     </div>
 
                                     <div id="VishnuChart"></div>
-                                    
+
                                 </div>
                                 <!-- Your sixth chart content here -->
                             </div>
@@ -320,54 +323,57 @@
 
                         <!-- Fourth Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
+                            <div class="card col col-md-6 card-dark-md card-shadow-light fixed-height">
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Category with most followers</h6>
+                                    <h5 class="highlight">Category with most followers</h5>
                                 </div>
 
-                                <div class="chart-seven" id="pie-chart-contain">
-                                    
+                                <div class="card-body chart-seven" id="pie-chart-contain">
+
                                     <div id="vishnupiechart-container">
                                         <div id="vishnupiechart"></div>
                                         <div id="vishnupiechartlegend"></div>
                                     </div>
-                                    
+
                                 </div>
                                 <!-- Your seventh chart content here -->
                             </div>
 
-                            <div class="col col-md-6 card-dark-md card-shadow-light fixed-height">
-                                <div
-                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                    <h6 class="m-0 font-weight-bold text-primary">Chart 8</h6>
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart8Title">
+                                    <h5 class="highlight"> Chart 8 </h5>
                                 </div>
+                                <div class="card-body" id="chart8Container">
+                                    <div id="chart8">
+                                        <img src="./style/images/charts/pie_chart_2.png" class="img-fluid"
+                                            alt="Pie chart 8">
+                                    </div>
+                                    <div id="chart8Legend">
 
-                                <div class="chart-eight">
-                                    
-                                    <img src="./style/images/charts/pie_chart_2.png" class="img-fluid"
-                                        alt="Pie chart 8">
+                                    </div>
                                 </div>
-
-                                <div id="chart8">
-                                    
-                                </div>
-                                <!-- Your eighth chart content here -->
                             </div>
+
                         </div>
-
-
-
 
                     </div> <!-- Content container for charts -->
 
                 </div> <!-- end Page Contents div -->
 
+                <div class="text-center">
+                    <span class="large-screen-text">
+                        <p class="copyright">This UI Library & Dashboard was made by Leviel, Chad, Vishnu, Tanya,
+                            and
+                            Parham.</p>
+                    </span>
+                    <span class="small-screen-icon copyright">&copy; LCVTP</span>
+                </div>
 
 
             </div> <!-- right side container -->
         </div> <!-- wrapper -->
-
 
         <!-- jQuery CDN - Slim version (=without AJAX) -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -385,15 +391,6 @@
         <!-- Our Main JS -->
         <script src="./scripts/main.js"></script>
 
-        <!-- Our CHARTS JS -->
-        <script src="./scripts/chart1.js"></script>
-        <script src="./scripts/chart2.js"></script>
-        <script src="./scripts/chart3.js"></script>
-        <script src="./scripts/chart4.js"></script>
-        <script src="./scripts/chart5.js"></script>
-        <script src="./scripts/chart6.js"></script>
-        <script src="./scripts/chart7.js"></script>
-        <script src="./scripts/chart8.js"></script>
 
 </body>
 
