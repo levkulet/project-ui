@@ -9,7 +9,7 @@ function createChart() {
   ];
 
   // Remove existing chart
-  d3.select('#chart svg').remove();
+  d3.select('#chart5').remove();
 
   // Set up the chart dimensions
   const margin = { top: 20, right: 30, bottom: 70, left: 120 };
@@ -17,7 +17,7 @@ function createChart() {
   const height = 400 - margin.top - margin.bottom;
 
   // Append SVG to the chart div
-  const svg = d3.select('#chart')
+  const svg = d3.select('#chart5')
     .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
@@ -36,7 +36,7 @@ function createChart() {
   const yAxis = d3.axisLeft(yScale);
 
   // Tooltip
-  const tooltip = d3.select('#chart').append('div')
+  const tooltip = d3.select('#chart5').append('div')
     .attr('class', 'tooltip')
     .style('opacity', 0);
 
