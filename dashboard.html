@@ -271,6 +271,18 @@
                                 <div class="card-body" id="bar-chart-container">
                                     <div id="chart3">
 
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <label for="colorPicker">Select Chart Color: </label>
+                                            <select id="colorPicker" onchange="updateChartColor()">
+                                                <option value="#F05006">Default (Orange)</option>
+                                                <option value="#46b9bb">Breaker Bay</option>
+                                                <option value="#b263e9">Eminence</option>
+                                                <option value="#efd103">Yellow</option>
+                                                <option value="#fff7ed">White</option>
+                                                <!-- Add more color options as needed -->
+                                            </select>
+                                        </div>
+
                                         <div id="tanya_bar_chart_container">
                                             <div id="tanya_bar_chart"></div>
 
