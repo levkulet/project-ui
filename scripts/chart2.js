@@ -50,4 +50,50 @@ d3.csv("./data/likesubscribe.csv").then(function(data) {
       .x(function(d, i) { return x(i); })
       .y(function(d) { return y(d.Subscribe); })
     );
+
+  // Create a tooltip div that is hidden by default:
+  var tooltip = d3.select("#chart2")
+    .append("div")
+    .style("opacity", 0)
+    .attr("class", "tooltip")
+    .style("background-color", "white")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("padding", "10px");
+
+  // Three function that change the tooltip when user hover / move / leave a cell
+  var mouseover = function(d) {
+    tooltip.style("opacity", 1);
+  }
+  var mousemove = function(d) {
+    tooltip
+      .html("Likes: " + d.Like + "<br>Subscribes: " + d.Subscribe)
+      .style("left", (d3.mouse(this)[0]+70) + "px")
+      .style("top", (d3.mouse(this)[1]) + "px");
+  }
+  var mouseleave = function(d) {
+    tooltip.style("opacity", 0);
+  }
+
+  // Add the points
+  svg
+    // First we need to enter in a group
+    .selectAll("myDots")
+    .data(data)
+    .enter()
+      .append('g')
+      .attr("class", "dot")
+      .on("mouseover", mouseover)
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+    // Second we need to enter in the 'values' part of this group
+    .selectAll("myPoints")
+    .data(function(d){ return d.values })
+    .enter()
+    .append("circle")
+      .attr("cx", function(d) { return x(d.date) } )
+      .attr("cy", function(d) { return y(d.value) } )
+      .attr("r", 5)
+      .attr("stroke", "white");
 });
