@@ -78,6 +78,41 @@ d3.csv("./data/likesubscribe.csv").then(function(data) {
     tooltip.style("opacity", 0);
   }
 
+  // Add legend below the chart
+    var legend = d3.select("#chart2Legend")
+    .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", 30)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + 0 + ")");
+
+    // Add 'Like' legend item
+    legend.append("rect")
+    .attr("width", 18)
+    .attr("height", 18)
+    .attr("fill", "steelblue");
+
+    legend.append("text")
+    .attr("x", 24)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("fill", "white")
+    .text("Like");
+
+    // Add 'Subscribe' legend item
+    legend.append("rect")
+    .attr("x", 80)
+    .attr("width", 18)
+    .attr("height", 18)
+    .attr("fill", "orange");
+
+    legend.append("text")
+    .attr("x", 104)
+    .attr("y", 9)
+    .attr("dy", ".35em")
+    .style("fill", "white")
+    .text("Subscribe");
+
   // Add the points
   svg
     // First we need to enter in a group
