@@ -127,6 +127,22 @@ d3.csv("./data/top_100_youtubers.csv").then(function(data) {
         .style('font-size','.7rem');
 
     // Add interactivity to the arcs
+    legendSvg.on('mouseover', function(event, d) {
+        // Make the tooltip visible and set its content
+        tooltip.style('opacity', 1)
+            .html('Click the legend to highlight the chart');
+    })
+    .on('mousemove', function(event) {
+        // Position the tooltip near the mouse pointer
+        tooltip.style('left', (event.pageX + 10) + 'px')
+            .style('top', (event.pageY - 10) + 'px');
+    })
+    .on('mouseout', function() {
+        // Hide the tooltip
+        tooltip.style('opacity', 0);
+    });
+
+    // Add interactivity to the arcs
     arcGroup.on('mouseover', function(event, d) {
         // Make the tooltip visible and set its content
         tooltip.style('opacity', 1)
