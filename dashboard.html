@@ -88,46 +88,48 @@
 </head>
 
 <body>
-    <div class="wrapper" style="width: 100%;"><!-- Main wrapper -->
-        <div class="col justify-content-center"> <!-- Right Content  -->
+    <div class="wrapper content" ><!-- Main wrapper -->
+        <div class="container-fluid justify-content-center"> <!-- Right Content  -->
             <div id="content">
                 <!-- MAIN HEADER AND NAVIGATION -->
-                <header>
-                    <div class="content-container">
-                        <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
-                            <div class="container-fluid">
-                                <!-- Navigation Top -->
-                                <div id="head-nav">
-                                    <ul class="nav navbar-nav d-flex ml-auto text-center">
+                <div class="content-container">
+                    <header>
+                        <div class="content-container">
+                            <nav id="navbar" class="navbar navbar-expand-sm navbar-collapse">
+                                <div class="container-fluid">
+                                    <!-- Navigation Top -->
+                                    <div id="head-nav">
+                                        <ul class="nav navbar-nav d-flex ml-auto text-center">
 
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">
-                                                <span class="large-screen-text">
-                                                    <i class="material-icons">library_books</i>
-                                                    &thinsp;UI Library</span>
-                                                <i class="small-screen-icon material-icons">library_books</i>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="dashboard.html">
-                                                <span class="large-screen-text">
-                                                    <i class="material-icons">dashboard</i>
-                                                    &thinsp;Dashboard</span>
-                                                <i class="small-screen-icon material-icons">dashboard</i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                                            <li class="nav-item active">
+                                                <a class="nav-link" href="index.html">
+                                                    <span class="large-screen-text">
+                                                        <i class="material-icons">library_books</i>
+                                                        &thinsp;UI Library</span>
+                                                    <i class="small-screen-icon material-icons">library_books</i>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard.html">
+                                                    <span class="large-screen-text">
+                                                        <i class="material-icons">dashboard</i>
+                                                        &thinsp;Dashboard</span>
+                                                    <i class="small-screen-icon material-icons">dashboard</i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png"
+                                            alt="">
+                                        <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
+                                            alt="">
+                                    </div>
                                 </div>
-                                <div>
-                                    <img class="header-logo" id="logo-large" src="./style/images/logo-wide.png" alt="">
-                                    <img class="header-logo" id="logo-small" src="./style/images/logo-square.png"
-                                        alt="">
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </header>
-
+                            </nav>
+                        </div>
+                    </header>
+                </div>
 
                 <!-- Page Contents -->
                 <div class="content-container">
@@ -207,8 +209,9 @@
                         <!-- First Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
                             <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" id="chart1Title">
-                                    <h5 class="highlight"> 
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart1Title">
+                                    <h5 class="highlight">
                                         The proportion of the top 100 YouTube channels in each category
                                     </h5>
                                 </div>
@@ -219,13 +222,13 @@
                                     </div>
                                 </div>
                             </div>
-                            
 
                             <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" id="chart2Title">
-                                    <h5 class="highlight"> 
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart2Title">
+                                    <h5 class="highlight">
                                         Relationship between the ‘likes’ and ‘subscribers
-                                    </h5>    
+                                    </h5>
                                 </div>
                                 <div class="card-body" id="chart2Container">
                                     <div id="chart2"></div>
@@ -235,6 +238,23 @@
                                 </div>
                             </div>
                         </div> <!-- End Row 1 -->
+
+                        <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
+                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
+                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    id="chart5Title">
+                                    <h5 class="highlight"> Chart 5 </h5>
+                                </div>
+                                <div class="custom-card-body" id="custom-chart-container">
+                                    <div id="custom-chart">
+
+                                    </div>
+                                    <div id="custom-chart-legend">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- Second Row -->
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
@@ -248,7 +268,7 @@
 
                                         <div id="tanya_bar_chart_container">
                                             <div id="tanya_bar_chart"></div>
-                                            
+
                                         </div>
 
                                     </div>
@@ -269,13 +289,13 @@
                                     <div id="chart4">
 
                                         <div id="tanya_line_chart_container">
-                                            
+
                                             <div id="tanya_line_chart"></div>
                                         </div>
-                                        
+
                                     </div>
 
-                                    <div id="chart4Legend"> 
+                                    <div id="chart4Legend">
                                         <div id="tanya_line_chart_legend"></div>
 
                                     </div>
@@ -285,23 +305,8 @@
                         </div>
 
                         <!-- Third Row -->
+
                         <div class="row flex-column flex-md-row justify-content-center justify-content-md-between">
-                            <div class="card col col-md-6 card-dark-md card-shadow-dark fixed-height">
-                                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
-                                    id="chart5Title">
-                                    <h5 class="highlight"> Chart 5 </h5>
-                                </div>
-                                <div class="custom-card-body" id="custom-chart-container">
-                                    <div id="custom-chart">
-
-                                    </div>
-                                    <div id="custom-chart-legend">
-
-                                    </div>
-                                </div>
-                            </div>
-
-
                             <div class="card col col-md-6 card-dark-md card-shadow-light fixed-height">
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
@@ -370,7 +375,9 @@
 
                 <div class="text-center">
                     <span class="large-screen-text">
-                        <p class="copyright">This UI Library & Dashboard was made by Leviel, Chad, Vishnu, Tanya,
+                        <p class="copyright">This UI Library & Dashboard was made by
+                            Leviel, Chad,
+                            Vishnu, Tanya,
                             and
                             Parham.</p>
                     </span>
