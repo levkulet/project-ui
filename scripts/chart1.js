@@ -1,7 +1,7 @@
 // Load the CSV data
 d3.csv("./data/category_proportion_data.csv").then(function(data) {
   // Set the dimensions of the chart
-  var width = 960;
+  var width = 1000;
   var height = 400;
   var radius = Math.min(width, height) / 2;
 
@@ -11,8 +11,10 @@ d3.csv("./data/category_proportion_data.csv").then(function(data) {
   // Create SVG
   var svg = d3.select("#chart1")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", "100%") // Set width to 100% for responsiveness
+    .attr("height", "100%") // Set height to 100% for responsiveness
+    .attr("viewBox", "0 0 " + width + " " + height) // Add viewBox attribute
+    .attr("preserveAspectRatio", "xMidYMid meet") // Add preserveAspectRatio attribute
     .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
