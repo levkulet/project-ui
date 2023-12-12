@@ -2,7 +2,7 @@
 d3.csv("./data/likesubscribe.csv").then(function(data) {
   // Set the dimensions of the chart
   var margin = {top: 10, right: 30, bottom: 30, left: 60},
-      width = 900 - margin.left - margin.right,
+      width = 960 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
   // Append the SVG object to the chart2 div

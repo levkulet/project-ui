@@ -1,7 +1,7 @@
 // Load the CSV data
 d3.csv("./data/category_proportion_data.csv").then(function(data) {
     // Set the dimensions of the chart
-    var width = 900;
+    var width = 960;
     var height = 400;
     var radius = Math.min(width, height) / 2;
   
