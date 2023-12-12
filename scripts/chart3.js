@@ -2,19 +2,16 @@
 function updateChartColor() {
     const selectedColor = document.getElementById("colorPicker").value;
 
-      // Update chart bars' fill color in the specific container
-      d3.select("#tanya_bar_chart_container")
+    // Update chart bars' fill color in the specific container
+    d3.select("#tanya_bar_chart_container")
         .selectAll("rect")
         .transition()
         .duration(500)
         .attr("fill", selectedColor);
 }
 
-
-
 // Load the CSV file
 d3.csv("./data/top_100_youtubers.csv").then(function (data) {
-
     // Data manipulation to get counts per country
     const counts = {};
     data.forEach(d => {
@@ -41,6 +38,18 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+    // Add tooltip
+    var tooltip = d3.select('body').append('div')
+        .attr('class', 'tooltip')
+        .style('opacity', 0)
+        .style('position', 'absolute')
+        .style("background", "#ffffff")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "5px")
+        .style('font-size','1rem');
+
     // Create x and y scales
     const xScale = d3.scaleBand().range([0, width - margin.left - margin.right]).padding(0.1); // Adjusted xScale range
     const yScale = d3.scaleLinear().range([height, 0]);
@@ -53,7 +62,6 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
     xScale.domain(countsArray.map(d => d.Country));
     yScale.domain([0, 40]); // Set the desired domain range
 
-
     // Add x-axis
     svg.append("g")
         .attr("transform", "translate(0," + height + ")")
@@ -62,7 +70,6 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
         .selectAll("text")
         .attr("fill", "white") // Set x-axis tick label color to white
         .attr("transform", "rotate(-45)"); // Rotate x-axis labels for better readability;
-    
 
     // Add y-axis
     svg.append("g")
@@ -91,22 +98,25 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
         .attr("height", 0) // Initial height as 0
         .attr("fill", "#F05006")
         // Tooltip 
-        .on("mouseover", function(event, d) {
-            tooltip.style("visibility", "visible");
+        .on("mouseover", function (event, d) {
+            const tooltipContent = "Country: " + d.Country + "<br/>YouTubers: " + d.count;
+            tooltip.html(tooltipContent);
+
+            tooltip.style('opacity', 1)
         })
-        .on("mousemove", function (event, d) {
-            tooltip.style("left", (event.pageX + 10) + "px")
-                .style("top", (event.pageY - 10) + "px")
-                .text("Country: " +  d.Country + ", " + "YouTubers: " + d.count);    
+        .on('mousemove', function(event) {
+            // Position the tooltip near the mouse pointer
+            tooltip.style('left', (event.pageX + 10) + 'px')
+                .style('top', (event.pageY - 10) + 'px');
         })
-        .on("mouseout", function (event, d) {
-            tooltip.style("visibility", "hidden");
+        .on('mouseout', function() {
+            // Hide the tooltip
+            tooltip.style('opacity', 0);
         })
         .transition()
         .duration(1000) // Transition duration
         .attr("y", d => yScale(d.count))
-        .attr("height", d => height - yScale(d.count))
-        
+        .attr("height", d => height - yScale(d.count));
 
     // Add label for countries
     svg.append("text")
