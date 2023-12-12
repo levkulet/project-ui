@@ -144,7 +144,7 @@
                             <div id="tooltip"></div>
                             <!-- SV1 Card Example -->
                             <div class="col-lg-3 col-md-6 col-sm-6 ">
-                                <div
+                                <div id="sv1"
                                     class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
                                     <div class="card-header text-center" id="sv1Title"></div>
                                     <div class="card-body-small">
@@ -160,7 +160,7 @@
 
                             <!-- SV2 Card Example -->
                             <div class="col-lg-3 col-md-6 col-sm-6">
-                                <div
+                                <div id="sv2"
                                     class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
                                     <div class="card-header text-center" id="sv2Title"></div>
                                     <div class="card-body-small">
@@ -176,7 +176,7 @@
 
                             <!-- SV3 Card Example -->
                             <div class="col-lg-3 col-md-6 col-sm-6 ">
-                                <div
+                                <div id="sv3"
                                     class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
                                     <div class="card-header text-center" id="sv3Title"></div>
                                     <div class="card-body-small">
@@ -191,7 +191,7 @@
 
                             <!-- SV4 Card Example -->
                             <div class="col-lg-3 col-md-6 col-sm-6 ">
-                                <div
+                                <div id="sv4"
                                     class="card card-dark-sm fixed-height-small d-flex align-items-center justify-content-center">
                                     <div class="card-header text-center" id="sv4Title"></div>
                                     <div class="card-body-small">
@@ -269,6 +269,18 @@
                                 </div>
                                 <div class="card-body" id="bar-chart-container">
                                     <div id="chart3">
+
+                                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                            <label for="colorPicker">Select Chart Color: </label>
+                                            <select id="colorPicker" onchange="updateChartColor()">
+                                                <option value="#F05006">Default (Orange)</option>
+                                                <option value="#46b9bb">Breaker Bay</option>
+                                                <option value="#b263e9">Eminence</option>
+                                                <option value="#efd103">Yellow</option>
+                                                <option value="#fff7ed">White</option>
+                                                <!-- Add more color options as needed -->
+                                            </select>
+                                        </div>
 
                                         <div id="tanya_bar_chart_container">
                                             <div id="tanya_bar_chart"></div>

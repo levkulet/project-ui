@@ -2,7 +2,7 @@
 d3.csv("./data/avg_view_every_year.csv").then(function (data) {
 
     // Set up the chart dimensions
-    const margin = { top: 20, right: 120, bottom: 110, left: 90 }; // Increased right margin
+    const margin = { top: 20, right: 120, bottom: 70, left: 90 }; // Increased right margin
     const width = 900 - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 

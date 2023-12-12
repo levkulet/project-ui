@@ -1,3 +1,17 @@
+// Function to update chart color based on dropdown selection
+function updateChartColor() {
+    const selectedColor = document.getElementById("colorPicker").value;
+
+      // Update chart bars' fill color in the specific container
+      d3.select("#tanya_bar_chart_container")
+        .selectAll("rect")
+        .transition()
+        .duration(500)
+        .attr("fill", selectedColor);
+}
+
+
+
 // Load the CSV file
 d3.csv("./data/top_100_youtubers.csv").then(function (data) {
 
@@ -14,7 +28,7 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
     });
 
     // Set up the chart dimensions
-    const margin = { top: 20, right: 20, bottom: 100, left: 70 };
+    const margin = { top: 20, right: 20, bottom: 70, left: 70 };
     const barWidth = 40; // Adjust the bar width 
     const width = 960 - margin.left - margin.right // Adjusted width calculation
     const height = 500 - margin.top - margin.bottom;
