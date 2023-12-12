@@ -19,7 +19,8 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
 
         // Clear previous content
         d3.select("#sv3Title").selectAll("*").remove();
-        d3.select("#sv3").selectAll("*").remove();
+        //d3.select("#sv3").selectAll("*").remove();
+        var chartContainer = d3.select("#sv3");
 
         // Create div elements and update their content
         var svTitle = d3.select("#sv3Title")
@@ -56,6 +57,36 @@ d3.csv("./data/top_100_youtubers.csv").then(function (data) {
             channelNameDiv.append("span").text("No data available.");
             earningsDiv.append("span").text("No data available.");
         }
+        // Create a tooltip
+        var tooltip = d3.select("#sv3").append('div')
+            .attr('class', 'tooltip')
+            .style('opacity', 0)
+            .style('position', 'absolute')
+            .style("background", "#ffffff")
+            .style("border", "solid")
+            .style("border-width", "1px")
+            .style("border-radius", "5px")
+            .style("padding", "5px")
+            .style('font-size', '.7rem');
+
+        // Add interactivity 
+        chartContainer.on('mouseover', function (event, d) {
+            // Make the tooltip visible and set its content
+            tooltip.style('opacity', 1)
+                .html(`Channel: ${topChannelData.ChannelName}
+                    <br>Total Followers: ${topChannelData.followers}
+                    <br>Category: ${topChannelData.Category}`);
+        })
+            /*            .on('mousemove', function (event) {
+                           // Position the tooltip near the mouse pointer
+                           tooltip.style('left', (event.pageX + 10) + 'px')
+                               .style('top', (event.pageY - tooltip.node().offsetHeight - 100) + 'px');
+                       })
+            */
+            .on('mouseout', function () {
+                // Hide the tooltip
+                tooltip.style('opacity', 0);
+            });
     }
 
     // Function to format earnings to add commas and specify "M" for million and "B" for billion
