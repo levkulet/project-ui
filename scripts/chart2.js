@@ -2,14 +2,16 @@
 d3.csv("./data/likesubscribe.csv").then(function(data) {
   // Set the dimensions of the chart
   var margin = {top: 10, right: 30, bottom: 30, left: 60},
-      width = 960 - margin.left - margin.right,
+      width = 1000 - margin.left - margin.right,
       height = 400 - margin.top - margin.bottom;
 
   // Append the SVG object to the chart2 div
   var svg = d3.select("#chart2")
     .append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
+      .attr("width", "100%") // Set width to 100% for responsiveness
+      .attr("height", "100%") // Set height to 100% for responsiveness
+      .attr("viewBox", "0 0 " + (width + margin.left + margin.right) + " " + (height + margin.top + margin.bottom)) // Add viewBox attribute
+      .attr("preserveAspectRatio", "xMidYMid meet") // Add preserveAspectRatio attribute
     .append("g")
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
