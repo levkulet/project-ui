@@ -18,6 +18,7 @@ d3.csv("./data/avg_view_every_year.csv").then(function (data) {
         .attr('viewBox', '0 0 ' + (width + margin.left + margin.right) + ' ' + (height + margin.top + margin.bottom))
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        
 
     // Create x and y scales
     const xScale = d3.scaleBand().range([0, width]).padding(0.1);
@@ -78,10 +79,14 @@ d3.csv("./data/avg_view_every_year.csv").then(function (data) {
             .on("mouseover", function (event, d) {
                 const year = d.Year;
                 const views = channels.map(ch => `${ch}: ${format(d[ch])}`).join("<br>"); // Format numbers with commas
+                const containerPos = document.getElementById("line-chart-container").getBoundingClientRect();
+                const x = event.clientX - containerPos.left;
+                const y = event.clientY - containerPos.top;
+            
                 tooltip.style("visibility", "visible")
                     .html(`Year: ${year}<br>${views}`)
-                    .style("left", (event.pageX) + "px")
-                    .style("top", (event.pageY - 28) + "px");
+                    .style("left", (x + 10) + "px")
+                    .style("top", (y - 28) + "px");
             })
             .on("mouseout", function () {
                 tooltip.style("visibility", "hidden");
