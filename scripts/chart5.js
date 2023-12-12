@@ -1,4 +1,4 @@
-// Function to create and update the chart
+/* // Function to create and update the chart
 function createCustomChart() {
     // Data
   const data = [
@@ -136,3 +136,8 @@ function createCustomChart() {
 createCustomChart();
 // Update chart on window resize
 window.addEventListener('resize', createCustomChart);
+ */
+
+
+
+/* LEVIEL FIX CODE FROM HERE BELOW */
