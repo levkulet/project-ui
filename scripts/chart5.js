@@ -1,5 +1,6 @@
-function createChart() {
-  // Data
+// Function to create and update the chart
+function createCustomChart() {
+    // Data
   const data = [
     { channel: 'Mr.Beast', q1: 374968, q2: 914153, q3: 776074, q4: 125315 },
     { channel: 'PewDiePie', q1: 146655, q2: 389799, q3: 687739, q4: 5611 },
@@ -9,16 +10,14 @@ function createChart() {
   ];
 
   // Remove existing chart
-  d3.select('#chart svg').remove();
-
+  d3.select('#custom-chart-container svg').remove();
   // Set up the chart dimensions
   const margin = { top: 20, right: 30, bottom: 70, left: 120 };
   const width = window.innerWidth - margin.left - margin.right;
   const height = 400 - margin.top - margin.bottom;
 
   // Append SVG to the chart div
-  const svg = d3.select('#chart')
-    .append('svg')
+  const svg = d3.select('#custom-chart-container')    .append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
     .append('g')
@@ -82,27 +81,28 @@ function createChart() {
   });
 
   quarters.forEach((quarter, i) => {
-  svg.selectAll(`.bar-${quarter}`)
-    .data(data)
-    .enter()
-    .append('rect')
-    .attr('class', `bar-${quarter}`)
-    .attr('x', 0)
-    .attr('y', d => yScale(d.channel) + i * (yScale.bandwidth() / quarters.length))
-    .attr('width', d => xScale(d[quarter]))
-    .attr('height', yScale.bandwidth() / quarters.length)
-    .attr('fill', d => d3.schemeCategory10[i])
-    .on('mouseover', function (d, j) {
-      const currentQuarter = quarters[i]; // Use closure to capture the current quarter
-      tooltip.transition().duration(200).style('opacity', 0.9);
-      tooltip.html(`<strong>${d.channel}</strong><br>${currentQuarter}: ${d[currentQuarter]}`)
-        .style('left', (d3.event.pageX + 5) + 'px')
-        .style('top', (d3.event.pageY - 28) + 'px');
-    })
-    .on('mouseout', () => {
-      tooltip.transition().duration(500).style('opacity', 0);
-    });
-});
+    svg.selectAll(`.custom-bar-${quarter}`)
+        .data(data)
+        .enter()
+        .append('rect')
+        .attr('class', `custom-bar-${quarter}`)
+        .attr('x', 0)
+        .attr('y', d => yScale(d.channel) + i * (yScale.bandwidth() / quarters.length))
+        .attr('width', d => xScale(d[quarter]))
+        .attr('height', yScale.bandwidth() / quarters.length)
+        .attr('fill', d => d3.schemeCategory10[i])
+        .on('mouseover', function (d, j) {
+            const currentQuarter = quarters[i];
+            tooltip.transition().duration(200).style('opacity', 0.9);
+            tooltip.html(`<strong>${d.channel}</strong><br>${currentQuarter}: ${d[currentQuarter]}`)
+                .style('left', (d3.event.pageX + 5) + 'px')
+                .style('top', (d3.event.pageY - 28) + 'px');
+        })
+        .on('mouseout', () => {
+            tooltip.transition().duration(500).style('opacity', 0);
+        });
+
+}); 
 
   // Legend
   const legend = svg.append('g')
@@ -133,7 +133,6 @@ function createChart() {
 }
 
 // Initial chart creation
-createChart();
-
+createCustomChart();
 // Update chart on window resize
-window.addEventListener('resize', createChart);
+window.addEventListener('resize', createCustomChart);
