@@ -4,7 +4,7 @@
         ];
 
         function updateDimensions() {
-            const containerWidth = document.getElementById('chart-container').offsetWidth;
+            const containerWidth = document.getElementById('chart8Container').offsetWidth;
             const width = Math.min(containerWidth, 700);
             const height = width;
             const radius = Math.min(width, height) / 2;
@@ -32,7 +32,7 @@
                 .attr('transform', (d, i) => 'translate(0,' + (i * 20 + height / 4) + ')');
         }
 
-        const containerWidth = document.getElementById('chart-container').offsetWidth;
+        const containerWidth = document.getElementById('chart8Container').offsetWidth;
         const width = Math.min(containerWidth, 700);
         const height = width;
         const radius = Math.min(width, height) / 2;
